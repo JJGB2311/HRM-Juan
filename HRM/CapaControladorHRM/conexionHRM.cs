@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Odbc;
+using System.Data;
+
 
 namespace CapaControladorHRM
 {
@@ -11,10 +13,10 @@ namespace CapaControladorHRM
 		
     {
 
-        public OdbcConnection conexion(string modulo)
+        public OdbcConnection conexion()
         {
             //creacion de la conexion via ODBC
-            OdbcConnection conn = new OdbcConnection("Dsn=" + modulo + "");
+            OdbcConnection conn = new OdbcConnection("Dsn=ERP");
             try
             {
                 conn.Open();

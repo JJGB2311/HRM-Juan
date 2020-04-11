@@ -1,0 +1,17 @@
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Proyecto HRM\Proyecto HRM\bin\Debug\Proyecto HRM.exe.config
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Proyecto HRM\Proyecto HRM\bin\Debug\Proyecto HRM.exe
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Proyecto HRM\Proyecto HRM\bin\Debug\Proyecto HRM.pdb
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Proyecto HRM\Proyecto HRM\bin\Debug\CapaVistaHRM.dll
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Proyecto HRM\Proyecto HRM\bin\Debug\CapaVistaHRM.pdb
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Proyecto HRM\Proyecto HRM\obj\Debug\Proyecto HRM.csprojAssemblyReference.cache
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Proyecto HRM\Proyecto HRM\obj\Debug\Proyecto_HRM.Form1.resources
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Proyecto HRM\Proyecto HRM\obj\Debug\Proyecto_HRM.Properties.Resources.resources
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Proyecto HRM\Proyecto HRM\obj\Debug\Proyecto HRM.csproj.GenerateResource.cache
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Proyecto HRM\Proyecto HRM\obj\Debug\Proyecto HRM.csproj.CopyComplete
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Proyecto HRM\Proyecto HRM\obj\Debug\Proyecto HRM.exe
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Proyecto HRM\Proyecto HRM\obj\Debug\Proyecto HRM.pdb
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Proyecto HRM\Proyecto HRM\obj\Debug\Proyecto_HRM.MDIHRMM.resources
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Proyecto HRM\Proyecto HRM\bin\Debug\CapaModeloHRM.dll
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Proyecto HRM\Proyecto HRM\bin\Debug\CapaControladorHRM.dll
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Proyecto HRM\Proyecto HRM\bin\Debug\CapaModeloHRM.pdb
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Proyecto HRM\Proyecto HRM\bin\Debug\CapaControladorHRM.pdb

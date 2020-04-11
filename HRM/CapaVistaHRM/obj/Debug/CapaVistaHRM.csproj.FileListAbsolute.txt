@@ -1,8 +1,14 @@
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\HRM\CapaVistaHRM\bin\Debug\CapaVistaHRM.dll
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\HRM\CapaVistaHRM\bin\Debug\CapaVistaHRM.pdb
-C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\HRM\CapaVistaHRM\bin\Debug\CapaModeloHRM.dll
-C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\HRM\CapaVistaHRM\bin\Debug\CapaModeloHRM.pdb
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\HRM\CapaVistaHRM\obj\Debug\CapaVistaHRM.csprojAssemblyReference.cache
-C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\HRM\CapaVistaHRM\obj\Debug\CapaVistaHRM.csproj.CopyComplete
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\HRM\CapaVistaHRM\obj\Debug\CapaVistaHRM.dll
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\HRM\CapaVistaHRM\obj\Debug\CapaVistaHRM.pdb
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\HRM\CapaVistaHRM\obj\Debug\CapaVistaHRM.Properties.Resources.resources
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\HRM\CapaVistaHRM\obj\Debug\CapaVistaHRM.csproj.GenerateResource.cache
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\HRM\CapaVistaHRM\bin\Debug\CapaModeloHRM.dll
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\HRM\CapaVistaHRM\bin\Debug\CapaModeloHRM.pdb
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\HRM\CapaVistaHRM\obj\Debug\CapaVistaHRM.csproj.CopyComplete
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\HRM\CapaVistaHRM\obj\Debug\CapaVistaHRM.MDIHRM.resources
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\HRM\CapaVistaHRM\obj\Debug\CapaVistaHRM.Empleado.resources
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\HRM\CapaVistaHRM\bin\Debug\CapaControladorHRM.dll
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\HRM\CapaVistaHRM\bin\Debug\CapaControladorHRM.pdb
