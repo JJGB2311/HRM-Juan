@@ -20,13 +20,14 @@ namespace CapaVistaHRM
             string[] alias = { "No", "area", "Estado" }; // Arreglo de nombres para campos
             navegador1.asignarAlias(alias); // Asignar nombres
             navegador1.asignarSalida(this); // Asignar form de salida
-            Color nuevoColor = System.Drawing.ColorTranslator.FromHtml("#DA7D7D"); // Deficion de 
+            Color nuevoColor = System.Drawing.ColorTranslator.FromHtml("#0926E3"); // Deficion de 
             navegador1.asignarColorFondo(nuevoColor);
-            navegador1.asignarColorFuente(Color.Black);
+            navegador1.asignarColorFuente(Color.White);
             navegador1.asignarAyuda("1"); // asignar 1 por defecto 
 
             navegador1.asignarTabla("area"); // tabla principal
             navegador1.asignarNombreForm("Area"); // Titulo y nombre del form
+
         }
 
         private void Area_Load(object sender, EventArgs e)

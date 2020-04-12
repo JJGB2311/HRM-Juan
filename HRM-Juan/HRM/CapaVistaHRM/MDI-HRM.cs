@@ -112,7 +112,7 @@ namespace CapaVistaHRM
         {
             Area nuevo = new Area(usuarioact);
             nuevo.MdiParent = this.MdiParent;
-            nuevo.Show();
+           nuevo.Show();
         }
 
         private void empleadosToolStripMenuItem1_Click(object sender, EventArgs e)
