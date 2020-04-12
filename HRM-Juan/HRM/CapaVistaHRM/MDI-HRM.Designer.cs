@@ -114,6 +114,7 @@
             this.hRMToolStripMenuItem.Name = "hRMToolStripMenuItem";
             this.hRMToolStripMenuItem.Size = new System.Drawing.Size(58, 25);
             this.hRMToolStripMenuItem.Text = "HRM";
+            this.hRMToolStripMenuItem.Click += new System.EventHandler(this.hRMToolStripMenuItem_Click);
             // 
             // empleadosToolStripMenuItem
             // 
@@ -125,6 +126,7 @@
             this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
             this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.empleadosToolStripMenuItem.Text = "Empleados";
+            this.empleadosToolStripMenuItem.Click += new System.EventHandler(this.empleadosToolStripMenuItem_Click);
             // 
             // agregarEmpleadoToolStripMenuItem
             // 
@@ -164,12 +166,14 @@
             this.empleadosToolStripMenuItem1.Name = "empleadosToolStripMenuItem1";
             this.empleadosToolStripMenuItem1.Size = new System.Drawing.Size(231, 26);
             this.empleadosToolStripMenuItem1.Text = "Empleados";
+            this.empleadosToolStripMenuItem1.Click += new System.EventHandler(this.empleadosToolStripMenuItem1_Click);
             // 
             // empleadosToolStripMenuItem2
             // 
             this.empleadosToolStripMenuItem2.Name = "empleadosToolStripMenuItem2";
             this.empleadosToolStripMenuItem2.Size = new System.Drawing.Size(173, 26);
             this.empleadosToolStripMenuItem2.Text = "Empleados";
+            this.empleadosToolStripMenuItem2.Click += new System.EventHandler(this.empleadosToolStripMenuItem2_Click);
             // 
             // puestosToolStripMenuItem
             // 
@@ -200,6 +204,7 @@
             this.areasToolStripMenuItem.Name = "areasToolStripMenuItem";
             this.areasToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
             this.areasToolStripMenuItem.Text = "Areas";
+            this.areasToolStripMenuItem.Click += new System.EventHandler(this.areasToolStripMenuItem_Click);
             // 
             // planillaToolStripMenuItem
             // 
@@ -306,6 +311,7 @@
             this.seguridadToolStripMenuItem.Name = "seguridadToolStripMenuItem";
             this.seguridadToolStripMenuItem.Size = new System.Drawing.Size(102, 25);
             this.seguridadToolStripMenuItem.Text = "Seguridad";
+            this.seguridadToolStripMenuItem.Click += new System.EventHandler(this.seguridadToolStripMenuItem_Click);
             // 
             // polizaToolStripMenuItem
             // 
@@ -324,6 +330,8 @@
             this.IsMdiContainer = true;
             this.Name = "MDI_HRM";
             this.Text = "MDI_HRM";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MDI_HRM_Load);
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
             this.menuStrip.ResumeLayout(false);

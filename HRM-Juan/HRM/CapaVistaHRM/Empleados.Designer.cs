@@ -315,6 +315,7 @@
             this.Name = "Empleados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Empleados";
+            this.Load += new System.EventHandler(this.Empleados_Load);
             this.groupBox4.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

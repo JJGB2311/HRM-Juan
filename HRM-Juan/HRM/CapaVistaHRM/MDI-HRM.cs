@@ -7,13 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaDiseno;
 
 namespace CapaVistaHRM
 {
     public partial class MDI_HRM : Form
     {
         private int childFormNumber = 0;
-
+        string user;
+        string usuarioact;
         public MDI_HRM()
         {
             InitializeComponent();
@@ -84,6 +86,50 @@ namespace CapaVistaHRM
             {
                 childForm.Close();
             }
+        }
+
+        private void MDI_HRM_Load(object sender, EventArgs e)
+        {
+            frm_login login = new frm_login();
+            login.ShowDialog();
+            LblUsuario.Text = login.obtenerNombreUsuario();
+            usuarioact = LblUsuario.Text;
+        }
+
+        private void seguridadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MDI_Seguridad seguridad = new MDI_Seguridad(LblUsuario.Text);
+            seguridad.lbl_nombreUsuario.Text = LblUsuario.Text;
+            seguridad.ShowDialog();
+        }
+
+        private void hRMToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void areasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Area nuevo = new Area(usuarioact);
+            nuevo.MdiParent = this.MdiParent;
+            nuevo.Show();
+        }
+
+        private void empleadosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void empleadosToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Empleados nuevo = new Empleados();
+            nuevo.MdiParent = this.MdiParent;
+            nuevo.Show();
+        }
+
+        private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

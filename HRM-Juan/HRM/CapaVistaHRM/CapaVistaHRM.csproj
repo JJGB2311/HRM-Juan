@@ -31,6 +31,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CapaDeDiseno">
+      <HintPath>..\..\..\Navegador\CapaDeDiseno\bin\Debug\CapaDeDiseno.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaDiseno">
+      <HintPath>..\..\..\Seguridad\CapaDiseno\bin\Debug\CapaDiseno.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -43,6 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Area.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Area.Designer.cs">
+      <DependentUpon>Area.cs</DependentUpon>
+    </Compile>
     <Compile Include="Conceptos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +90,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Area.resx">
+      <DependentUpon>Area.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Conceptos.resx">
       <DependentUpon>Conceptos.cs</DependentUpon>
     </EmbeddedResource>
