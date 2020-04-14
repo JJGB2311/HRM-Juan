@@ -19,6 +19,15 @@ namespace CapaControladorHRM
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
             return dataTable;
         }
+        public void ejecutarQuery(string query)// ejecuta un query en la BD
+        {
+            try
+            {
+                OdbcCommand consulta = new OdbcCommand(query, cn.conexion());
+                consulta.ExecuteNonQuery();
+            }
+            catch (OdbcException ex) { Console.WriteLine(ex.ToString()); }
 
+        }
     }
 }

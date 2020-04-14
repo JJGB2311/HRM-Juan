@@ -131,5 +131,38 @@ namespace CapaVistaHRM
         {
 
         }
+
+        private void tipoDeConceptosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TipoConcepto nuevo = new TipoConcepto(usuarioact);
+            nuevo.MdiParent = this.MdiParent;
+            nuevo.Show();
+        }
+
+        private void sueldoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+          Sueldos nuevo = new Sueldos(usuarioact);
+            nuevo.MdiParent = this.MdiParent;
+            nuevo.Show();
+        }
+
+        private void puestosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Puestos nuevo = new Puestos(usuarioact);
+            nuevo.MdiParent = this.MdiParent;
+            nuevo.Show();
+        }
+
+        private void planillasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void generarPlanillaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Planilla nuevo = new Planilla(usuarioact);
+            nuevo.MdiParent = this.MdiParent;
+            nuevo.Show();
+        }
     }
 }

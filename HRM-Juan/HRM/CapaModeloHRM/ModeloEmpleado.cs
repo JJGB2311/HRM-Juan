@@ -20,5 +20,9 @@ namespace CapaModeloHRM
             dt.Fill(table);
             return table;
         }
+        public void nuevoQuery(String query)//trasporta el query de la capa de disenio a Datos
+        {
+            sn.ejecutarQuery(query);
+        }
     }
 }

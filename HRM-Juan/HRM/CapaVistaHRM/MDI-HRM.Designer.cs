@@ -154,6 +154,7 @@
             this.tipoDeConceptosToolStripMenuItem.Name = "tipoDeConceptosToolStripMenuItem";
             this.tipoDeConceptosToolStripMenuItem.Size = new System.Drawing.Size(225, 26);
             this.tipoDeConceptosToolStripMenuItem.Text = "Tipo de conceptos";
+            this.tipoDeConceptosToolStripMenuItem.Click += new System.EventHandler(this.tipoDeConceptosToolStripMenuItem_Click);
             // 
             // empleadosToolStripMenuItem1
             // 
@@ -178,14 +179,16 @@
             // puestosToolStripMenuItem
             // 
             this.puestosToolStripMenuItem.Name = "puestosToolStripMenuItem";
-            this.puestosToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.puestosToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.puestosToolStripMenuItem.Text = "Puestos";
+            this.puestosToolStripMenuItem.Click += new System.EventHandler(this.puestosToolStripMenuItem_Click);
             // 
             // sueldoToolStripMenuItem
             // 
             this.sueldoToolStripMenuItem.Name = "sueldoToolStripMenuItem";
-            this.sueldoToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.sueldoToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.sueldoToolStripMenuItem.Text = "Sueldo";
+            this.sueldoToolStripMenuItem.Click += new System.EventHandler(this.sueldoToolStripMenuItem_Click);
             // 
             // asistenciaToolStripMenuItem
             // 
@@ -220,12 +223,14 @@
             this.generarPlanillaToolStripMenuItem.Name = "generarPlanillaToolStripMenuItem";
             this.generarPlanillaToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.generarPlanillaToolStripMenuItem.Text = "Generar planilla ";
+            this.generarPlanillaToolStripMenuItem.Click += new System.EventHandler(this.generarPlanillaToolStripMenuItem_Click);
             // 
             // planillasToolStripMenuItem
             // 
             this.planillasToolStripMenuItem.Name = "planillasToolStripMenuItem";
             this.planillasToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.planillasToolStripMenuItem.Text = "planillas";
+            this.planillasToolStripMenuItem.Click += new System.EventHandler(this.planillasToolStripMenuItem_Click);
             // 
             // contratacionesToolStripMenuItem
             // 

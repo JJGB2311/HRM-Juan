@@ -44,6 +44,7 @@
     <Compile Include="conexionHRM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLEmpleado.cs" />
+    <Compile Include="SQLPlanilla.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

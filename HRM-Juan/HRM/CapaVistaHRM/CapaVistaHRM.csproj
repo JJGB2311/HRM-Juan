@@ -57,11 +57,29 @@
     <Compile Include="Area.Designer.cs">
       <DependentUpon>Area.cs</DependentUpon>
     </Compile>
+    <Compile Include="Asistenacia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asistenacia.Designer.cs">
+      <DependentUpon>Asistenacia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Conceptos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Conceptos.Designer.cs">
       <DependentUpon>Conceptos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contrataciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrataciones.Designer.cs">
+      <DependentUpon>Contrataciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetallePlanilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetallePlanilla.Designer.cs">
+      <DependentUpon>DetallePlanilla.cs</DependentUpon>
     </Compile>
     <Compile Include="Empleados.cs">
       <SubType>Form</SubType>
@@ -75,13 +93,49 @@
     <Compile Include="EmpleaodosCom.Designer.cs">
       <DependentUpon>EmpleaodosCom.cs</DependentUpon>
     </Compile>
+    <Compile Include="GenePlanilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenePlanilla.Designer.cs">
+      <DependentUpon>GenePlanilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HorasExtras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HorasExtras.Designer.cs">
+      <DependentUpon>HorasExtras.cs</DependentUpon>
+    </Compile>
     <Compile Include="MDI-HRM.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MDI-HRM.Designer.cs">
       <DependentUpon>MDI-HRM.cs</DependentUpon>
     </Compile>
+    <Compile Include="Planilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planilla.Designer.cs">
+      <DependentUpon>Planilla.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Puestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Puestos.Designer.cs">
+      <DependentUpon>Puestos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sueldos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sueldos.Designer.cs">
+      <DependentUpon>Sueldos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipoConcepto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoConcepto.Designer.cs">
+      <DependentUpon>TipoConcepto.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CapaModeloHRM\CapaModeloHRM.csproj">
@@ -93,8 +147,17 @@
     <EmbeddedResource Include="Area.resx">
       <DependentUpon>Area.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Asistenacia.resx">
+      <DependentUpon>Asistenacia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Conceptos.resx">
       <DependentUpon>Conceptos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrataciones.resx">
+      <DependentUpon>Contrataciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetallePlanilla.resx">
+      <DependentUpon>DetallePlanilla.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Empleados.resx">
       <DependentUpon>Empleados.cs</DependentUpon>
@@ -102,8 +165,26 @@
     <EmbeddedResource Include="EmpleaodosCom.resx">
       <DependentUpon>EmpleaodosCom.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GenePlanilla.resx">
+      <DependentUpon>GenePlanilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HorasExtras.resx">
+      <DependentUpon>HorasExtras.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MDI-HRM.resx">
       <DependentUpon>MDI-HRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planilla.resx">
+      <DependentUpon>Planilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Puestos.resx">
+      <DependentUpon>Puestos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sueldos.resx">
+      <DependentUpon>Sueldos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoConcepto.resx">
+      <DependentUpon>TipoConcepto.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
