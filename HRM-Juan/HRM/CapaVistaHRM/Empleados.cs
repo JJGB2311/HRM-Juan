@@ -18,15 +18,19 @@ namespace CapaVistaHRM
         OdbcConnection conn = new OdbcConnection("Dsn=ERP");
         ModeloEmpleado logic = new ModeloEmpleado();
         string tabla = "def";
-        public Empleados()
+        string fechana;
+        string usuario;
+        public Empleados(string user)
         {
             InitializeComponent();
             Mostraremp();
+            user = usuario;
+            LblUsuario.Text = usuario;
         }
         void Mostraremp()
         {
             DataTable dt = logic.consultaLogica(tabla);
-            dataGridView1.DataSource = dt;
+            DTP_fechai.DataSource = dt;
         }
         private void Empleados_Load(object sender, EventArgs e)
         {
@@ -36,7 +40,7 @@ namespace CapaVistaHRM
         {
 
 
-            string query = "INSERT INTO `empleados` (`id_empleado`, `nombre`, `apellido`, `sexo`, `fecha_de_nacimiento`, `correo`, `id_puesto`, `id_area`, `estado`) VALUES (NULL, 'pedro', 'sanches', 'Masculino', '2020-04-16', 'juan@hotmail.com', '1', '1', '1')";
+            string query = "INSERT INTO `empleados` (`id_empleado`, `nombre`, `apellido`, `sexo`, `fecha_de_nacimiento`, `cui`, `correo`, `id_puesto`, `id_area`, `nit`, `direccion`, `estado`) VALUES (NULL, '"+Txt_nombre.Text+"', '"+Txt_apellido.Text+"', 'Masculino', '"+ fechana + "', '"+Txt_cui.Text+"', '"+Txt_correo.Text+"', '1', '1', '"+Txt_nit.Text+"', '"+Txt_direccion.Text+"', '1');";
 
             return query;
 
@@ -65,6 +69,18 @@ namespace CapaVistaHRM
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Conceptos nuevo = new Conceptos(usuario);
+            nuevo.MdiParent = this.MdiParent;
+            nuevo.Show();
+        }
+
+        private void Dtp_naci_ValueChanged(object sender, EventArgs e)
+        {
+            fechana = DTP_fecha.Value.ToString("yyyy/MM/dd");
         }
     }
 }

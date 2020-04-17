@@ -12,9 +12,12 @@ namespace CapaVistaHRM
 {
     public partial class Conceptos : Form
     {
-        public Conceptos()
+        string usuario;
+        public Conceptos(string user)
         {
             InitializeComponent();
+            user = usuario;
+            LblUsuario.Text = usuario;
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
@@ -23,6 +26,11 @@ namespace CapaVistaHRM
         }
 
         private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Conceptos_Load(object sender, EventArgs e)
         {
 
         }

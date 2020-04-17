@@ -63,6 +63,10 @@
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.polizaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.heramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -93,7 +97,11 @@
             // menuStrip
             // 
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inicioToolStripMenuItem,
             this.hRMToolStripMenuItem,
+            this.procesosToolStripMenuItem,
+            this.heramientasToolStripMenuItem,
+            this.reportesToolStripMenuItem,
             this.ayudaToolStripMenuItem,
             this.seguridadToolStripMenuItem,
             this.polizaToolStripMenuItem});
@@ -102,6 +110,7 @@
             this.menuStrip.Size = new System.Drawing.Size(1273, 29);
             this.menuStrip.TabIndex = 4;
             this.menuStrip.Text = "MenuStrip";
+            this.menuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip_ItemClicked);
             // 
             // hRMToolStripMenuItem
             // 
@@ -148,6 +157,7 @@
             this.conceptosToolStripMenuItem1.Name = "conceptosToolStripMenuItem1";
             this.conceptosToolStripMenuItem1.Size = new System.Drawing.Size(225, 26);
             this.conceptosToolStripMenuItem1.Text = "Conceptos";
+            this.conceptosToolStripMenuItem1.Click += new System.EventHandler(this.conceptosToolStripMenuItem1_Click);
             // 
             // tipoDeConceptosToolStripMenuItem
             // 
@@ -179,14 +189,14 @@
             // puestosToolStripMenuItem
             // 
             this.puestosToolStripMenuItem.Name = "puestosToolStripMenuItem";
-            this.puestosToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.puestosToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
             this.puestosToolStripMenuItem.Text = "Puestos";
             this.puestosToolStripMenuItem.Click += new System.EventHandler(this.puestosToolStripMenuItem_Click);
             // 
             // sueldoToolStripMenuItem
             // 
             this.sueldoToolStripMenuItem.Name = "sueldoToolStripMenuItem";
-            this.sueldoToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.sueldoToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
             this.sueldoToolStripMenuItem.Text = "Sueldo";
             this.sueldoToolStripMenuItem.Click += new System.EventHandler(this.sueldoToolStripMenuItem_Click);
             // 
@@ -325,10 +335,37 @@
             this.polizaToolStripMenuItem.Size = new System.Drawing.Size(65, 25);
             this.polizaToolStripMenuItem.Text = "Poliza";
             // 
+            // inicioToolStripMenuItem
+            // 
+            this.inicioToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
+            this.inicioToolStripMenuItem.Size = new System.Drawing.Size(63, 25);
+            this.inicioToolStripMenuItem.Text = "Inicio";
+            // 
+            // procesosToolStripMenuItem
+            // 
+            this.procesosToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
+            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(88, 25);
+            this.procesosToolStripMenuItem.Text = "Procesos";
+            // 
+            // reportesToolStripMenuItem
+            // 
+            this.reportesToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(86, 25);
+            this.reportesToolStripMenuItem.Text = "reportes";
+            // 
+            // heramientasToolStripMenuItem
+            // 
+            this.heramientasToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.heramientasToolStripMenuItem.Name = "heramientasToolStripMenuItem";
+            this.heramientasToolStripMenuItem.Size = new System.Drawing.Size(121, 25);
+            this.heramientasToolStripMenuItem.Text = "Heramientas";
+            // 
             // MDI_HRM
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1273, 630);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.menuStrip);
@@ -381,6 +418,10 @@
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem seguridadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem polizaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inicioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem procesosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem heramientasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
     }
 }
 

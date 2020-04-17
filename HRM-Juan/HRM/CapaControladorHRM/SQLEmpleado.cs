@@ -14,7 +14,7 @@ namespace CapaControladorHRM
         public OdbcDataAdapter llenaTbl(string tabla)// metodo  que obtinene el contenio de una tabla
         {
 
-            string sql = "SELECT * FROM `empleados` WHERE 1";
+            string sql = "SELECT id_empleado,nombre,apellido,sexo,fecha_de_nacimiento,cui,correo,id_puesto,id_area,nit,direccion FROM `empleados` WHERE estado =1;";
             //SELECT * FROM tbl_bodega WHERE estado=1 ORDER BY kbodega DESC
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
             return dataTable;

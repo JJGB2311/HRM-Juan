@@ -14,8 +14,9 @@ namespace CapaVistaHRM
     public partial class MDI_HRM : Form
     {
         private int childFormNumber = 0;
-        string user;
+        
         string usuarioact;
+        string id; string fechai, fechaf;
         public MDI_HRM()
         {
             InitializeComponent();
@@ -122,7 +123,7 @@ namespace CapaVistaHRM
 
         private void empleadosToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            Empleados nuevo = new Empleados();
+            Empleados nuevo = new Empleados(usuarioact);
             nuevo.MdiParent = this.MdiParent;
             nuevo.Show();
         }
@@ -155,7 +156,9 @@ namespace CapaVistaHRM
 
         private void planillasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            DetallePlanilla nuevo = new DetallePlanilla(usuarioact,id,fechai,fechaf);
+            nuevo.MdiParent = this.MdiParent;
+            nuevo.Show();
         }
 
         private void generarPlanillaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -163,6 +166,18 @@ namespace CapaVistaHRM
             Planilla nuevo = new Planilla(usuarioact);
             nuevo.MdiParent = this.MdiParent;
             nuevo.Show();
+        }
+
+        private void conceptosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Conceptos nuevo = new Conceptos(usuarioact);
+            nuevo.MdiParent = this.MdiParent;
+            nuevo.Show();
+        }
+
+        private void menuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

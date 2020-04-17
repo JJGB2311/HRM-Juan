@@ -12,9 +12,26 @@ namespace CapaVistaHRM
 {
     public partial class GenePlanilla : Form
     {
-        public GenePlanilla()
+        string user;
+        string dato;
+        string fechain;
+        string fechafi;
+        public GenePlanilla(string usuario , string id,string fechai,string fechaf)
         {
             InitializeComponent();
+            user = usuario;
+            dato = id;
+            fechain = fechai;
+            fechafi = fechaf;
+            LblUsuario.Text = usuario;
+            Lbl_planinlla.Text = dato;
+            Lbl_fechai.Text = fechain;
+            Lbl_fechaf.Text = fechafi;
+        }
+
+        private void GenePlanilla_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

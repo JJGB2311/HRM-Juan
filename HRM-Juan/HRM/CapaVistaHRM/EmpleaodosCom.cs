@@ -16,5 +16,10 @@ namespace CapaVistaHRM
         {
             InitializeComponent();
         }
+
+        private void EmpleaodosCom_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

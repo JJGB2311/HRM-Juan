@@ -35,10 +35,16 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Txt_direccion = new System.Windows.Forms.TextBox();
+            this.Txt_nit = new System.Windows.Forms.TextBox();
+            this.Txt_cui = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.Cbo_sexo = new System.Windows.Forms.ComboBox();
             this.Cbo_Area = new System.Windows.Forms.ComboBox();
             this.Cbo_puesto = new System.Windows.Forms.ComboBox();
-            this.Dtp_naci = new System.Windows.Forms.DateTimePicker();
+            this.DTP_fecha = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.Txt_correo = new System.Windows.Forms.TextBox();
@@ -53,19 +59,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DTP_fechai = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.LblUsuario = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DTP_fechai)).BeginInit();
             this.groupBox3.SuspendLayout();
+            this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox4
@@ -141,6 +145,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Conceptos";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -160,16 +165,16 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.Txt_direccion);
+            this.groupBox2.Controls.Add(this.Txt_nit);
+            this.groupBox2.Controls.Add(this.Txt_cui);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.Cbo_sexo);
             this.groupBox2.Controls.Add(this.Cbo_Area);
             this.groupBox2.Controls.Add(this.Cbo_puesto);
-            this.groupBox2.Controls.Add(this.Dtp_naci);
+            this.groupBox2.Controls.Add(this.DTP_fecha);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.Txt_correo);
@@ -188,6 +193,54 @@
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos";
+            // 
+            // Txt_direccion
+            // 
+            this.Txt_direccion.Location = new System.Drawing.Point(640, 222);
+            this.Txt_direccion.Name = "Txt_direccion";
+            this.Txt_direccion.Size = new System.Drawing.Size(359, 27);
+            this.Txt_direccion.TabIndex = 29;
+            // 
+            // Txt_nit
+            // 
+            this.Txt_nit.Location = new System.Drawing.Point(118, 265);
+            this.Txt_nit.Name = "Txt_nit";
+            this.Txt_nit.Size = new System.Drawing.Size(359, 27);
+            this.Txt_nit.TabIndex = 28;
+            // 
+            // Txt_cui
+            // 
+            this.Txt_cui.Location = new System.Drawing.Point(118, 224);
+            this.Txt_cui.Name = "Txt_cui";
+            this.Txt_cui.Size = new System.Drawing.Size(359, 27);
+            this.Txt_cui.TabIndex = 27;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(513, 230);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(83, 21);
+            this.label12.TabIndex = 26;
+            this.label12.Text = "Direccion";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(6, 263);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(32, 21);
+            this.label11.TabIndex = 24;
+            this.label11.Text = "Nit";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 225);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(36, 21);
+            this.label10.TabIndex = 22;
+            this.label10.Text = "Cui";
             // 
             // Cbo_sexo
             // 
@@ -213,12 +266,13 @@
             this.Cbo_puesto.Size = new System.Drawing.Size(359, 29);
             this.Cbo_puesto.TabIndex = 19;
             // 
-            // Dtp_naci
+            // DTP_fecha
             // 
-            this.Dtp_naci.Location = new System.Drawing.Point(693, 43);
-            this.Dtp_naci.Name = "Dtp_naci";
-            this.Dtp_naci.Size = new System.Drawing.Size(306, 27);
-            this.Dtp_naci.TabIndex = 18;
+            this.DTP_fecha.Location = new System.Drawing.Point(693, 43);
+            this.DTP_fecha.Name = "DTP_fecha";
+            this.DTP_fecha.Size = new System.Drawing.Size(306, 27);
+            this.DTP_fecha.TabIndex = 18;
+            this.DTP_fecha.ValueChanged += new System.EventHandler(this.Dtp_naci_ValueChanged);
             // 
             // label5
             // 
@@ -307,6 +361,7 @@
             // 
             // Txt_id
             // 
+            this.Txt_id.Enabled = false;
             this.Txt_id.Location = new System.Drawing.Point(118, 40);
             this.Txt_id.Name = "Txt_id";
             this.Txt_id.Size = new System.Drawing.Size(359, 27);
@@ -342,17 +397,17 @@
             this.label9.TabIndex = 0;
             this.label9.Text = "Empleados";
             // 
-            // dataGridView1
+            // DTP_fechai
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 39);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1026, 150);
-            this.dataGridView1.TabIndex = 0;
+            this.DTP_fechai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DTP_fechai.Location = new System.Drawing.Point(6, 39);
+            this.DTP_fechai.Name = "DTP_fechai";
+            this.DTP_fechai.Size = new System.Drawing.Size(1026, 150);
+            this.DTP_fechai.TabIndex = 0;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.dataGridView1);
+            this.groupBox3.Controls.Add(this.DTP_fechai);
             this.groupBox3.Location = new System.Drawing.Point(6, 400);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(1041, 213);
@@ -360,58 +415,37 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "información";
             // 
-            // label10
+            // statusStrip
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 225);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(36, 21);
-            this.label10.TabIndex = 22;
-            this.label10.Text = "Cui";
+            this.statusStrip.BackColor = System.Drawing.Color.DodgerBlue;
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel,
+            this.LblUsuario});
+            this.statusStrip.Location = new System.Drawing.Point(0, 621);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Size = new System.Drawing.Size(1310, 22);
+            this.statusStrip.TabIndex = 14;
+            this.statusStrip.Text = "StatusStrip";
             // 
-            // label11
+            // toolStripStatusLabel
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(6, 263);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(32, 21);
-            this.label11.TabIndex = 24;
-            this.label11.Text = "Nit";
+            this.toolStripStatusLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
+            this.toolStripStatusLabel.Text = "Estado";
             // 
-            // label12
+            // LblUsuario
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(513, 230);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(83, 21);
-            this.label12.TabIndex = 26;
-            this.label12.Text = "Direccion";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(118, 224);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(359, 27);
-            this.textBox1.TabIndex = 27;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(118, 265);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(359, 27);
-            this.textBox2.TabIndex = 28;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(640, 222);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(359, 27);
-            this.textBox3.TabIndex = 29;
+            this.LblUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.LblUsuario.Name = "LblUsuario";
+            this.LblUsuario.Size = new System.Drawing.Size(13, 17);
+            this.LblUsuario.Text = "..";
             // 
             // Empleados
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1310, 643);
+            this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -427,9 +461,12 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DTP_fechai)).EndInit();
             this.groupBox3.ResumeLayout(false);
+            this.statusStrip.ResumeLayout(false);
+            this.statusStrip.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -445,7 +482,7 @@
         private System.Windows.Forms.ComboBox Cbo_sexo;
         private System.Windows.Forms.ComboBox Cbo_Area;
         private System.Windows.Forms.ComboBox Cbo_puesto;
-        private System.Windows.Forms.DateTimePicker Dtp_naci;
+        private System.Windows.Forms.DateTimePicker DTP_fecha;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox Txt_correo;
@@ -459,14 +496,17 @@
         private System.Windows.Forms.TextBox Txt_id;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DTP_fechai;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Txt_direccion;
+        private System.Windows.Forms.TextBox Txt_nit;
+        private System.Windows.Forms.TextBox Txt_cui;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.StatusStrip statusStrip;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
+        private System.Windows.Forms.ToolStripStatusLabel LblUsuario;
     }
 }
