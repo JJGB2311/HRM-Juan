@@ -27,24 +27,42 @@ namespace CapaModeloHRM
             dt.Fill(table);
             return table;
         }
-        public void nuevoQueryplani(string id ,string idemple,string fehcai,string fechaf )//trasporta el query de la capa de disenio a Datos
+
+        public DataTable consultaLogicadet2(string tabla)
         {
-            string query = "INSERT INTO `detalle_planilla` (`id_detalle`, `id_planilla`, `id_empleado`, `sueldo_base`, `sueldo_extraordinario`, `total_devengado`, `total_descuento`, `total_liquido`, `estado`) VALUES(NULL, "+id+", "+idemple+", "+ sn.obtenersueldobase(idemple, fehcai, fechaf) + ", " + sn.obtenersueldoextraordinario(idemple, fehcai, fechaf) + ", " + sn.obtenersueldodebengado(idemple, fehcai, fechaf) + ", " + sn.obtenerDescuentos(idemple, fehcai, fechaf) + ",  " + sn.obtenerTotal(idemple, fehcai, fechaf) + ", '1');";
+            OdbcDataAdapter dt = sn.llenaTblade2(tabla);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+        public void nuevoQuerydepla(String query)//trasporta el query de la capa de disenio a Datos
+        {
+            sn.ejecutarQuerydepa(query);
+        }
+
+        public void nuevoQueryplani(int IDDE ,string IDPL ,string IDEMPLE,string fehcai,string fechaf )//trasporta el query de la capa de disenio a Datos
+        {
+            string query = "INSERT INTO `detalle_planilla` (`id_detalle`, `id_planilla`, `id_empleado`, `sueldo_base`, `sueldo_extraordinario`, `total_devengado`, `total_descuento`, `total_liquido`, `estado`) VALUES ('" + IDDE + "', '" + IDPL+ "', '"+ IDEMPLE + "','"+ sn.obtenersueldobase(IDEMPLE) + "', '"+ sn.obtenersueldoextraordinario(IDEMPLE) + "', '"+ sn.obtenersueldodebengado(IDEMPLE, fehcai, fechaf) + "', '"+ sn.obtenerDescuentos(IDEMPLE, fehcai, fechaf) + "', '"+ sn.obtenerTotal(IDEMPLE, fehcai, fechaf) + "', '1');";
+          
             sn.ejecutarQuerypla(query);
         }
         /**Detalle planilla***/
-        public void creardetalle (string id, string fehcai, string fechaf)//trasporta el query de la capa de disenio a Datos
+        public void creardetalle (string IDPL, string fechai, string fechaf)//trasporta el query de la capa de disenio a Datos
         {
 
             string[] empleados = sn.obteneridplanilla().Split(',');
             int i=1;
+            int cont = 1;
+          
             foreach (var empleado in empleados)
-            {
+            { 
                 if (i !=empleados.Length )
-                {
-                    nuevoQueryplani(id, empleado, fehcai, fechaf);
-                    Console.WriteLine("---------------------------------------------------------------------------------------------------------");
+                { 
+                   
+                    nuevoQueryplani(cont, IDPL, empleado, fechai, fechaf);
+                    Console.WriteLine(sn.obtenerTotal(empleado, fechai, fechaf) + "---------------------------------------------------------------------------------------------------------");
                 }i++;
+                cont++;
 
                 Console.WriteLine("---------------------------***********************************************************************************");
             }

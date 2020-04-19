@@ -1,5 +1,9 @@
 SELECT id_empleado ,nombre,apellido FROM empleados WHERE estado=1;
 
+//***
+INSERT INTO `detalle_planilla` (`id_detalle`, `id_planilla`, `id_empleado`, `sueldo_base`, `sueldo_extraordinario`, `total_devengado`, `total_descuento`, `total_liquido`, `estado`) VALUES (NULL, '1', '1', '5000', '51515', '555', '5255', '123', '1');
+/**
+
 SELECT empleados.id_empleado, empleados.nombre, empleados.apellido, conceptos.fecha_inicio, conceptos.fecha_fin ,conceptos.monto,conceptos.debe_Haber FROM empleados INNER JOIN conceptos ON empleados.id_empleado = conceptos.id_empleado
 
 SELECT empleados.id_empleado, empleados.nombre, empleados.apellido,empleados.id_puesto,empleados.id_area, conceptos.fecha_inicio, conceptos.fecha_fin ,conceptos.monto,conceptos.debe_Haber FROM empleados INNER JOIN conceptos ON empleados.id_empleado = conceptos.id_empleado AND empleados.id_empleado=1;

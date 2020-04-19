@@ -24,13 +24,11 @@ namespace CapaVistaHRM
         string dato;
         string fechain;
         string fechafi;
-        public DetallePlanilla(string usuario, string id, string fechai, string fechaf)
+        public DetallePlanilla(string usuario)
         {
             InitializeComponent();
             user = usuario;
-            dato = id;
-            fechain = fechai;
-            fechafi = fechaf;
+        
             LblUsuario.Text = usuario;
             Lbl_planinlla.Text = dato;
             Lbl_fechai.Text = fechain;

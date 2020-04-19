@@ -156,7 +156,7 @@ namespace CapaVistaHRM
 
         private void planillasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DetallePlanilla nuevo = new DetallePlanilla(usuarioact,id,fechai,fechaf);
+            DetallePlanilla nuevo = new DetallePlanilla(usuarioact);
             nuevo.MdiParent = this.MdiParent;
             nuevo.Show();
         }
@@ -173,6 +173,16 @@ namespace CapaVistaHRM
             Conceptos nuevo = new Conceptos(usuarioact);
             nuevo.MdiParent = this.MdiParent;
             nuevo.Show();
+        }
+
+        private void planillaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bolsaDeTrabajoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void menuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
