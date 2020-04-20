@@ -34,6 +34,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.DTP_fechaf = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
+            this.Btn_Nuevo = new System.Windows.Forms.Button();
             this.DTP_fechai = new System.Windows.Forms.DateTimePicker();
             this.Txt_nombre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,7 +48,6 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.LblUsuario = new System.Windows.Forms.ToolStripStatusLabel();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -59,6 +59,7 @@
             // 
             this.Btn_detalle.BackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_detalle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_detalle.Enabled = false;
             this.Btn_detalle.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
             this.Btn_detalle.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_detalle.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
@@ -77,13 +78,14 @@
             // 
             this.Btn_Insertar.BackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_Insertar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_Insertar.Enabled = false;
             this.Btn_Insertar.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
             this.Btn_Insertar.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_Insertar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_Insertar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_Insertar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Insertar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Btn_Insertar.Location = new System.Drawing.Point(586, 123);
+            this.Btn_Insertar.Location = new System.Drawing.Point(575, 36);
             this.Btn_Insertar.Name = "Btn_Insertar";
             this.Btn_Insertar.Size = new System.Drawing.Size(204, 68);
             this.Btn_Insertar.TabIndex = 0;
@@ -95,6 +97,7 @@
             // 
             this.Btn_generar.BackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_generar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_generar.Enabled = false;
             this.Btn_generar.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
             this.Btn_generar.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_generar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
@@ -114,7 +117,7 @@
             this.groupBox2.Controls.Add(this.DTP_fechaf);
             this.groupBox2.Controls.Add(this.Btn_Insertar);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.Btn_Nuevo);
             this.groupBox2.Controls.Add(this.DTP_fechai);
             this.groupBox2.Controls.Add(this.Txt_nombre);
             this.groupBox2.Controls.Add(this.label3);
@@ -130,6 +133,7 @@
             // 
             // DTP_fechaf
             // 
+            this.DTP_fechaf.Enabled = false;
             this.DTP_fechaf.Location = new System.Drawing.Point(121, 124);
             this.DTP_fechaf.Name = "DTP_fechaf";
             this.DTP_fechaf.Size = new System.Drawing.Size(435, 27);
@@ -146,17 +150,36 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Fecha fin";
             // 
+            // Btn_Nuevo
+            // 
+            this.Btn_Nuevo.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Nuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_Nuevo.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.Btn_Nuevo.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Nuevo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Nuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Nuevo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Btn_Nuevo.Location = new System.Drawing.Point(575, 124);
+            this.Btn_Nuevo.Name = "Btn_Nuevo";
+            this.Btn_Nuevo.Size = new System.Drawing.Size(204, 64);
+            this.Btn_Nuevo.TabIndex = 15;
+            this.Btn_Nuevo.Text = "Nueva planilla";
+            this.Btn_Nuevo.UseVisualStyleBackColor = false;
+            this.Btn_Nuevo.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // DTP_fechai
             // 
+            this.DTP_fechai.Enabled = false;
             this.DTP_fechai.Location = new System.Drawing.Point(118, 77);
             this.DTP_fechai.Name = "DTP_fechai";
             this.DTP_fechai.Size = new System.Drawing.Size(435, 27);
             this.DTP_fechai.TabIndex = 8;
             this.DTP_fechai.Value = new System.DateTime(2020, 4, 13, 0, 0, 0, 0);
-            this.DTP_fechai.ValueChanged += new System.EventHandler(this.DTP_fecha_ValueChanged);
             // 
             // Txt_nombre
             // 
+            this.Txt_nombre.Enabled = false;
             this.Txt_nombre.Location = new System.Drawing.Point(121, 164);
             this.Txt_nombre.Name = "Txt_nombre";
             this.Txt_nombre.Size = new System.Drawing.Size(438, 27);
@@ -265,23 +288,6 @@
             this.LblUsuario.Size = new System.Drawing.Size(13, 17);
             this.LblUsuario.Text = "..";
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(586, 40);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(204, 64);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Nueva planilla";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // Planilla
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -329,6 +335,6 @@
         private System.Windows.Forms.DateTimePicker DTP_fechaf;
         private System.Windows.Forms.Label label5;
         public System.Windows.Forms.DateTimePicker DTP_fechai;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Btn_Nuevo;
     }
 }

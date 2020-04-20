@@ -57,6 +57,7 @@ namespace CapaVistaHRM
             Planilla nuevo = new Planilla(user);
             nuevo.MdiParent = this.MdiParent;
             nuevo.Show();
+            this.Close();
         }
     }
 }

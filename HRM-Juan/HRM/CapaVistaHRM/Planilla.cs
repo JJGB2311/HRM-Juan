@@ -13,10 +13,12 @@ using System.IO;
 using System.Net;
 
 
+
 namespace CapaVistaHRM
 {
     public partial class Planilla : Form
     {
+        OdbcConnection conn = new OdbcConnection("Dsn=ERP");
         Modeloplanilla logic = new Modeloplanilla();
         DateTime hoy = DateTime.Now;
         string tabla = "def";
@@ -25,6 +27,7 @@ namespace CapaVistaHRM
         string fechai;
         string fechaf;
         string fechahora;
+        string prueba;
    
         
               public Planilla(string usuario)
@@ -56,38 +59,26 @@ namespace CapaVistaHRM
             DataTable dt = logic.consultaLogicaplani(tabla);
             dataGridView1.DataSource = dt;
         }
-          string crearDelete()// crea el query de delete
-        {
-            //Cambiar el estadoPelicula por estado
-            string query = "UPDATE planilla set estado = 0 "+" WHERE id_planilla =" + dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            return query;
-        }
-
-       /* string crearUpdate()// crea el query de update
-         {
-             string query = "UPDATE ayuda SET Ruta = 'Página web ayuda/ayuda.chm.', indice = 'Menúboletos.html.' WHERE ayuda.Id_ayuda = " + dataGridView1.CurrentRow.Cells[0].Value.ToString();
-             string query = "UPDATE ayuda SET Ruta = '" + txtruta.Text.Replace("\\", "/") + "', indice = '" + txtindice.Text + "' WHERE ayuda.Id_ayuda = " + dataGridView1.CurrentRow.Cells[0].Value.ToString();
-
-
-             return query;
-         }*/
+      
+      
         private void button1_Click(object sender, EventArgs e)
         {
-           logic.nuevoQuerydepla(crearInsert());
+           logic.nuevoQuerypla(crearInsert());
+            MessageBox.Show("Planilla Generada Corectamente");
             Mostrarpla();
             Txt_id.Text = "";
             Txt_nombre.Text = "";
             fechai = fechahora;
             fechaf = fechahora;
-
+            Btn_Insertar.Enabled = false;
+            Btn_Nuevo.Enabled = true;
+            Txt_nombre.Enabled = false;
+            DTP_fechai.Enabled = false;
+            DTP_fechaf.Enabled = false;
 
         }
 
-        private void DTP_fecha_ValueChanged(object sender, EventArgs e)
-        {
-            
-        }
-
+    
         private void button5_Click(object sender, EventArgs e)
         {
             Txt_id.Text = "";
@@ -97,18 +88,7 @@ namespace CapaVistaHRM
             this.Hide();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Btn_generar.Enabled = false;
-            logic.nuevoQuerydepla(crearDelete());
-            Mostrarpla();
-            Txt_id.Text = "";
-            Txt_nombre.Text = "";
-            fechai = fechahora;
-            fechaf = fechahora;
-            Mostrarpla();
-           
-        }
+       
 
         private void dataGridView1_DoubleClick(object sender, EventArgs e)
         {
@@ -122,6 +102,7 @@ namespace CapaVistaHRM
                 fechai = DTP_fechai.Text;
                 fechaf = DTP_fechaf.Text;
                 Btn_generar.Enabled = true;
+                Btn_detalle.Enabled = true;
             }
             else
             {
@@ -129,10 +110,25 @@ namespace CapaVistaHRM
             }
         }
 
+
+        
         private void button2_Click(object sender, EventArgs e)
-        {
-            logic.creardetalle(IDPLA, fechai,fechaf);
-            MessageBox.Show("BIEN");
+        { //string sql = "SELECT COUNT(detalle_planilla.id_detalle) as dato FROM planilla INNER JOIN detalle_planilla ON planilla.id_planilla = detalle_planilla.id_planilla WHERE detalle_planilla.id_planilla=" + ID + ";";
+
+
+            if (logic.nuevovali(IDPLA) == "0")
+            {
+                logic.creardetalle(IDPLA, fechai, fechaf);
+                MessageBox.Show("La planilla se genero Corectamente");
+            }
+            else
+            {
+
+                MessageBox.Show("La planilla ya fue creada");
+                //   Console.WriteLine(sn.obtenerDatodde(IDPL) + "---------------------------------------------------------------------------------------------------------");
+
+            }
+
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -145,6 +141,16 @@ namespace CapaVistaHRM
             GenePlanilla nuevo = new GenePlanilla(user, IDPLA);
             nuevo.MdiParent = this.MdiParent;
             nuevo.Show();
+            this.Close();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Btn_Insertar.Enabled = true;
+            Txt_nombre.Enabled = true;
+            DTP_fechai.Enabled = true;
+            DTP_fechaf.Enabled = true;
+            Btn_Nuevo.Enabled = false;
         }
     }
 }

@@ -99,9 +99,6 @@ namespace CapaVistaHRM
 
         private void seguridadToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MDI_Seguridad seguridad = new MDI_Seguridad(LblUsuario.Text);
-            seguridad.lbl_nombreUsuario.Text = LblUsuario.Text;
-            seguridad.ShowDialog();
         }
 
         private void hRMToolStripMenuItem_Click(object sender, EventArgs e)
@@ -156,7 +153,7 @@ namespace CapaVistaHRM
 
         private void planillasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DetallePlanilla nuevo = new DetallePlanilla(usuarioact);
+            MantenimientoPlanilla nuevo = new MantenimientoPlanilla(usuarioact);
             nuevo.MdiParent = this.MdiParent;
             nuevo.Show();
         }
@@ -182,6 +179,14 @@ namespace CapaVistaHRM
 
         private void bolsaDeTrabajoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void seguridadToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MDI_Seguridad seguridad = new MDI_Seguridad(LblUsuario.Text);
+            seguridad.lbl_nombreUsuario.Text = LblUsuario.Text;
+            seguridad.ShowDialog();
 
         }
 

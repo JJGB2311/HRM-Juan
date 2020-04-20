@@ -61,16 +61,16 @@
             this.solicitudesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trajajosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.perfilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.heramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.polizaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.despidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.despidosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tiempoLaboralToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.finiquitosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.heramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.seguridadToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.polizaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -106,9 +106,7 @@
             this.procesosToolStripMenuItem,
             this.heramientasToolStripMenuItem,
             this.reportesToolStripMenuItem,
-            this.ayudaToolStripMenuItem,
-            this.seguridadToolStripMenuItem,
-            this.polizaToolStripMenuItem});
+            this.ayudaToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(1273, 29);
@@ -133,8 +131,8 @@
             this.despidosToolStripMenuItem});
             this.hRMToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hRMToolStripMenuItem.Name = "hRMToolStripMenuItem";
-            this.hRMToolStripMenuItem.Size = new System.Drawing.Size(58, 25);
-            this.hRMToolStripMenuItem.Text = "HRM";
+            this.hRMToolStripMenuItem.Size = new System.Drawing.Size(149, 25);
+            this.hRMToolStripMenuItem.Text = "Mantenimientos";
             this.hRMToolStripMenuItem.Click += new System.EventHandler(this.hRMToolStripMenuItem_Click);
             // 
             // empleadosToolStripMenuItem
@@ -145,7 +143,7 @@
             this.empleadosToolStripMenuItem1,
             this.areasToolStripMenuItem});
             this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
-            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
+            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
             this.empleadosToolStripMenuItem.Text = "Empleados";
             this.empleadosToolStripMenuItem.Click += new System.EventHandler(this.empleadosToolStripMenuItem_Click);
             // 
@@ -271,7 +269,7 @@
             this.puebasToolStripMenuItem,
             this.citasToolStripMenuItem});
             this.candidatosToolStripMenuItem.Name = "candidatosToolStripMenuItem";
-            this.candidatosToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.candidatosToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.candidatosToolStripMenuItem.Text = "Candidatos";
             // 
             // canditaosToolStripMenuItem
@@ -312,63 +310,20 @@
             // solicitudesToolStripMenuItem
             // 
             this.solicitudesToolStripMenuItem.Name = "solicitudesToolStripMenuItem";
-            this.solicitudesToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
+            this.solicitudesToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.solicitudesToolStripMenuItem.Text = "Solicitudes";
             // 
             // trajajosToolStripMenuItem
             // 
             this.trajajosToolStripMenuItem.Name = "trajajosToolStripMenuItem";
-            this.trajajosToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
+            this.trajajosToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.trajajosToolStripMenuItem.Text = "Empleos";
             // 
             // perfilesToolStripMenuItem
             // 
             this.perfilesToolStripMenuItem.Name = "perfilesToolStripMenuItem";
-            this.perfilesToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
+            this.perfilesToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.perfilesToolStripMenuItem.Text = "Perfiles";
-            // 
-            // procesosToolStripMenuItem
-            // 
-            this.procesosToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
-            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(88, 25);
-            this.procesosToolStripMenuItem.Text = "Procesos";
-            // 
-            // heramientasToolStripMenuItem
-            // 
-            this.heramientasToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.heramientasToolStripMenuItem.Name = "heramientasToolStripMenuItem";
-            this.heramientasToolStripMenuItem.Size = new System.Drawing.Size(121, 25);
-            this.heramientasToolStripMenuItem.Text = "Heramientas";
-            // 
-            // reportesToolStripMenuItem
-            // 
-            this.reportesToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(86, 25);
-            this.reportesToolStripMenuItem.Text = "reportes";
-            // 
-            // ayudaToolStripMenuItem
-            // 
-            this.ayudaToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(75, 25);
-            this.ayudaToolStripMenuItem.Text = "Ayuda";
-            // 
-            // seguridadToolStripMenuItem
-            // 
-            this.seguridadToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.seguridadToolStripMenuItem.Name = "seguridadToolStripMenuItem";
-            this.seguridadToolStripMenuItem.Size = new System.Drawing.Size(102, 25);
-            this.seguridadToolStripMenuItem.Text = "Seguridad";
-            this.seguridadToolStripMenuItem.Click += new System.EventHandler(this.seguridadToolStripMenuItem_Click);
-            // 
-            // polizaToolStripMenuItem
-            // 
-            this.polizaToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.polizaToolStripMenuItem.Name = "polizaToolStripMenuItem";
-            this.polizaToolStripMenuItem.Size = new System.Drawing.Size(65, 25);
-            this.polizaToolStripMenuItem.Text = "Poliza";
             // 
             // despidosToolStripMenuItem
             // 
@@ -397,6 +352,51 @@
             this.finiquitosToolStripMenuItem.Name = "finiquitosToolStripMenuItem";
             this.finiquitosToolStripMenuItem.Size = new System.Drawing.Size(195, 26);
             this.finiquitosToolStripMenuItem.Text = "Finiquitos";
+            // 
+            // procesosToolStripMenuItem
+            // 
+            this.procesosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.polizaToolStripMenuItem1});
+            this.procesosToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
+            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(88, 25);
+            this.procesosToolStripMenuItem.Text = "Procesos";
+            // 
+            // heramientasToolStripMenuItem
+            // 
+            this.heramientasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.seguridadToolStripMenuItem1});
+            this.heramientasToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.heramientasToolStripMenuItem.Name = "heramientasToolStripMenuItem";
+            this.heramientasToolStripMenuItem.Size = new System.Drawing.Size(121, 25);
+            this.heramientasToolStripMenuItem.Text = "Heramientas";
+            // 
+            // reportesToolStripMenuItem
+            // 
+            this.reportesToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(86, 25);
+            this.reportesToolStripMenuItem.Text = "reportes";
+            // 
+            // ayudaToolStripMenuItem
+            // 
+            this.ayudaToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(75, 25);
+            this.ayudaToolStripMenuItem.Text = "Ayuda";
+            // 
+            // seguridadToolStripMenuItem1
+            // 
+            this.seguridadToolStripMenuItem1.Name = "seguridadToolStripMenuItem1";
+            this.seguridadToolStripMenuItem1.Size = new System.Drawing.Size(180, 26);
+            this.seguridadToolStripMenuItem1.Text = "Seguridad";
+            this.seguridadToolStripMenuItem1.Click += new System.EventHandler(this.seguridadToolStripMenuItem1_Click);
+            // 
+            // polizaToolStripMenuItem1
+            // 
+            this.polizaToolStripMenuItem1.Name = "polizaToolStripMenuItem1";
+            this.polizaToolStripMenuItem1.Size = new System.Drawing.Size(180, 26);
+            this.polizaToolStripMenuItem1.Text = "Poliza";
             // 
             // MDI_HRM
             // 
@@ -451,8 +451,6 @@
         private System.Windows.Forms.ToolStripMenuItem trajajosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem perfilesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem seguridadToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem polizaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inicioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem procesosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem heramientasToolStripMenuItem;
@@ -461,6 +459,8 @@
         private System.Windows.Forms.ToolStripMenuItem despidosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem tiempoLaboralToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem finiquitosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem seguridadToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem polizaToolStripMenuItem1;
     }
 }
 
