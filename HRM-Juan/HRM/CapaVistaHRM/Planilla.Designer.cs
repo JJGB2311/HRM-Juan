@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Planilla));
             this.Btn_detalle = new System.Windows.Forms.Button();
             this.Btn_Insertar = new System.Windows.Forms.Button();
             this.Btn_generar = new System.Windows.Forms.Button();
@@ -48,11 +49,13 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.LblUsuario = new System.Windows.Forms.ToolStripStatusLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.statusStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Btn_detalle
@@ -139,7 +142,7 @@
             this.DTP_fechaf.Size = new System.Drawing.Size(435, 27);
             this.DTP_fechaf.TabIndex = 10;
             this.DTP_fechaf.Value = new System.DateTime(2020, 4, 13, 0, 0, 0, 0);
-            this.DTP_fechaf.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+          
             // 
             // label5
             // 
@@ -223,10 +226,11 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Location = new System.Drawing.Point(12, 3);
+            this.groupBox1.Location = new System.Drawing.Point(0, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(821, 72);
+            this.groupBox1.Size = new System.Drawing.Size(842, 76);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             // 
@@ -288,6 +292,16 @@
             this.LblUsuario.Size = new System.Drawing.Size(13, 17);
             this.LblUsuario.Text = "..";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(742, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 72);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // Planilla
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -310,6 +324,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -336,5 +351,6 @@
         private System.Windows.Forms.Label label5;
         public System.Windows.Forms.DateTimePicker DTP_fechai;
         private System.Windows.Forms.Button Btn_Nuevo;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

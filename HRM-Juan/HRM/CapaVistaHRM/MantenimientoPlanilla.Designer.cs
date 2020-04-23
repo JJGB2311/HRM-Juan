@@ -28,30 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MantenimientoPlanilla));
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.LblUsuario = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.DTP_fechaf = new System.Windows.Forms.DateTimePicker();
+            this.Btn_Modificar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.DTP_fechai = new System.Windows.Forms.DateTimePicker();
+            this.Btn_Borar = new System.Windows.Forms.Button();
             this.Txt_nombre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Txt_id = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.Btn_Borar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.Btn_generar = new System.Windows.Forms.Button();
-            this.Btn_Modificar = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.statusStrip.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox4.SuspendLayout();
@@ -64,9 +66,9 @@
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel,
             this.LblUsuario});
-            this.statusStrip.Location = new System.Drawing.Point(0, 592);
+            this.statusStrip.Location = new System.Drawing.Point(0, 645);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(1139, 22);
+            this.statusStrip.Size = new System.Drawing.Size(1093, 22);
             this.statusStrip.TabIndex = 17;
             this.statusStrip.Text = "StatusStrip";
             // 
@@ -87,16 +89,18 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.DTP_fechaf);
+            this.groupBox2.Controls.Add(this.Btn_Modificar);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.DTP_fechai);
+            this.groupBox2.Controls.Add(this.Btn_Borar);
             this.groupBox2.Controls.Add(this.Txt_nombre);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.Txt_id);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(12, 91);
+            this.groupBox2.Location = new System.Drawing.Point(12, 79);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(578, 205);
+            this.groupBox2.Size = new System.Drawing.Size(578, 264);
             this.groupBox2.TabIndex = 15;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos";
@@ -109,6 +113,25 @@
             this.DTP_fechaf.Size = new System.Drawing.Size(435, 27);
             this.DTP_fechaf.TabIndex = 10;
             this.DTP_fechaf.Value = new System.DateTime(2020, 4, 13, 0, 0, 0, 0);
+            // 
+            // Btn_Modificar
+            // 
+            this.Btn_Modificar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Modificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_Modificar.Enabled = false;
+            this.Btn_Modificar.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.Btn_Modificar.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Modificar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Modificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Modificar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Btn_Modificar.Location = new System.Drawing.Point(314, 201);
+            this.Btn_Modificar.Name = "Btn_Modificar";
+            this.Btn_Modificar.Size = new System.Drawing.Size(239, 51);
+            this.Btn_Modificar.TabIndex = 18;
+            this.Btn_Modificar.Text = "Modificar Planilla";
+            this.Btn_Modificar.UseVisualStyleBackColor = false;
+            this.Btn_Modificar.Click += new System.EventHandler(this.Btn_Modificar_Click);
             // 
             // label5
             // 
@@ -127,6 +150,25 @@
             this.DTP_fechai.Size = new System.Drawing.Size(435, 27);
             this.DTP_fechai.TabIndex = 8;
             this.DTP_fechai.Value = new System.DateTime(2020, 4, 13, 0, 0, 0, 0);
+            // 
+            // Btn_Borar
+            // 
+            this.Btn_Borar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Borar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_Borar.Enabled = false;
+            this.Btn_Borar.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.Btn_Borar.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Borar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Borar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Borar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Borar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Btn_Borar.Location = new System.Drawing.Point(10, 202);
+            this.Btn_Borar.Name = "Btn_Borar";
+            this.Btn_Borar.Size = new System.Drawing.Size(256, 48);
+            this.Btn_Borar.TabIndex = 0;
+            this.Btn_Borar.Text = "Eliminar Planilla";
+            this.Btn_Borar.UseVisualStyleBackColor = false;
+            this.Btn_Borar.Click += new System.EventHandler(this.Btn_Insertar_Click);
             // 
             // Txt_nombre
             // 
@@ -165,40 +207,32 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 40);
+            this.label1.Location = new System.Drawing.Point(6, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "No. Planilla";
             // 
-            // Btn_Borar
-            // 
-            this.Btn_Borar.BackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Borar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Borar.Enabled = false;
-            this.Btn_Borar.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.Btn_Borar.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Borar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Borar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Borar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Borar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Btn_Borar.Location = new System.Drawing.Point(618, 469);
-            this.Btn_Borar.Name = "Btn_Borar";
-            this.Btn_Borar.Size = new System.Drawing.Size(256, 100);
-            this.Btn_Borar.TabIndex = 0;
-            this.Btn_Borar.Text = "Eliminar Planilla";
-            this.Btn_Borar.UseVisualStyleBackColor = false;
-            this.Btn_Borar.Click += new System.EventHandler(this.Btn_Insertar_Click);
-            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Location = new System.Drawing.Point(12, 1);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1096, 72);
+            this.groupBox1.Size = new System.Drawing.Size(1090, 72);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(975, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 72);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // label4
             // 
@@ -214,10 +248,9 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.dataGridView2);
-            this.groupBox3.Controls.Add(this.Btn_generar);
-            this.groupBox3.Location = new System.Drawing.Point(608, 91);
+            this.groupBox3.Location = new System.Drawing.Point(12, 345);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(524, 356);
+            this.groupBox3.Size = new System.Drawing.Size(1075, 282);
             this.groupBox3.TabIndex = 16;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "información";
@@ -227,53 +260,15 @@
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(30, 26);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(458, 264);
+            this.dataGridView2.Size = new System.Drawing.Size(1016, 247);
             this.dataGridView2.TabIndex = 0;
-            // 
-            // Btn_generar
-            // 
-            this.Btn_generar.BackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_generar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_generar.Enabled = false;
-            this.Btn_generar.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.Btn_generar.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_generar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_generar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_generar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_generar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Btn_generar.Location = new System.Drawing.Point(131, 296);
-            this.Btn_generar.Name = "Btn_generar";
-            this.Btn_generar.Size = new System.Drawing.Size(266, 54);
-            this.Btn_generar.TabIndex = 1;
-            this.Btn_generar.Text = "Regenerar detalle planilla";
-            this.Btn_generar.UseVisualStyleBackColor = false;
-            this.Btn_generar.Click += new System.EventHandler(this.Btn_generar_Click);
-            // 
-            // Btn_Modificar
-            // 
-            this.Btn_Modificar.BackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Modificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Modificar.Enabled = false;
-            this.Btn_Modificar.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.Btn_Modificar.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Modificar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Modificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Modificar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Btn_Modificar.Location = new System.Drawing.Point(893, 469);
-            this.Btn_Modificar.Name = "Btn_Modificar";
-            this.Btn_Modificar.Size = new System.Drawing.Size(239, 100);
-            this.Btn_Modificar.TabIndex = 18;
-            this.Btn_Modificar.Text = "Modificar Planilla";
-            this.Btn_Modificar.UseVisualStyleBackColor = false;
-            this.Btn_Modificar.Click += new System.EventHandler(this.Btn_Modificar_Click);
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.dataGridView1);
-            this.groupBox4.Location = new System.Drawing.Point(12, 302);
+            this.groupBox4.Location = new System.Drawing.Point(596, 91);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(578, 273);
+            this.groupBox4.Size = new System.Drawing.Size(491, 252);
             this.groupBox4.TabIndex = 20;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "información";
@@ -283,18 +278,16 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(6, 27);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(566, 240);
+            this.dataGridView1.Size = new System.Drawing.Size(475, 205);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
             // MantenimientoPlanilla
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1139, 614);
+            this.ClientSize = new System.Drawing.Size(1093, 667);
             this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.Btn_Modificar);
             this.Controls.Add(this.statusStrip);
-            this.Controls.Add(this.Btn_Borar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
@@ -303,13 +296,13 @@
             this.Name = "MantenimientoPlanilla";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DetallePlanilla";
-            this.Load += new System.EventHandler(this.MantenimientoPlanilla_Load);
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox4.ResumeLayout(false);
@@ -338,9 +331,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Button Btn_generar;
         private System.Windows.Forms.Button Btn_Modificar;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

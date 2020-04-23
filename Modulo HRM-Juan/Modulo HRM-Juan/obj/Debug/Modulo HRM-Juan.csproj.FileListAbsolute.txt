@@ -100,3 +100,10 @@ C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingen
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Modulo HRM-Juan\Modulo HRM-Juan\obj\Debug\Modulo HRM-Juan.csproj.CopyComplete
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Modulo HRM-Juan\Modulo HRM-Juan\obj\Debug\Modulo HRM-Juan.exe
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Modulo HRM-Juan\Modulo HRM-Juan\obj\Debug\Modulo HRM-Juan.pdb
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Modulo HRM-Juan\Modulo HRM-Juan\bin\Debug\CapaVista.dll
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Modulo HRM-Juan\Modulo HRM-Juan\bin\Debug\CapaModelo.dll
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Modulo HRM-Juan\Modulo HRM-Juan\bin\Debug\CapaControlador.dll
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Modulo HRM-Juan\Modulo HRM-Juan\bin\Debug\CapaVista.pdb
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Modulo HRM-Juan\Modulo HRM-Juan\bin\Debug\CapaVista.dll.config
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Modulo HRM-Juan\Modulo HRM-Juan\bin\Debug\CapaModelo.pdb
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Modulo HRM-Juan\Modulo HRM-Juan\bin\Debug\CapaControlador.pdb

@@ -55,7 +55,7 @@ namespace CapaControladorHRM
            
 
             // string sql = "SELECT id_empleado  FROM empleados WHERE estado=1;";
-            string sql = "SELECT detalle_planilla.id_detalle,empleados.nombre,detalle_planilla.sueldo_base,detalle_planilla.sueldo_extraordinario,detalle_planilla.total_devengado,detalle_planilla.total_descuento,detalle_planilla.total_liquido FROM `detalle_planilla` INNER JOIN empleados ON empleados.id_empleado = detalle_planilla.id_empleado WHERE detalle_planilla.id_planilla ="+ id + ";";
+            string sql = "SELECT detalle_planilla.id_detalle,empleados.nombre,empleados.apellido,detalle_planilla.sueldo_base,detalle_planilla.sueldo_extraordinario,detalle_planilla.total_devengado,detalle_planilla.total_descuento,detalle_planilla.total_liquido FROM `detalle_planilla` INNER JOIN empleados ON empleados.id_empleado = detalle_planilla.id_empleado WHERE detalle_planilla.id_planilla =" + id + ";";
             //SELECT * FROM tbl_bodega WHERE estado=1 ORDER BY kbodega DESC
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
             return dataTable;

@@ -24,3 +24,44 @@ cualquier duda comunicarse con Edgar Casasola salu2 XD
 
 	combo1.obtener();
    Esta funcion retorna un valor string del valor seleccionado en el comboBox.
+
+---------------cambio de funciones obtener-----------
+
+1. ahora en el combo se puede buscar por codigo o por nombre de elemento
+2. se cambiaron las funciones obtener por el siguiente motivo
+
+
+	1|abrigos
+	2|mochilas
+	3|zapatos
+	4|comida
+
+el combo desplegaba unicamente los nombres ahora depliega codigo-nombre, basados en el ejemplo
+anterior
+
+	1-abrigos
+	2-mochilas
+
+sin embargo esto solo permitia consultar por id, por lo cual tambien se le da la vuelta al registro
+
+	abrigos-1
+	mochilas-2
+
+con lo que surgen 2 metodos
+	combo1.obtenerP(); obtiene el id en primera posicion
+	combo1.obtenerU(); obtiene el id en ultima  posicion
+
+esto para facilitar el ingreso o consulta de elementos con el mismo nombre pero diferente id	
+          	
+------------Nuevas Instrucciones----------------
+
+para mejorar el problema de obtener el primero o ultimo simplemente se generó una funcion 
+llamada ObtenerIdif(); la cual obtiene siempre el id del articulo indiferente a la manera
+en la que se busque.
+
+	1-abrigo 
+	abrigo-1 = 1-abrigo
+
+la funcion devuelve un string y se llama de la siguiente manera por ejemplo
+
+string algo = combo1.ObtenerIndif();

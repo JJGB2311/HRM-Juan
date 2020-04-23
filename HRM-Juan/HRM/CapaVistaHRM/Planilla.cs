@@ -12,8 +12,6 @@ using CapaModeloHRM;
 using System.IO;
 using System.Net;
 
-
-
 namespace CapaVistaHRM
 {
     public partial class Planilla : Form
@@ -27,9 +25,7 @@ namespace CapaVistaHRM
         string fechai;
         string fechaf;
         string fechahora;
-        string prueba;
-   
-        
+
               public Planilla(string usuario)
         {
             InitializeComponent();
@@ -46,7 +42,6 @@ namespace CapaVistaHRM
         string crearInsert()// crea el query de insert
         {
             string query = "INSERT INTO `planilla` (`id_planilla`, `fecha_inicio`, `fecha_fin`, `Nombre`, `estado`) VALUES (NULL, '"+ DTP_fechai.Text+ "', '"+ DTP_fechaf.Text+ "', '"+Txt_nombre.Text+"', '1');";
-
             return query;
 
         }
@@ -59,8 +54,6 @@ namespace CapaVistaHRM
             DataTable dt = logic.consultaLogicaplani(tabla);
             dataGridView1.DataSource = dt;
         }
-      
-      
         private void button1_Click(object sender, EventArgs e)
         {
            logic.nuevoQuerypla(crearInsert());
@@ -75,10 +68,8 @@ namespace CapaVistaHRM
             Txt_nombre.Enabled = false;
             DTP_fechai.Enabled = false;
             DTP_fechaf.Enabled = false;
-
         }
 
-    
         private void button5_Click(object sender, EventArgs e)
         {
             Txt_id.Text = "";
@@ -87,9 +78,6 @@ namespace CapaVistaHRM
             fechaf = fechahora;
             this.Hide();
         }
-
-       
-
         private void dataGridView1_DoubleClick(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count == 1)
@@ -110,8 +98,6 @@ namespace CapaVistaHRM
             }
         }
 
-
-        
         private void button2_Click(object sender, EventArgs e)
         { //string sql = "SELECT COUNT(detalle_planilla.id_detalle) as dato FROM planilla INNER JOIN detalle_planilla ON planilla.id_planilla = detalle_planilla.id_planilla WHERE detalle_planilla.id_planilla=" + ID + ";";
 
@@ -123,17 +109,9 @@ namespace CapaVistaHRM
             }
             else
             {
-
                 MessageBox.Show("La planilla ya fue creada");
-                //   Console.WriteLine(sn.obtenerDatodde(IDPL) + "---------------------------------------------------------------------------------------------------------");
-
             }
 
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-            
         }
 
         private void Btn_detalle_Click(object sender, EventArgs e)

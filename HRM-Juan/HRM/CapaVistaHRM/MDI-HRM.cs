@@ -57,10 +57,6 @@ namespace CapaVistaHRM
             this.Close();
         }
 
-     
-
-       
-
         private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             LayoutMdi(MdiLayout.Cascade);
@@ -97,14 +93,6 @@ namespace CapaVistaHRM
             usuarioact = LblUsuario.Text;
         }
 
-        private void seguridadToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void hRMToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void areasToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -113,21 +101,11 @@ namespace CapaVistaHRM
            nuevo.Show();
         }
 
-        private void empleadosToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void empleadosToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             Empleados nuevo = new Empleados(usuarioact);
             nuevo.MdiParent = this.MdiParent;
             nuevo.Show();
-        }
-
-        private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void tipoDeConceptosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -172,16 +150,6 @@ namespace CapaVistaHRM
             nuevo.Show();
         }
 
-        private void planillaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bolsaDeTrabajoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void seguridadToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             MDI_Seguridad seguridad = new MDI_Seguridad(LblUsuario.Text);
@@ -190,9 +158,20 @@ namespace CapaVistaHRM
 
         }
 
-        private void menuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        private void horasExtrasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            HorasExtra nuevo = new HorasExtra(usuarioact);
+            nuevo.MdiParent = this.MdiParent;
+            nuevo.Show();
         }
+
+        private void agregarEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Btn_agrecon nuevo = new Btn_agrecon(usuarioact);
+            nuevo.MdiParent = this.MdiParent;
+            nuevo.Show();
+        }
+
+       
     }
 }

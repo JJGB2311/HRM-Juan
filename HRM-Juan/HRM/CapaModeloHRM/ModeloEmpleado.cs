@@ -13,9 +13,16 @@ namespace CapaModeloHRM
     {
 
         SQLEmpleado sn = new SQLEmpleado();
-        public DataTable consultaLogica(string tabla)
+        public DataTable consultaLogica()
         {
-            OdbcDataAdapter dt = sn.llenaTbl(tabla);
+            OdbcDataAdapter dt = sn.llenaTbl();
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+        public DataTable consultaLogicacon(string emple)
+        {
+            OdbcDataAdapter dt = sn.llenaTblcon(emple);
             DataTable table = new DataTable();
             dt.Fill(table);
             return table;

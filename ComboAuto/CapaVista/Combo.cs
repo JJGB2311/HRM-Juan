@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data;
+
 using CapaModelo;
 
 namespace CapaVista
@@ -17,7 +17,8 @@ namespace CapaVista
     {
         LogicaCombo cm = new LogicaCombo();
         string tbl ;
-        string cmp ;
+        string cmp1 ;
+        string cmp2;
         public Combo()
         {
             InitializeComponent();
@@ -26,17 +27,18 @@ namespace CapaVista
 
         }
       
-        public void llenarse(string tabla, string campo) {
+        public void llenarse(string tabla, string campo1, string campo2) {
 
             tbl = tabla;
-            cmp = campo;
+            cmp1 = campo1;
+            cmp2 = campo2;
           
 
            
             Cmb_auto.ValueMember = "numero";
             Cmb_auto.DisplayMember = "nombre";
 
-            string[] items = cm.items(tabla,campo);
+            string[] items = cm.items(tabla,campo1, campo2);
 
 
 
@@ -52,12 +54,14 @@ namespace CapaVista
 
             }
 
-            var dt2 = cm.enviar(tabla, campo);
+            var dt2 = cm.enviar(tabla, campo1, campo2);
             AutoCompleteStringCollection coleccion = new AutoCompleteStringCollection();
             foreach (DataRow row in dt2.Rows)
             {
 
-                coleccion.Add(Convert.ToString(row[campo]));
+                coleccion.Add(Convert.ToString(row[campo1]) + "-"+ Convert.ToString(row[campo2]));
+                coleccion.Add(Convert.ToString(row[campo2]) + "-" + Convert.ToString(row[campo1]));
+
 
             }
 
@@ -68,16 +72,88 @@ namespace CapaVista
 
 
 
+
         }
 
 
+      
+
         public string obtener() {
+            string ob = "";
+            ob = Cmb_auto.Text;
+
+            return ob;
+
+        }
+
+
+        public string obtenerU() {
 
             string ob = "";
+            string ob2 = "";
+            char op;
+
 
             ob = Cmb_auto.Text;
             
+            //   String ultimo = ob.substring(ob.length() - 1);
+
+            ob2= ob.Substring(ob.Length-1);
+
+            return ob2;
+
+        }
+
+        public string obtenerP() {
+
+            string ob = "";
+            string ob2 = "";
+            char op;
+
+
+            op = Cmb_auto.Text[0];
+            ob = op.ToString();
+
+
             return ob;
+
+        }
+
+
+        public string ObtenerIndif()
+        {
+
+            string iddef;
+            string obp = obtenerP();
+
+
+            char al = char.Parse(obp);
+
+            if (char.IsLetter(al))
+            {
+                string cosa = obtener();
+
+                char[] delimitador = { '-' };
+                int i = 0;
+                string[] partes = cosa.Split(delimitador);
+
+                string id = partes[1] + "-" + partes[0];
+
+                iddef= id;
+            }
+
+            else
+            {
+
+                string completo = obtener();
+
+                iddef = completo;
+
+            }
+
+            return iddef;
+
+
 
         }
 
