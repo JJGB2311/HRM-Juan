@@ -86,7 +86,22 @@ namespace CapaControladorHRM
             return caposactivos1;
         }
         /**/
+        public string obtenerTOTAL(string ID)
+        {
+            string caposactivos1 = "";
+            string sql = "SELECT COALESCE (round(sum(total_liquido),2),0) FROM `detalle_planilla` WHERE estado=1 AND id_planilla=" + ID + ";";
 
+            OdbcCommand command = new OdbcCommand(sql, cn.conexion());
+            OdbcDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                caposactivos1 += reader.GetValue(0).ToString();
+            }
+            caposactivos1.TrimEnd(',');
+            return caposactivos1;
+        }
+
+        /**/
 
         public string obteneridplanilla()
         {

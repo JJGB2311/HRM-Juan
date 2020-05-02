@@ -103,14 +103,11 @@ namespace CapaVistaHRM
         }
         string crearInsertcon()// crea el query de insert
         {
-            string query = "INSERT INTO `conceptos` (`id_concepto`, `id_empleado`, `fecha_inicio`, `fecha_fin`, `id_tipo`, `monto`, `debe_Haber`, `estado`) VALUES (NULL, '"+Txt_emplecon.Text+"', '"+ fechaini + "', '"+ fechafin + "', '"+combo3.obtener()+"', '"+Txt_montocon.Text+"', '"+ debehaber + "', '1');";
+            string query = "INSERT INTO `conceptos` (`id_concepto`, `id_empleado`, `fecha_inicio`, `fecha_fin`, `id_tipo`, `monto`, `debe_Haber`, `estado`) VALUES (NULL, '"+Txt_emplecon.Text+"', '"+ dateTimePicker2.Text + "', '"+ dateTimePicker3.Text + "', '"+combo3.obtener()+"', '"+Txt_montocon.Text+"', '"+ debehaber + "', '1');";
             return query;
 
         }
-        private void button1_Click(object sender, EventArgs e)
-        {
-           
-        }
+        
 
         private void dataGridView1_DoubleClick(object sender, EventArgs e)
         {

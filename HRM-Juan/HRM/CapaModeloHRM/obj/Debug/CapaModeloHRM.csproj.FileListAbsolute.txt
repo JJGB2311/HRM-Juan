@@ -22,3 +22,4 @@ C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingen
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaModeloHRM\obj\Debug\CapaModeloHRM.csproj.CopyComplete
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaModeloHRM\obj\Debug\CapaModeloHRM.dll
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaModeloHRM\obj\Debug\CapaModeloHRM.pdb
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaModeloHRM\obj\Debug\CapaModeloHRM.csproj.CoreCompileInputs.cache

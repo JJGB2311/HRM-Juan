@@ -32,25 +32,29 @@
             this.GPB_info = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.Cbo_sexo = new System.Windows.Forms.GroupBox();
+            this.Btn_nuevoreg = new System.Windows.Forms.Button();
+            this.combo3 = new CapaVista.Combo();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label20 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.label19 = new System.Windows.Forms.Label();
-            this.Btn_geeecon = new System.Windows.Forms.Button();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.Txt_emplecon = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.Btn_geeecon = new System.Windows.Forms.Button();
             this.Txt_montocon = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.Txt_emplecon = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Btn_new = new System.Windows.Forms.Button();
+            this.Btn_can = new System.Windows.Forms.Button();
             this.combo2 = new CapaVista.Combo();
             this.combo1 = new CapaVista.Combo();
             this.Txt_dire = new System.Windows.Forms.TextBox();
@@ -80,10 +84,6 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.LblUsuario = new System.Windows.Forms.ToolStripStatusLabel();
-            this.combo3 = new CapaVista.Combo();
-            this.Btn_nuevoreg = new System.Windows.Forms.Button();
-            this.Btn_can = new System.Windows.Forms.Button();
-            this.Btn_new = new System.Windows.Forms.Button();
             this.GPB_info.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.Cbo_sexo.SuspendLayout();
@@ -135,6 +135,32 @@
             this.Cbo_sexo.TabStop = false;
             this.Cbo_sexo.Text = "Componentes";
             // 
+            // Btn_nuevoreg
+            // 
+            this.Btn_nuevoreg.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_nuevoreg.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.Btn_nuevoreg.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_nuevoreg.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_nuevoreg.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_nuevoreg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_nuevoreg.ForeColor = System.Drawing.Color.White;
+            this.Btn_nuevoreg.Location = new System.Drawing.Point(404, 210);
+            this.Btn_nuevoreg.Name = "Btn_nuevoreg";
+            this.Btn_nuevoreg.Size = new System.Drawing.Size(224, 47);
+            this.Btn_nuevoreg.TabIndex = 11;
+            this.Btn_nuevoreg.Text = "Nuevo Registro";
+            this.Btn_nuevoreg.UseVisualStyleBackColor = false;
+            this.Btn_nuevoreg.Click += new System.EventHandler(this.Btn_nuevoreg_Click);
+            // 
+            // combo3
+            // 
+            this.combo3.Enabled = false;
+            this.combo3.Location = new System.Drawing.Point(102, 59);
+            this.combo3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.combo3.Name = "combo3";
+            this.combo3.Size = new System.Drawing.Size(220, 30);
+            this.combo3.TabIndex = 31;
+            // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
@@ -160,27 +186,6 @@
             this.radioButton1.Text = "Debe";
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Enabled = false;
-            this.checkBox1.Location = new System.Drawing.Point(149, 28);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(138, 25);
-            this.checkBox1.TabIndex = 24;
-            this.checkBox1.Text = "Definir Tiempo";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(9, 32);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(67, 21);
-            this.label20.TabIndex = 23;
-            this.label20.Text = "Tiempo";
             // 
             // groupBox6
             // 
@@ -214,6 +219,61 @@
             this.label19.TabIndex = 8;
             this.label19.Text = "Fecha Fin";
             // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Enabled = false;
+            this.dateTimePicker2.Location = new System.Drawing.Point(122, 71);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(240, 27);
+            this.dateTimePicker2.TabIndex = 7;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Enabled = false;
+            this.checkBox1.Location = new System.Drawing.Point(149, 28);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(138, 25);
+            this.checkBox1.TabIndex = 24;
+            this.checkBox1.Text = "Definir Tiempo";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(2, 77);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(104, 21);
+            this.label12.TabIndex = 6;
+            this.label12.Text = "Fecha Inicio";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(9, 32);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(67, 21);
+            this.label20.TabIndex = 23;
+            this.label20.Text = "Tiempo";
+            // 
+            // Txt_emplecon
+            // 
+            this.Txt_emplecon.Enabled = false;
+            this.Txt_emplecon.Location = new System.Drawing.Point(102, 26);
+            this.Txt_emplecon.Name = "Txt_emplecon";
+            this.Txt_emplecon.Size = new System.Drawing.Size(220, 27);
+            this.Txt_emplecon.TabIndex = 5;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(6, 34);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(90, 21);
+            this.label13.TabIndex = 4;
+            this.label13.Text = "Empleado";
+            // 
             // Btn_geeecon
             // 
             this.Btn_geeecon.BackColor = System.Drawing.Color.DodgerBlue;
@@ -230,23 +290,6 @@
             this.Btn_geeecon.Text = "Agregar concepto";
             this.Btn_geeecon.UseVisualStyleBackColor = false;
             this.Btn_geeecon.Click += new System.EventHandler(this.Btn_geeecon_Click);
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Enabled = false;
-            this.dateTimePicker2.Location = new System.Drawing.Point(122, 71);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(240, 27);
-            this.dateTimePicker2.TabIndex = 7;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(2, 77);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(104, 21);
-            this.label12.TabIndex = 6;
-            this.label12.Text = "Fecha Inicio";
             // 
             // Txt_montocon
             // 
@@ -282,23 +325,6 @@
             this.label11.Size = new System.Drawing.Size(42, 21);
             this.label11.TabIndex = 8;
             this.label11.Text = "Tipo";
-            // 
-            // Txt_emplecon
-            // 
-            this.Txt_emplecon.Enabled = false;
-            this.Txt_emplecon.Location = new System.Drawing.Point(102, 26);
-            this.Txt_emplecon.Name = "Txt_emplecon";
-            this.Txt_emplecon.Size = new System.Drawing.Size(220, 27);
-            this.Txt_emplecon.TabIndex = 5;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(6, 34);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(90, 21);
-            this.label13.TabIndex = 4;
-            this.label13.Text = "Empleado";
             // 
             // groupBox3
             // 
@@ -352,6 +378,42 @@
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Empleados";
+            // 
+            // Btn_new
+            // 
+            this.Btn_new.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_new.Enabled = false;
+            this.Btn_new.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.Btn_new.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_new.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_new.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_new.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_new.ForeColor = System.Drawing.Color.White;
+            this.Btn_new.Location = new System.Drawing.Point(283, 210);
+            this.Btn_new.Name = "Btn_new";
+            this.Btn_new.Size = new System.Drawing.Size(126, 57);
+            this.Btn_new.TabIndex = 32;
+            this.Btn_new.Text = "Nuevo Empleado";
+            this.Btn_new.UseVisualStyleBackColor = false;
+            this.Btn_new.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // Btn_can
+            // 
+            this.Btn_can.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_can.Enabled = false;
+            this.Btn_can.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.Btn_can.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_can.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_can.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_can.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_can.ForeColor = System.Drawing.Color.White;
+            this.Btn_can.Location = new System.Drawing.Point(576, 210);
+            this.Btn_can.Name = "Btn_can";
+            this.Btn_can.Size = new System.Drawing.Size(116, 57);
+            this.Btn_can.TabIndex = 31;
+            this.Btn_can.Text = "Cancela registo";
+            this.Btn_can.UseVisualStyleBackColor = false;
+            this.Btn_can.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // combo2
             // 
@@ -478,7 +540,7 @@
             // txt_correo
             // 
             this.txt_correo.Enabled = false;
-            this.txt_correo.Location = new System.Drawing.Point(430, 26);
+            this.txt_correo.Location = new System.Drawing.Point(426, 26);
             this.txt_correo.Name = "txt_correo";
             this.txt_correo.Size = new System.Drawing.Size(266, 27);
             this.txt_correo.TabIndex = 13;
@@ -619,67 +681,6 @@
             this.LblUsuario.Name = "LblUsuario";
             this.LblUsuario.Size = new System.Drawing.Size(13, 17);
             this.LblUsuario.Text = "..";
-            // 
-            // combo3
-            // 
-            this.combo3.Enabled = false;
-            this.combo3.Location = new System.Drawing.Point(102, 59);
-            this.combo3.Name = "combo3";
-            this.combo3.Size = new System.Drawing.Size(220, 30);
-            this.combo3.TabIndex = 31;
-            // 
-            // Btn_nuevoreg
-            // 
-            this.Btn_nuevoreg.BackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_nuevoreg.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.Btn_nuevoreg.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_nuevoreg.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_nuevoreg.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_nuevoreg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_nuevoreg.ForeColor = System.Drawing.Color.White;
-            this.Btn_nuevoreg.Location = new System.Drawing.Point(404, 210);
-            this.Btn_nuevoreg.Name = "Btn_nuevoreg";
-            this.Btn_nuevoreg.Size = new System.Drawing.Size(224, 47);
-            this.Btn_nuevoreg.TabIndex = 11;
-            this.Btn_nuevoreg.Text = "Nuevo Registro";
-            this.Btn_nuevoreg.UseVisualStyleBackColor = false;
-            this.Btn_nuevoreg.Click += new System.EventHandler(this.Btn_nuevoreg_Click);
-            // 
-            // Btn_can
-            // 
-            this.Btn_can.BackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_can.Enabled = false;
-            this.Btn_can.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.Btn_can.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_can.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_can.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_can.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_can.ForeColor = System.Drawing.Color.White;
-            this.Btn_can.Location = new System.Drawing.Point(576, 210);
-            this.Btn_can.Name = "Btn_can";
-            this.Btn_can.Size = new System.Drawing.Size(116, 57);
-            this.Btn_can.TabIndex = 31;
-            this.Btn_can.Text = "Cancela registo";
-            this.Btn_can.UseVisualStyleBackColor = false;
-            this.Btn_can.Click += new System.EventHandler(this.button1_Click_2);
-            // 
-            // Btn_new
-            // 
-            this.Btn_new.BackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_new.Enabled = false;
-            this.Btn_new.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.Btn_new.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_new.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_new.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_new.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_new.ForeColor = System.Drawing.Color.White;
-            this.Btn_new.Location = new System.Drawing.Point(283, 210);
-            this.Btn_new.Name = "Btn_new";
-            this.Btn_new.Size = new System.Drawing.Size(126, 57);
-            this.Btn_new.TabIndex = 32;
-            this.Btn_new.Text = "Nuevo Empleado";
-            this.Btn_new.UseVisualStyleBackColor = false;
-            this.Btn_new.Click += new System.EventHandler(this.button2_Click);
             // 
             // Btn_agrecon
             // 

@@ -87,13 +87,27 @@ namespace CapaVistaHRM
 
         private void MDI_HRM_Load(object sender, EventArgs e)
         {
+            
+            progres();
+            ProgressBar1.Style = ProgressBarStyle.Marquee;
             frm_login login = new frm_login();
             login.ShowDialog();
             LblUsuario.Text = login.obtenerNombreUsuario();
             usuarioact = LblUsuario.Text;
+            ProgressBar1.Style = ProgressBarStyle.Continuous;
+            progres();
         }
 
+        void progres()
+        {
+            for (int i = 0; i <= 100; i++)
+            {
+                ProgressBar1.Value = i;
+                i++;
+               
+            }
 
+        }
         private void areasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Area nuevo = new Area(usuarioact);
@@ -163,6 +177,53 @@ namespace CapaVistaHRM
             HorasExtra nuevo = new HorasExtra(usuarioact);
             nuevo.MdiParent = this.MdiParent;
             nuevo.Show();
+        }
+
+        private void perfilesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Perfiles nuevo = new Perfiles(usuarioact);
+            nuevo.MdiParent = this.MdiParent;
+            nuevo.Show();
+        }
+
+        private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void contratacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void empleadosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void candidatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void despidosToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void despidosToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void recontratacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void solicitudesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void agregarEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)

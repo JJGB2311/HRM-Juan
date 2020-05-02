@@ -27,6 +27,33 @@ namespace CapaControladorHRM
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
             return dataTable;
         }
+
+        public OdbcDataAdapter llenaTblcon2(string empeado)// metodo  que obtinene el contenio de una tabla
+        {
+
+            string sql = "SELECT conceptos.id_concepto, conceptos.id_empleado,conceptos.fecha_inicio,conceptos.fecha_fin,tipo_concepto.nombre,conceptos.monto,conceptos.debe_Haber FROM conceptos INNER JOIN tipo_concepto ON conceptos.id_tipo = tipo_concepto.id_tipo AND conceptos.estado= 1 AND conceptos.id_empleado=" + empeado + ";";
+            //SELECT * FROM tbl_bodega WHERE estado=1 ORDER BY kbodega DESC
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
+            return dataTable;
+        }
+
+        public OdbcDataAdapter llenaTblempleno(string empeado)// metodo  que obtinene el contenio de una tabla
+        {
+
+            string sql = "SELECT conceptos.id_empleado,conceptos.fecha_inicio,conceptos.fecha_fin,tipo_concepto.nombre,conceptos.monto,conceptos.debe_Haber FROM conceptos INNER JOIN tipo_concepto ON conceptos.id_tipo = tipo_concepto.id_tipo AND conceptos.estado= 1 AND conceptos.id_empleado=" + empeado + ";";
+            //SELECT * FROM tbl_bodega WHERE estado=1 ORDER BY kbodega DESC
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
+            return dataTable;
+        }
+
+        public OdbcDataAdapter llenaTblemplenom(string empeado)// metodo  que obtinene el contenio de una tabla
+        {
+
+            string sql = "SELECT conceptos.id_empleado,conceptos.fecha_inicio,conceptos.fecha_fin,tipo_concepto.nombre,conceptos.monto,conceptos.debe_Haber FROM conceptos INNER JOIN tipo_concepto ON conceptos.id_tipo = tipo_concepto.id_tipo AND conceptos.estado= 1 AND conceptos.id_empleado=" + empeado + ";";
+            //SELECT * FROM tbl_bodega WHERE estado=1 ORDER BY kbodega DESC
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
+            return dataTable;
+        }
         public void ejecutarQuery(string query)// ejecuta un query en la BD
         {
             try

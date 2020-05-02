@@ -64,7 +64,6 @@
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.LblUsuario = new System.Windows.Forms.ToolStripStatusLabel();
             this.dataSet11 = new CapaVista.DataSet1();
-            this.label13 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -432,20 +431,10 @@
             this.dataSet11.DataSetName = "DataSet1";
             this.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(695, 91);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(66, 21);
-            this.label13.TabIndex = 15;
-            this.label13.Text = "label13";
-            // 
             // Empleados
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1215, 643);
-            this.Controls.Add(this.label13);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -507,6 +496,5 @@
         private CapaVista.Combo combo1;
         private CapaVista.DataSet1 dataSet11;
         private CapaVista.Combo combo2;
-        private System.Windows.Forms.Label label13;
     }
 }

@@ -46,6 +46,10 @@ namespace CapaModeloHRM
         {
            return sn.obtenerDatodde(IDv);
         }
+        public string Totalpla(string IDv)//trasporta el query de la capa de disenio a Datos
+        {
+            return sn.obtenerTOTAL(IDv);
+        }
 
         public void nuevoQueryplani(int IDDE ,string IDPL ,string IDEMPLE,string fehcai,string fechaf )//trasporta el query de la capa de disenio a Datos
         {

@@ -38,6 +38,7 @@ namespace CapaVistaHRM
             Mostrarpla();
             user = usuario;
             LblUsuario.Text = usuario;
+            ProgressBar1.Value = 0;
         }
         string crearInsert()// crea el query de insert
         {
@@ -48,11 +49,21 @@ namespace CapaVistaHRM
         private void Planilla_Load(object sender, EventArgs e)
         {
             user = LblUsuario.Text;
+            progres();
         }
         void Mostrarpla()
         {
             DataTable dt = logic.consultaLogicaplani(tabla);
             dataGridView1.DataSource = dt;
+        }
+        void progres()
+        {
+            for (int i = 0; i <= 100; i++)
+            {
+                ProgressBar1.Value = i;
+                i++;
+            }
+
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -68,6 +79,12 @@ namespace CapaVistaHRM
             Txt_nombre.Enabled = false;
             DTP_fechai.Enabled = false;
             DTP_fechaf.Enabled = false;
+            Btn_detalle.Enabled = false;
+            Btn_generar.Enabled = false;
+            BTN_cancelar.Enabled = false;
+            Btn_detalle.Enabled = false;
+            dataGridView1.Enabled = true;
+            progres();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -91,25 +108,31 @@ namespace CapaVistaHRM
                 fechaf = DTP_fechaf.Text;
                 Btn_generar.Enabled = true;
                 Btn_detalle.Enabled = true;
+                Btn_Insertar.Enabled = false;
+                Btn_Nuevo.Enabled = true;
+                Txt_nombre.Enabled = false;
+                DTP_fechai.Enabled = false;
+                DTP_fechaf.Enabled = false;
+                BTN_cancelar.Enabled = false;
+                progres();
+                ProgressBar1.Style = ProgressBarStyle.Marquee;
             }
             else
             {
                 MessageBox.Show("Seleccione un Registro!", "Planilla", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-
         private void button2_Click(object sender, EventArgs e)
-        { //string sql = "SELECT COUNT(detalle_planilla.id_detalle) as dato FROM planilla INNER JOIN detalle_planilla ON planilla.id_planilla = detalle_planilla.id_planilla WHERE detalle_planilla.id_planilla=" + ID + ";";
-
-
+        { 
             if (logic.nuevovali(IDPLA) == "0")
             {
                 logic.creardetalle(IDPLA, fechai, fechaf);
-                MessageBox.Show("La planilla se genero Corectamente");
+                MessageBox.Show("La planilla se generó Correctamente (Puede seleccionarla y seleccionar ver detalle de planilla para visualizar la planilla)");
+                progres();
             }
             else
             {
-                MessageBox.Show("La planilla ya fue creada");
+                MessageBox.Show("EL encabezado de la planilla selecciona ya fue generado el detalle (Puedes revisar en visualizar la planilla)");
             }
 
         }
@@ -121,14 +144,43 @@ namespace CapaVistaHRM
             nuevo.Show();
             this.Close();
         }
-
         private void button1_Click_1(object sender, EventArgs e)
         {
+            Txt_id.Text = "";
+            Txt_nombre.Text = "";
+            fechai = fechahora;
+            fechaf = fechahora;
             Btn_Insertar.Enabled = true;
             Txt_nombre.Enabled = true;
             DTP_fechai.Enabled = true;
             DTP_fechaf.Enabled = true;
             Btn_Nuevo.Enabled = false;
+            BTN_cancelar.Enabled = true;
+            Btn_detalle.Enabled = false;
+            dataGridView1.Enabled = false;
+            ProgressBar1.Style = ProgressBarStyle.Marquee;
+            progres();
         }
+
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            Txt_id.Text = "";
+            Txt_nombre.Text = "";
+            fechai = fechahora;
+            fechaf = fechahora;
+            Btn_Insertar.Enabled = false;
+            Btn_Nuevo.Enabled = true;
+            Txt_nombre.Enabled = false;
+            DTP_fechai.Enabled = false;
+            DTP_fechaf.Enabled = false;
+            Btn_detalle.Enabled = false;
+            Btn_generar.Enabled = false;
+            BTN_cancelar.Enabled = false;
+            dataGridView1.Enabled = true;
+            progres();
+        }
+
+        
     }
 }

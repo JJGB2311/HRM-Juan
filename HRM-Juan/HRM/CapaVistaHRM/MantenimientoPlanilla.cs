@@ -35,6 +35,12 @@ namespace CapaVistaHRM
             DTP_fechai.CustomFormat = "yyyy-MM-dd";
             DTP_fechaf.Format = DateTimePickerFormat.Custom;
             DTP_fechaf.CustomFormat = "yyyy-MM-dd";
+           
+            Txt_id.Text = "";
+            Txt_nombre.Text = "";
+            fechai = fechahora;
+            fechaf = fechahora;
+           
         }
         void Mostrarpla()
         {
@@ -49,7 +55,7 @@ namespace CapaVistaHRM
 
       string crearUpdate(string ID , string FechaI , string FechaF)// crea el query de update
         {
-            string query = "UPDATE `planilla` SET `fecha_inicio` = '"+ FechaI + "', `fecha_fin` = '"+ FechaF + "', `Nombre` = 'Bienestar' WHERE `planilla`.`id_planilla` = "+ID+";" ;
+            string query = "UPDATE `planilla` SET `fecha_inicio` = '"+ FechaI + "', `fecha_fin` = '"+ FechaF + "', `Nombre` = '"+Txt_nombre.Text+"' WHERE `planilla`.`id_planilla` = "+ID+";" ;
             return query;
         }
        
@@ -74,6 +80,19 @@ namespace CapaVistaHRM
             Txt_nombre.Enabled = false;
             DTP_fechai.Enabled = false;
             DTP_fechaf.Enabled = false;
+            MessageBox.Show("La planilla se elimino corectamente");
+            ProgressBar1.Style = ProgressBarStyle.Continuous;
+            progres();
+
+        }
+        void progres()
+        {
+            for (int i = 0; i <= 100; i++)
+            {
+                ProgressBar1.Value = i;
+                i++;
+            }
+
         }
 
         private void dataGridView1_DoubleClick(object sender, EventArgs e)
@@ -87,13 +106,18 @@ namespace CapaVistaHRM
                 IDPLA = dataGridView1.CurrentRow.Cells[0].Value.ToString();
                 fechai = DTP_fechai.Text;
                 fechaf = DTP_fechaf.Text;
-                Txt_id.Enabled = true;
+                Txt_id.Enabled = false;
                 Txt_nombre.Enabled = true;
                 DTP_fechai.Enabled = true;
                 DTP_fechaf.Enabled = true;
                 Btn_Borar.Enabled = true;
                 Btn_Modificar.Enabled = true;
                 Mostrarpla2(IDPLA);
+                LBL_Total.Text = logic.Totalpla(IDPLA);
+                TOTAL.Text = logic.Totalpla(IDPLA);
+                progres();
+                ProgressBar1.Style = ProgressBarStyle.Marquee;
+
             }
             else
             {
@@ -116,6 +140,9 @@ namespace CapaVistaHRM
             Txt_nombre.Enabled = false;
             DTP_fechai.Enabled = false;
             DTP_fechaf.Enabled = false;
+            MessageBox.Show("El encabezado de la planilla se modifico corectamente");
+            ProgressBar1.Style = ProgressBarStyle.Continuous;
+            progres();
         }
         private void Btn_generar_Click(object sender, EventArgs e)
         {
@@ -128,6 +155,17 @@ namespace CapaVistaHRM
             Txt_nombre.Enabled = false;
             DTP_fechai.Enabled = false;
             DTP_fechaf.Enabled = false;
+        }
+
+       
+        private void MantenimientoPlanilla_Load(object sender, EventArgs e)
+        {
+            progres();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

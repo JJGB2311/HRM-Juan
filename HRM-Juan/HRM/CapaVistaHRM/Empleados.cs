@@ -85,7 +85,7 @@ namespace CapaVistaHRM
                 Txt_nit.Text = dataGridView1.CurrentRow.Cells[9].Value.ToString();
                 Txt_direccion.Text = dataGridView1.CurrentRow.Cells[10].Value.ToString();
                 emple = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-                label13.Text = emple;
+                
                 Btn_concep.Enabled = true;
                 Btn_elimi.Enabled = true;
                 Btn_Modi.Enabled = true;
