@@ -64,6 +64,7 @@
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.LblUsuario = new System.Windows.Forms.ToolStripStatusLabel();
             this.dataSet11 = new CapaVista.DataSet1();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -71,56 +72,66 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.statusStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // Btn_Modi
             // 
             this.Btn_Modi.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Modi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Modi.BackgroundImage")));
+            this.Btn_Modi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_Modi.Enabled = false;
             this.Btn_Modi.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
             this.Btn_Modi.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_Modi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_Modi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_Modi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Modi.Location = new System.Drawing.Point(1040, 26);
+            this.Btn_Modi.Location = new System.Drawing.Point(1030, 26);
             this.Btn_Modi.Name = "Btn_Modi";
-            this.Btn_Modi.Size = new System.Drawing.Size(144, 64);
+            this.Btn_Modi.Size = new System.Drawing.Size(154, 73);
             this.Btn_Modi.TabIndex = 3;
             this.Btn_Modi.Text = "Modificar";
+            this.Btn_Modi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Modi.UseVisualStyleBackColor = false;
             this.Btn_Modi.Click += new System.EventHandler(this.button4_Click);
             // 
             // Btn_elimi
             // 
             this.Btn_elimi.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_elimi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_elimi.BackgroundImage")));
+            this.Btn_elimi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_elimi.Enabled = false;
             this.Btn_elimi.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
             this.Btn_elimi.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_elimi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_elimi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_elimi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_elimi.Location = new System.Drawing.Point(1040, 96);
+            this.Btn_elimi.Location = new System.Drawing.Point(1030, 107);
             this.Btn_elimi.Name = "Btn_elimi";
-            this.Btn_elimi.Size = new System.Drawing.Size(144, 62);
+            this.Btn_elimi.Size = new System.Drawing.Size(154, 67);
             this.Btn_elimi.TabIndex = 2;
             this.Btn_elimi.Text = "Eliminar";
+            this.Btn_elimi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_elimi.UseVisualStyleBackColor = false;
             this.Btn_elimi.Click += new System.EventHandler(this.button3_Click);
             // 
             // Btn_concep
             // 
             this.Btn_concep.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_concep.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_concep.BackgroundImage")));
+            this.Btn_concep.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_concep.Enabled = false;
             this.Btn_concep.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
             this.Btn_concep.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_concep.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_concep.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_concep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_concep.Location = new System.Drawing.Point(1040, 180);
+            this.Btn_concep.Location = new System.Drawing.Point(1030, 180);
             this.Btn_concep.Name = "Btn_concep";
-            this.Btn_concep.Size = new System.Drawing.Size(144, 71);
+            this.Btn_concep.Size = new System.Drawing.Size(154, 100);
             this.Btn_concep.TabIndex = 1;
             this.Btn_concep.Text = "Ver Conceptos";
+            this.Btn_concep.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_concep.UseVisualStyleBackColor = false;
             this.Btn_concep.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -151,9 +162,9 @@
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.Txt_id);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(6, 102);
+            this.groupBox2.Location = new System.Drawing.Point(6, 90);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1201, 300);
+            this.groupBox2.Size = new System.Drawing.Size(1201, 286);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos";
@@ -161,7 +172,7 @@
             // combo2
             // 
             this.combo2.Enabled = false;
-            this.combo2.Location = new System.Drawing.Point(640, 180);
+            this.combo2.Location = new System.Drawing.Point(640, 159);
             this.combo2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.combo2.Name = "combo2";
             this.combo2.Size = new System.Drawing.Size(359, 31);
@@ -170,7 +181,7 @@
             // combo1
             // 
             this.combo1.Enabled = false;
-            this.combo1.Location = new System.Drawing.Point(640, 135);
+            this.combo1.Location = new System.Drawing.Point(640, 114);
             this.combo1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.combo1.Name = "combo1";
             this.combo1.Size = new System.Drawing.Size(359, 30);
@@ -180,7 +191,7 @@
             // 
             this.Cbo_sexo.Enabled = false;
             this.Cbo_sexo.FormattingEnabled = true;
-            this.Cbo_sexo.Location = new System.Drawing.Point(118, 182);
+            this.Cbo_sexo.Location = new System.Drawing.Point(118, 161);
             this.Cbo_sexo.Name = "Cbo_sexo";
             this.Cbo_sexo.Size = new System.Drawing.Size(359, 29);
             this.Cbo_sexo.TabIndex = 30;
@@ -189,7 +200,7 @@
             // Txt_direccion
             // 
             this.Txt_direccion.Enabled = false;
-            this.Txt_direccion.Location = new System.Drawing.Point(640, 222);
+            this.Txt_direccion.Location = new System.Drawing.Point(640, 202);
             this.Txt_direccion.Name = "Txt_direccion";
             this.Txt_direccion.Size = new System.Drawing.Size(359, 27);
             this.Txt_direccion.TabIndex = 29;
@@ -197,7 +208,7 @@
             // Txt_nit
             // 
             this.Txt_nit.Enabled = false;
-            this.Txt_nit.Location = new System.Drawing.Point(118, 265);
+            this.Txt_nit.Location = new System.Drawing.Point(118, 245);
             this.Txt_nit.Name = "Txt_nit";
             this.Txt_nit.Size = new System.Drawing.Size(359, 27);
             this.Txt_nit.TabIndex = 28;
@@ -205,7 +216,7 @@
             // Txt_cui
             // 
             this.Txt_cui.Enabled = false;
-            this.Txt_cui.Location = new System.Drawing.Point(118, 224);
+            this.Txt_cui.Location = new System.Drawing.Point(118, 202);
             this.Txt_cui.Name = "Txt_cui";
             this.Txt_cui.Size = new System.Drawing.Size(359, 27);
             this.Txt_cui.TabIndex = 27;
@@ -213,7 +224,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(513, 230);
+            this.label12.Location = new System.Drawing.Point(513, 205);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(83, 21);
             this.label12.TabIndex = 26;
@@ -222,7 +233,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(6, 263);
+            this.label11.Location = new System.Drawing.Point(10, 248);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(32, 21);
             this.label11.TabIndex = 24;
@@ -231,7 +242,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 225);
+            this.label10.Location = new System.Drawing.Point(6, 208);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(36, 21);
             this.label10.TabIndex = 22;
@@ -240,7 +251,7 @@
             // DTP_fechana
             // 
             this.DTP_fechana.Enabled = false;
-            this.DTP_fechana.Location = new System.Drawing.Point(693, 43);
+            this.DTP_fechana.Location = new System.Drawing.Point(693, 27);
             this.DTP_fechana.Name = "DTP_fechana";
             this.DTP_fechana.Size = new System.Drawing.Size(306, 27);
             this.DTP_fechana.TabIndex = 18;
@@ -248,7 +259,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(513, 180);
+            this.label5.Location = new System.Drawing.Point(513, 161);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(49, 21);
             this.label5.TabIndex = 16;
@@ -257,7 +268,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(513, 141);
+            this.label6.Location = new System.Drawing.Point(513, 114);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(62, 21);
             this.label6.TabIndex = 14;
@@ -266,7 +277,7 @@
             // Txt_correo
             // 
             this.Txt_correo.Enabled = false;
-            this.Txt_correo.Location = new System.Drawing.Point(640, 90);
+            this.Txt_correo.Location = new System.Drawing.Point(640, 72);
             this.Txt_correo.Name = "Txt_correo";
             this.Txt_correo.Size = new System.Drawing.Size(359, 27);
             this.Txt_correo.TabIndex = 13;
@@ -274,7 +285,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(513, 93);
+            this.label7.Location = new System.Drawing.Point(513, 72);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(63, 21);
             this.label7.TabIndex = 12;
@@ -283,7 +294,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(510, 46);
+            this.label8.Location = new System.Drawing.Point(510, 32);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(177, 21);
             this.label8.TabIndex = 10;
@@ -292,7 +303,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 183);
+            this.label4.Location = new System.Drawing.Point(6, 161);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(46, 21);
             this.label4.TabIndex = 8;
@@ -301,7 +312,7 @@
             // Txt_apellido
             // 
             this.Txt_apellido.Enabled = false;
-            this.Txt_apellido.Location = new System.Drawing.Point(118, 141);
+            this.Txt_apellido.Location = new System.Drawing.Point(118, 114);
             this.Txt_apellido.Name = "Txt_apellido";
             this.Txt_apellido.Size = new System.Drawing.Size(359, 27);
             this.Txt_apellido.TabIndex = 7;
@@ -309,7 +320,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 144);
+            this.label3.Location = new System.Drawing.Point(5, 114);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 21);
             this.label3.TabIndex = 6;
@@ -318,7 +329,7 @@
             // Txt_nombre
             // 
             this.Txt_nombre.Enabled = false;
-            this.Txt_nombre.Location = new System.Drawing.Point(118, 93);
+            this.Txt_nombre.Location = new System.Drawing.Point(118, 66);
             this.Txt_nombre.Name = "Txt_nombre";
             this.Txt_nombre.Size = new System.Drawing.Size(359, 27);
             this.Txt_nombre.TabIndex = 5;
@@ -326,7 +337,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 96);
+            this.label2.Location = new System.Drawing.Point(6, 66);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 21);
             this.label2.TabIndex = 4;
@@ -335,7 +346,7 @@
             // Txt_id
             // 
             this.Txt_id.Enabled = false;
-            this.Txt_id.Location = new System.Drawing.Point(118, 40);
+            this.Txt_id.Location = new System.Drawing.Point(118, 26);
             this.Txt_id.Name = "Txt_id";
             this.Txt_id.Size = new System.Drawing.Size(359, 27);
             this.Txt_id.TabIndex = 3;
@@ -343,7 +354,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 43);
+            this.label1.Location = new System.Drawing.Point(6, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(27, 21);
             this.label1.TabIndex = 0;
@@ -352,6 +363,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Location = new System.Drawing.Point(0, 3);
@@ -364,7 +376,7 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(1109, 9);
+            this.pictureBox1.Location = new System.Drawing.Point(1115, 9);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 72);
             this.pictureBox1.TabIndex = 2;
@@ -384,19 +396,24 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.dataGridView1);
-            this.groupBox3.Location = new System.Drawing.Point(6, 400);
+            this.groupBox3.Location = new System.Drawing.Point(6, 382);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1201, 201);
+            this.groupBox3.Size = new System.Drawing.Size(1201, 236);
             this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "información";
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(26, 45);
+            this.dataGridView1.Location = new System.Drawing.Point(26, 26);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1145, 150);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(1145, 204);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
@@ -431,9 +448,20 @@
             this.dataSet11.DataSetName = "DataSet1";
             this.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox2.Location = new System.Drawing.Point(6, 14);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(65, 61);
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
             // Empleados
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1215, 643);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.groupBox2);
@@ -443,7 +471,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Empleados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Empleados";
+            this.Text = "3017 - Empleados";
             this.Load += new System.EventHandler(this.Empleados_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -455,6 +483,7 @@
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -496,5 +525,6 @@
         private CapaVista.Combo combo1;
         private CapaVista.DataSet1 dataSet11;
         private CapaVista.Combo combo2;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

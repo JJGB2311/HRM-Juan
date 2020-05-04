@@ -34,7 +34,26 @@ namespace CapaModeloHRM
             dt.Fill(table);
             return table;
         }
-
+        /*Busqueda*/
+        public DataTable consultaLogicacod(string emple)
+        {
+            OdbcDataAdapter dt = sn.llenaTblcod(emple);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+        public DataTable consultaLogicanoma(string nombre,string apelldo)
+        {
+            OdbcDataAdapter dt = sn.llenaTblnomap(nombre,apelldo);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+        /**/
+        public string nuevoEMPCON()//trasporta el query de la capa de disenio a Datos
+        {
+            return sn.obtenerEMP();
+        }
 
         public DataTable consultaLogiemplecod(string emple)
         {

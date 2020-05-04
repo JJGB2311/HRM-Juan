@@ -36,6 +36,24 @@ namespace CapaControladorHRM
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
             return dataTable;
         }
+        /*Busquedas*/
+        public OdbcDataAdapter llenaTblcod(string empeado)// metodo  que obtinene el contenio de una tabla
+        {
+
+            string sql = "SELECT id_empleado,nombre,apellido,sexo,fecha_de_nacimiento,cui,correo,id_puesto,id_area,nit,direccion FROM `empleados` WHERE estado =1 AND id_empleado=" + empeado + ";";
+            //SELECT * FROM tbl_bodega WHERE estado=1 ORDER BY kbodega DESC
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
+            return dataTable;
+        }
+        public OdbcDataAdapter llenaTblnomap(string nombre,string apellido)// metodo  que obtinene el contenio de una tabla
+        {
+            
+            string sql = "SELECT id_empleado,nombre,apellido,sexo,fecha_de_nacimiento,cui,correo,id_puesto,id_area,nit,direccion FROM `empleados` WHERE estado =1 AND nombre= '"+nombre+"' OR apellido = '"+apellido+"';";
+            //SELECT * FROM tbl_bodega WHERE estado=1 ORDER BY kbodega DESC
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
+            return dataTable;
+        }
+        /**/
 
         public OdbcDataAdapter llenaTblempleno(string empeado)// metodo  que obtinene el contenio de una tabla
         {
@@ -54,6 +72,22 @@ namespace CapaControladorHRM
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
             return dataTable;
         }
+        /**/
+        public string obtenerEMP()
+        {
+            string caposactivos1 = "";
+            string sql = "select MAX(id_empleado) from empleados where estado=1;";
+
+            OdbcCommand command = new OdbcCommand(sql, cn.conexion());
+            OdbcDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                caposactivos1 += reader.GetValue(0).ToString();
+            }
+            caposactivos1.TrimEnd(',');
+            return caposactivos1;
+        }
+        /**/
         public void ejecutarQuery(string query)// ejecuta un query en la BD
         {
             try

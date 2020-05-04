@@ -60,11 +60,23 @@
     <Compile Include="Area.Designer.cs">
       <DependentUpon>Area.cs</DependentUpon>
     </Compile>
+    <Compile Include="Asignacioncone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asignacioncone.Designer.cs">
+      <DependentUpon>Asignacioncone.cs</DependentUpon>
+    </Compile>
     <Compile Include="Asistenacia.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Asistenacia.Designer.cs">
       <DependentUpon>Asistenacia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comiciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comiciones.Designer.cs">
+      <DependentUpon>Comiciones.cs</DependentUpon>
     </Compile>
     <Compile Include="Conceptos.cs">
       <SubType>Form</SubType>
@@ -162,6 +174,12 @@
     <Compile Include="Sueldos.Designer.cs">
       <DependentUpon>Sueldos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tipocomiciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tipocomiciones.Designer.cs">
+      <DependentUpon>Tipocomiciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="TipoConcepto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,8 +197,14 @@
     <EmbeddedResource Include="Area.resx">
       <DependentUpon>Area.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Asignacioncone.resx">
+      <DependentUpon>Asignacioncone.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Asistenacia.resx">
       <DependentUpon>Asistenacia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comiciones.resx">
+      <DependentUpon>Comiciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Conceptos.resx">
       <DependentUpon>Conceptos.cs</DependentUpon>
@@ -230,6 +254,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sueldos.resx">
       <DependentUpon>Sueldos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tipocomiciones.resx">
+      <DependentUpon>Tipocomiciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TipoConcepto.resx">
       <DependentUpon>TipoConcepto.cs</DependentUpon>

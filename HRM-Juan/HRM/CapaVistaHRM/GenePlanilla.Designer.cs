@@ -34,6 +34,9 @@
             this.LblUsuario = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.Lbl_planinlla = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.TOTAL = new System.Windows.Forms.ToolStripStatusLabel();
+            this.ProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -41,18 +44,17 @@
             this.LBL_Total = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.TOTAL = new System.Windows.Forms.ToolStripStatusLabel();
-            this.ProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
             this.statusStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,6 +106,25 @@
             this.Lbl_planinlla.Name = "Lbl_planinlla";
             this.Lbl_planinlla.Size = new System.Drawing.Size(17, 20);
             this.Lbl_planinlla.Text = "..";
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(79, 20);
+            this.toolStripStatusLabel2.Text = "Total Planilla :";
+            // 
+            // TOTAL
+            // 
+            this.TOTAL.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.TOTAL.Name = "TOTAL";
+            this.TOTAL.Size = new System.Drawing.Size(16, 20);
+            this.TOTAL.Text = "...";
+            // 
+            // ProgressBar1
+            // 
+            this.ProgressBar1.Name = "ProgressBar1";
+            this.ProgressBar1.Size = new System.Drawing.Size(100, 19);
             // 
             // dataGridView1
             // 
@@ -172,6 +193,7 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.DodgerBlue;
+            this.groupBox3.Controls.Add(this.pictureBox2);
             this.groupBox3.Controls.Add(this.pictureBox1);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Location = new System.Drawing.Point(0, 2);
@@ -179,6 +201,16 @@
             this.groupBox3.Size = new System.Drawing.Size(910, 75);
             this.groupBox3.TabIndex = 18;
             this.groupBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 11);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(65, 61);
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -221,25 +253,6 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // toolStripStatusLabel2
-            // 
-            this.toolStripStatusLabel2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(79, 20);
-            this.toolStripStatusLabel2.Text = "Total Planilla :";
-            // 
-            // TOTAL
-            // 
-            this.TOTAL.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.TOTAL.Name = "TOTAL";
-            this.TOTAL.Size = new System.Drawing.Size(16, 20);
-            this.TOTAL.Text = "...";
-            // 
-            // ProgressBar1
-            // 
-            this.ProgressBar1.Name = "ProgressBar1";
-            this.ProgressBar1.Size = new System.Drawing.Size(100, 19);
-            // 
             // GenePlanilla
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -255,7 +268,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GenePlanilla";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "GenePlanilla";
+            this.Text = "3032 - Vista Planilla";
             this.Load += new System.EventHandler(this.GenePlanilla_Load);
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
@@ -266,6 +279,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -292,5 +306,6 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.ToolStripStatusLabel TOTAL;
         private System.Windows.Forms.ToolStripProgressBar ProgressBar1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

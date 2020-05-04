@@ -17,6 +17,7 @@ namespace CapaVistaHRM
         {
             InitializeComponent();
             usuario = user;
+            LblUsuario.Text = usuario;
             string[] alias = { "No", "Nombre", "Estado" }; // Arreglo de nombres para campos
             navegador1.asignarAlias(alias); // Asignar nombres
             navegador1.asignarSalida(this); // Asignar form de salida
@@ -28,18 +29,24 @@ namespace CapaVistaHRM
             navegador1.asignarTabla("tipo_concepto"); // tabla principal
             navegador1.asignarNombreForm("Tipo de conceptos"); // Titulo y nombre del form
         }
+        void progres()
+        {
+            for (int i = 0; i <= 100; i++)
+            {
+                ProgressBar1.Value = i;
+                i++;
+            }
 
+        }
         private void TipoConcepto_Load(object sender, EventArgs e)
         {
             string aplicacionActiva = "1";
             navegador1.ObtenerIdUsuario(usuario); // Pasa el parametro del usuario
             navegador1.botonesYPermisosInicial(usuario, aplicacionActiva); // Consulta permisos al iniciar
             navegador1.ObtenerIdAplicacion(aplicacionActiva);// Pasa el id de la aplicacion actual
+            progres();
         }
 
-        private void navegador1_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

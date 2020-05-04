@@ -29,13 +29,22 @@ namespace CapaVistaHRM
             navegador1.asignarNombreForm("Perfiles"); // Titulo y nombre del form
 
         }
+        void progres()
+        {
+            for (int i = 0; i <= 100; i++)
+            {
+                ProgressBar1.Value = i;
+                i++;
+            }
 
+        }
         private void Perfiles_Load(object sender, EventArgs e)
         {
             string aplicacionActiva = "1";
             navegador1.ObtenerIdUsuario(usuario); // Pasa el parametro del usuario
             navegador1.botonesYPermisosInicial(usuario, aplicacionActiva); // Consulta permisos al iniciar
             navegador1.ObtenerIdAplicacion(aplicacionActiva);// Pasa el id de la aplicacion actual
+            progres();
         }
     }
 }

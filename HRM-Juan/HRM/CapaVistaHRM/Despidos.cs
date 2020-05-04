@@ -12,9 +12,19 @@ namespace CapaVistaHRM
 {
     public partial class Despidos : Form
     {
-        public Despidos()
+        public Despidos(string user)
         {
             InitializeComponent();
+        }
+
+        private void Btn_Modi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Despidos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

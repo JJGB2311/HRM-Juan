@@ -16,7 +16,6 @@ namespace CapaVistaHRM
         private int childFormNumber = 0;
         
         string usuarioact;
-        string id; string fechai, fechaf;
         public MDI_HRM()
         {
             InitializeComponent();
@@ -213,7 +212,9 @@ namespace CapaVistaHRM
 
         private void despidosToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-
+            Despidos nuevo = new Despidos(usuarioact);
+            nuevo.MdiParent = this.MdiParent;
+            nuevo.Show();
         }
 
         private void recontratacionesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -226,9 +227,28 @@ namespace CapaVistaHRM
 
         }
 
+        private void asistenciaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tipoDeComicionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Tipocomiciones nuevo = new Tipocomiciones(usuarioact);
+            nuevo.MdiParent = this.MdiParent;
+            nuevo.Show();
+        }
+
+        private void facturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Comiciones nuevo = new Comiciones(usuarioact);
+            nuevo.MdiParent = this.MdiParent;
+            nuevo.Show();
+        }
+
         private void agregarEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Btn_agrecon nuevo = new Btn_agrecon(usuarioact);
+            EmpleadosCon nuevo = new EmpleadosCon(usuarioact);
             nuevo.MdiParent = this.MdiParent;
             nuevo.Show();
         }

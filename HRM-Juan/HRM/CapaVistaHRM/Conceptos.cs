@@ -23,6 +23,7 @@ namespace CapaVistaHRM
         string fechai;
         string fechaf;
         string DBAB;
+        string ID;
       
         ModeloEmpleado logic = new ModeloEmpleado();
         public Conceptos(string user)
@@ -36,10 +37,18 @@ namespace CapaVistaHRM
             dateTimePicker2.Format = DateTimePickerFormat.Custom;
             dateTimePicker3.CustomFormat = "yyyy-MM-dd";
             dateTimePicker3.Format = DateTimePickerFormat.Custom;
+            //dataGridView2.Columns[2].DefaultCellStyle.Format = "yyyy-MM-dd";
+          
         }
         string crearInsertcon()// crea el query de insert
         {
-            string query = "INSERT INTO `conceptos` (`id_concepto`, `id_empleado`, `fecha_inicio`, `fecha_fin`, `id_tipo`, `monto`, `debe_Haber`, `estado`) VALUES (NULL, '" + Txt_emplecon.Text + "', '" + fechaini + "', '" + fechafin + "', '" + combo3.obtener() + "', '" + Txt_montocon.Text + "', '" + debehaber + "', '1');";
+            string query = "INSERT INTO `conceptos` (`id_concepto`, `id_empleado`, `fecha_inicio`, `fecha_fin`, `id_tipo`, `monto`, `debe_Haber`, `estado`) VALUES (NULL, '" + Txt_Codigo2.Text + "', '" + fechaini + "', '" + fechafin + "', '" + combo3.obtener() + "', '" + Txt_montocon.Text + "', '" + debehaber + "', '1');";
+            return query;
+
+        }
+        string crearupdatetcon()// crea el query de insert
+        {
+            string query = "UPDATE `conceptos` SET `fecha_inicio` = '" + fechaini + "', `fecha_fin` = '" + fechafin + "', `id_tipo` = '" + combo3.obtener() + "', `monto` = '" + Txt_montocon.Text + "', `debe_Haber` = '" + debehaber + "' WHERE `conceptos`.`id_concepto` =" + dataGridView2.CurrentRow.Cells[0].Value.ToString(); 
             return query;
 
         }
@@ -48,14 +57,36 @@ namespace CapaVistaHRM
             DataTable dt = logic.consultaLogica();
             dataGridView1.DataSource = dt;
         }
+        /*Busquedas*/
+        void MostrarCOD( string dato)
+        {
+            DataTable dt = logic.consultaLogicacod(dato);
+            dataGridView1.DataSource = dt;
+        }
+        void MostrarNOMA(string nom, string ap)
+        {
+            DataTable dt = logic.consultaLogicanoma(nom,ap);
+            dataGridView1.DataSource = dt;
+        }
+        /**/
         string crearDelete()// crea el query de delete
         {
             //Cambiar el estadoPelicula por estado
             string query = "UPDATE `conceptos` SET `estado` = '0' WHERE `conceptos`.`id_concepto` = " + dataGridView2.CurrentRow.Cells[0].Value.ToString();
             return query;
         }
+        void progres()
+        {
+            for (int i = 0; i <= 100; i++)
+            {
+                ProgressBar1.Value = i;
+                i++;
+            }
+
+        }
         private void Conceptos_Load(object sender, EventArgs e)
         {
+            progres();
             if (radioButton2.Checked == true)
             {
                 debehaber = "1";
@@ -71,6 +102,8 @@ namespace CapaVistaHRM
         {
             DataTable dt = logic.consultaLogicacon2(emple);
             dataGridView2.DataSource = dt;
+            dataGridView2.Columns[2].DefaultCellStyle.Format = "yyyy-MM-dd";
+            dataGridView2.Columns[3].DefaultCellStyle.Format = "yyyy-MM-dd";
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -88,6 +121,9 @@ namespace CapaVistaHRM
                 Txt_Codigo2.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
                 Codigo = dataGridView1.CurrentRow.Cells[0].Value.ToString();
                 Mostrarcon2(Txt_Codigo2.Text);
+                dataGridView2.Columns[2].DefaultCellStyle.Format = "yyyy-MM-dd";
+                dataGridView2.Columns[3].DefaultCellStyle.Format = "yyyy-MM-dd";
+
             }
             else
             {
@@ -99,22 +135,19 @@ namespace CapaVistaHRM
         {
             if (dataGridView2.SelectedRows.Count == 1)
             {
+                ID= dataGridView2.CurrentRow.Cells[0].Value.ToString();
                 Txt_emplecon.Text = dataGridView2.CurrentRow.Cells[1].Value.ToString();
-                fechaini = dataGridView2.CurrentRow.Cells[2].Value.ToString();
-                fechafin = dataGridView2.CurrentRow.Cells[3].Value.ToString();
+                fechaini = dataGridView2.CurrentRow.Cells[2].FormattedValue.ToString();
+                fechafin = dataGridView2.CurrentRow.Cells[3].FormattedValue.ToString();
                 Txt_montocon.Text = dataGridView2.CurrentRow.Cells[5].Value.ToString();
                 DBAB = dataGridView2.CurrentRow.Cells[6].Value.ToString();
-            
-                label6.Text = fechaini;
-
-              
-                combo3.Enabled = true;
+                 combo3.Enabled = true;
                 Txt_montocon.Enabled = true;
                 radioButton1.Enabled = true;
                 radioButton2.Enabled = true;
                 checkBox1.Enabled = true;
 
-                if (fechaini == "1111-11-11 12:00:00")
+                if (fechaini == "1111-11-11")
                 {
                     fechaini = "1111-11-11";
                     fechafin = "1111-11-11";
@@ -200,20 +233,100 @@ namespace CapaVistaHRM
         private void button4_Click(object sender, EventArgs e)
         {
             logic.nuevoQuery(crearInsertcon());
-            Mostrarcon2(Txt_emplecon.Text);
+            Mostrarcon2(Txt_Codigo2.Text);
 
             Txt_montocon.Text = "";
             radioButton2.Checked = true;
             checkBox1.Checked = false;
+            progres();
+       
 
         }
 
         private void Btn_eliminar_Click(object sender, EventArgs e)
         {
             logic.nuevoQuery(crearDelete());
-
+            progres();
+            Mostrarcon2(Txt_Codigo2.Text);
             Txt_emplecon.Text = "";
             Txt_montocon.Text = "";
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            MostrarCOD(Txt_Codigo.Text); 
+            progres();
+            ProgressBar1.Style = ProgressBarStyle.Marquee;
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox2.Checked == true)
+            {
+                Txt_Codigo.Enabled = false;
+                TXT_APE.Enabled = true;
+                TXT_NOM.Enabled = true;
+
+            }
+            else if (checkBox2.Checked == false)
+            {
+                Txt_Codigo.Enabled = true;
+                TXT_APE.Enabled = false;
+                TXT_NOM.Enabled = false;
+            }
+            else
+            {
+                MessageBox.Show("Error!");
+            }
+            progres();
+            ProgressBar1.Style = ProgressBarStyle.Marquee;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            Txt_Codigo.Text="";
+            TXT_APE.Text = "";
+            TXT_NOM.Text = "";
+            Mostraremp();
+            progres();
+            ProgressBar1.Style = ProgressBarStyle.Marquee;
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            logic.nuevoQuery(crearupdatetcon());
+            progres();
+            Mostrarcon2(Txt_Codigo2.Text);
+            Txt_emplecon.Text = "";
+            Txt_montocon.Text = "";
+            MessageBox.Show("Modificado Corectamente");
+
+        }
+
+        private void Txt_Codigo_TextChanged(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MostrarNOMA(TXT_NOM.Text,TXT_APE.Text);
+                 progres();
+        }
+
+        private void button4_Click_2(object sender, EventArgs e)
+        {
+            combo3.Enabled = true;
+            Txt_montocon.Enabled = true;
+            radioButton1.Enabled = true;
+            radioButton2.Enabled = true;
+            checkBox1.Enabled = true;
         }
     }
 }

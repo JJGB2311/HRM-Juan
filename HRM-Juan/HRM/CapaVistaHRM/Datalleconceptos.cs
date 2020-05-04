@@ -16,7 +16,6 @@ namespace CapaVistaHRM
     public partial class Datalleconceptos : Form
     {
         string usuario = "";
-        string IDemple;
         ModeloEmpleado logic = new ModeloEmpleado();
         public Datalleconceptos(string user,string emple)
         {
@@ -24,6 +23,7 @@ namespace CapaVistaHRM
             user = usuario;
             LblUsuario.Text = usuario;
             Mostrarcon(emple);
+            ProgressBar1.Value = 100;
         }
         void Mostrarcon(string emple)
         {

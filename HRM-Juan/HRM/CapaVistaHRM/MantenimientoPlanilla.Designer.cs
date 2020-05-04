@@ -47,24 +47,26 @@
             this.Txt_id = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.LBL_Total = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.statusStrip.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox3.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // statusStrip
@@ -146,6 +148,7 @@
             // Btn_Modificar
             // 
             this.Btn_Modificar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Modificar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Modificar.BackgroundImage")));
             this.Btn_Modificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Btn_Modificar.Enabled = false;
             this.Btn_Modificar.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
@@ -183,6 +186,7 @@
             // Btn_Borar
             // 
             this.Btn_Borar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Borar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Borar.BackgroundImage")));
             this.Btn_Borar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Btn_Borar.Enabled = false;
             this.Btn_Borar.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
@@ -245,6 +249,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Location = new System.Drawing.Point(0, 1);
@@ -252,6 +257,16 @@
             this.groupBox1.Size = new System.Drawing.Size(1067, 72);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 11);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(65, 61);
+            this.pictureBox2.TabIndex = 21;
+            this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -284,6 +299,17 @@
             this.groupBox3.TabIndex = 16;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Detalle Planilla";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.label6);
+            this.groupBox5.Controls.Add(this.LBL_Total);
+            this.groupBox5.Location = new System.Drawing.Point(894, 76);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(143, 139);
+            this.groupBox5.TabIndex = 3;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Resultados";
             // 
             // label6
             // 
@@ -342,17 +368,6 @@
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.label6);
-            this.groupBox5.Controls.Add(this.LBL_Total);
-            this.groupBox5.Location = new System.Drawing.Point(894, 76);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(143, 139);
-            this.groupBox5.TabIndex = 3;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Resultados";
-            // 
             // MantenimientoPlanilla
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -367,7 +382,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MantenimientoPlanilla";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Detalle de Planilla";
+            this.Text = "3032 - Detalle de Planilla";
             this.Load += new System.EventHandler(this.MantenimientoPlanilla_Load);
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
@@ -375,13 +390,14 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox3.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -416,5 +432,6 @@
         private System.Windows.Forms.ToolStripStatusLabel TOTAL;
         private System.Windows.Forms.ToolStripProgressBar ProgressBar1;
         private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

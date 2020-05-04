@@ -32,6 +32,7 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.LblUsuario = new System.Windows.Forms.ToolStripStatusLabel();
+            this.ProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,11 +49,12 @@
             this.statusStrip.BackColor = System.Drawing.Color.DodgerBlue;
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel,
-            this.LblUsuario});
+            this.LblUsuario,
+            this.ProgressBar1});
             this.statusStrip.Location = new System.Drawing.Point(0, 651);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(858, 22);
-            this.statusStrip.TabIndex = 14;
+            this.statusStrip.TabIndex = 15;
             this.statusStrip.Text = "StatusStrip";
             // 
             // toolStripStatusLabel
@@ -69,6 +71,11 @@
             this.LblUsuario.Size = new System.Drawing.Size(13, 17);
             this.LblUsuario.Text = "..";
             // 
+            // ProgressBar1
+            // 
+            this.ProgressBar1.Name = "ProgressBar1";
+            this.ProgressBar1.Size = new System.Drawing.Size(100, 16);
+            // 
             // HorasExtra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -79,7 +86,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "HorasExtra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "HorasExtra";
+            this.Text = "3020 - Horas Extra";
             this.Load += new System.EventHandler(this.HorasExtra_Load);
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
@@ -94,5 +101,6 @@
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
         private System.Windows.Forms.ToolStripStatusLabel LblUsuario;
+        private System.Windows.Forms.ToolStripProgressBar ProgressBar1;
     }
 }

@@ -37,22 +37,20 @@
             this.txtcodigo = new System.Windows.Forms.Button();
             this.Btn_eliminar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.statusStrip = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.LblUsuario = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.TXT_APE = new System.Windows.Forms.TextBox();
+            this.Txt_Codigo = new System.Windows.Forms.TextBox();
+            this.TXT_NOM = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.Txt_Codigo = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
             this.Cbo_sexo = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.combo3 = new CapaVista.Combo();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -69,19 +67,23 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.Txt_Codigo2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.LblUsuario = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.Txt_Codigo2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.ProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.statusStrip.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox6.SuspendLayout();
             this.Cbo_sexo.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -119,20 +121,24 @@
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.dataGridView2);
-            this.groupBox4.Location = new System.Drawing.Point(12, 353);
+            this.groupBox4.Location = new System.Drawing.Point(644, 372);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(614, 287);
+            this.groupBox4.Size = new System.Drawing.Size(659, 279);
             this.groupBox4.TabIndex = 17;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "información Componentes";
             // 
             // dataGridView2
             // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(6, 26);
+            this.dataGridView2.Location = new System.Drawing.Point(39, 26);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(573, 253);
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.Size = new System.Drawing.Size(590, 240);
             this.dataGridView2.TabIndex = 0;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             this.dataGridView2.DoubleClick += new System.EventHandler(this.dataGridView2_DoubleClick);
             // 
             // txtcodigo
@@ -144,9 +150,9 @@
             this.txtcodigo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
             this.txtcodigo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.txtcodigo.ForeColor = System.Drawing.Color.White;
-            this.txtcodigo.Location = new System.Drawing.Point(423, 97);
+            this.txtcodigo.Location = new System.Drawing.Point(423, 152);
             this.txtcodigo.Name = "txtcodigo";
-            this.txtcodigo.Size = new System.Drawing.Size(211, 65);
+            this.txtcodigo.Size = new System.Drawing.Size(211, 49);
             this.txtcodigo.TabIndex = 3;
             this.txtcodigo.Text = "Insertar";
             this.txtcodigo.UseVisualStyleBackColor = false;
@@ -161,9 +167,9 @@
             this.Btn_eliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_eliminar.ForeColor = System.Drawing.Color.White;
-            this.Btn_eliminar.Location = new System.Drawing.Point(411, 174);
+            this.Btn_eliminar.Location = new System.Drawing.Point(423, 210);
             this.Btn_eliminar.Name = "Btn_eliminar";
-            this.Btn_eliminar.Size = new System.Drawing.Size(223, 64);
+            this.Btn_eliminar.Size = new System.Drawing.Size(211, 51);
             this.Btn_eliminar.TabIndex = 2;
             this.Btn_eliminar.Text = "Eliminar";
             this.Btn_eliminar.UseVisualStyleBackColor = false;
@@ -178,73 +184,52 @@
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(958, 268);
+            this.button2.Location = new System.Drawing.Point(484, 111);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(287, 79);
+            this.button2.Size = new System.Drawing.Size(149, 79);
             this.button2.TabIndex = 1;
             this.button2.Text = "Tipo de Conceptos";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // statusStrip
-            // 
-            this.statusStrip.BackColor = System.Drawing.Color.DodgerBlue;
-            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel,
-            this.LblUsuario});
-            this.statusStrip.Location = new System.Drawing.Point(0, 654);
-            this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(1309, 22);
-            this.statusStrip.TabIndex = 25;
-            this.statusStrip.Text = "StatusStrip";
-            // 
-            // toolStripStatusLabel
-            // 
-            this.toolStripStatusLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
-            this.toolStripStatusLabel.Text = "Estado";
-            // 
-            // LblUsuario
-            // 
-            this.LblUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LblUsuario.Name = "LblUsuario";
-            this.LblUsuario.Size = new System.Drawing.Size(13, 17);
-            this.LblUsuario.Text = "..";
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.dataGridView1);
-            this.groupBox3.Location = new System.Drawing.Point(12, 135);
+            this.groupBox3.Location = new System.Drawing.Point(8, 315);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(826, 212);
+            this.groupBox3.Size = new System.Drawing.Size(614, 336);
             this.groupBox3.TabIndex = 26;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Empleado";
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 26);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 26);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(808, 172);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(602, 297);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.label2);
-            this.groupBox6.Controls.Add(this.Txt_Codigo2);
             this.groupBox6.Controls.Add(this.checkBox2);
+            this.groupBox6.Controls.Add(this.label3);
             this.groupBox6.Controls.Add(this.button1);
-            this.groupBox6.Controls.Add(this.textBox2);
-            this.groupBox6.Controls.Add(this.textBox1);
+            this.groupBox6.Controls.Add(this.button5);
+            this.groupBox6.Controls.Add(this.TXT_APE);
+            this.groupBox6.Controls.Add(this.Txt_Codigo);
+            this.groupBox6.Controls.Add(this.TXT_NOM);
             this.groupBox6.Controls.Add(this.label5);
             this.groupBox6.Controls.Add(this.label4);
-            this.groupBox6.Location = new System.Drawing.Point(844, 94);
+            this.groupBox6.Location = new System.Drawing.Point(18, 99);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(460, 154);
+            this.groupBox6.Size = new System.Drawing.Size(460, 195);
             this.groupBox6.TabIndex = 27;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Buscar por Nombre";
@@ -252,12 +237,22 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(211, 26);
+            this.checkBox2.Location = new System.Drawing.Point(156, 66);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(177, 25);
             this.checkBox2.TabIndex = 28;
             this.checkBox2.Text = "Buscar por Nombre";
             this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(7, 27);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(128, 21);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "Codigo Cliente";
             // 
             // button1
             // 
@@ -268,60 +263,13 @@
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(331, 69);
+            this.button1.Location = new System.Drawing.Point(326, 116);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(115, 66);
             this.button1.TabIndex = 28;
             this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(108, 114);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(203, 27);
-            this.textBox2.TabIndex = 5;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(108, 75);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 27);
-            this.textBox1.TabIndex = 4;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(19, 114);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 21);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Apellido";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 75);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 21);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Nombre";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(64, 102);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(128, 21);
-            this.label3.TabIndex = 28;
-            this.label3.Text = "Codigo Cliente";
-            // 
-            // Txt_Codigo
-            // 
-            this.Txt_Codigo.Location = new System.Drawing.Point(198, 102);
-            this.Txt_Codigo.Name = "Txt_Codigo";
-            this.Txt_Codigo.Size = new System.Drawing.Size(364, 27);
-            this.Txt_Codigo.TabIndex = 29;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button5
             // 
@@ -332,15 +280,59 @@
             this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(575, 94);
+            this.button5.Location = new System.Drawing.Point(274, 21);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(222, 35);
+            this.button5.Size = new System.Drawing.Size(167, 35);
             this.button5.TabIndex = 30;
             this.button5.Text = "Buscar";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // TXT_APE
+            // 
+            this.TXT_APE.Enabled = false;
+            this.TXT_APE.Location = new System.Drawing.Point(108, 152);
+            this.TXT_APE.Name = "TXT_APE";
+            this.TXT_APE.Size = new System.Drawing.Size(203, 27);
+            this.TXT_APE.TabIndex = 5;
+            // 
+            // Txt_Codigo
+            // 
+            this.Txt_Codigo.Location = new System.Drawing.Point(141, 23);
+            this.Txt_Codigo.Name = "Txt_Codigo";
+            this.Txt_Codigo.Size = new System.Drawing.Size(111, 27);
+            this.Txt_Codigo.TabIndex = 29;
+            this.Txt_Codigo.TextChanged += new System.EventHandler(this.Txt_Codigo_TextChanged);
+            // 
+            // TXT_NOM
+            // 
+            this.TXT_NOM.Enabled = false;
+            this.TXT_NOM.Location = new System.Drawing.Point(108, 108);
+            this.TXT_NOM.Name = "TXT_NOM";
+            this.TXT_NOM.Size = new System.Drawing.Size(203, 27);
+            this.TXT_NOM.TabIndex = 4;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 152);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(74, 21);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Apellido";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(7, 114);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(73, 21);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Nombre";
             // 
             // Cbo_sexo
             // 
+            this.Cbo_sexo.Controls.Add(this.button4);
             this.Cbo_sexo.Controls.Add(this.combo3);
             this.Cbo_sexo.Controls.Add(this.Btn_eliminar);
             this.Cbo_sexo.Controls.Add(this.radioButton2);
@@ -353,12 +345,29 @@
             this.Cbo_sexo.Controls.Add(this.label9);
             this.Cbo_sexo.Controls.Add(this.label10);
             this.Cbo_sexo.Controls.Add(this.label11);
-            this.Cbo_sexo.Location = new System.Drawing.Point(632, 365);
+            this.Cbo_sexo.Location = new System.Drawing.Point(645, 99);
             this.Cbo_sexo.Name = "Cbo_sexo";
             this.Cbo_sexo.Size = new System.Drawing.Size(658, 267);
             this.Cbo_sexo.TabIndex = 31;
             this.Cbo_sexo.TabStop = false;
             this.Cbo_sexo.Text = "Componentes";
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.button4.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(423, 91);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(211, 55);
+            this.button4.TabIndex = 32;
+            this.button4.Text = "Nuevo concepto";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click_2);
             // 
             // combo3
             // 
@@ -517,61 +526,93 @@
             this.label11.TabIndex = 8;
             this.label11.Text = "Tipo";
             // 
+            // statusStrip
+            // 
+            this.statusStrip.BackColor = System.Drawing.Color.DodgerBlue;
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel,
+            this.LblUsuario,
+            this.toolStripStatusLabel1,
+            this.Txt_Codigo2,
+            this.ProgressBar1});
+            this.statusStrip.Location = new System.Drawing.Point(0, 654);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Size = new System.Drawing.Size(1308, 22);
+            this.statusStrip.TabIndex = 34;
+            this.statusStrip.Text = "StatusStrip";
+            // 
+            // toolStripStatusLabel
+            // 
+            this.toolStripStatusLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(47, 17);
+            this.toolStripStatusLabel.Text = "Usuario";
+            // 
+            // LblUsuario
+            // 
+            this.LblUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.LblUsuario.Name = "LblUsuario";
+            this.LblUsuario.Size = new System.Drawing.Size(13, 17);
+            this.LblUsuario.Text = "..";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(46, 17);
+            this.toolStripStatusLabel1.Text = "Codigo";
+            // 
             // Txt_Codigo2
             // 
-            this.Txt_Codigo2.Enabled = false;
-            this.Txt_Codigo2.Location = new System.Drawing.Point(80, 24);
             this.Txt_Codigo2.Name = "Txt_Codigo2";
-            this.Txt_Codigo2.Size = new System.Drawing.Size(82, 27);
-            this.Txt_Codigo2.TabIndex = 32;
+            this.Txt_Codigo2.Size = new System.Drawing.Size(16, 17);
+            this.Txt_Codigo2.Text = "...";
             // 
-            // label2
+            // ProgressBar1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 24);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 21);
-            this.label2.TabIndex = 33;
-            this.label2.Text = "Codigo";
+            this.ProgressBar1.Name = "ProgressBar1";
+            this.ProgressBar1.Size = new System.Drawing.Size(100, 16);
             // 
-            // label6
+            // button3
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(867, 319);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 21);
-            this.label6.TabIndex = 32;
-            this.label6.Text = "label6";
+            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(484, 209);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(149, 79);
+            this.button3.TabIndex = 35;
+            this.button3.Text = "Recargar";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Conceptos
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1309, 676);
-            this.Controls.Add(this.label6);
+            this.ClientSize = new System.Drawing.Size(1308, 676);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.Cbo_sexo);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.Txt_Codigo);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox4);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Conceptos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Insertar";
+            this.Text = "3015 - Conceptos";
             this.Load += new System.EventHandler(this.Conceptos_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            this.statusStrip.ResumeLayout(false);
-            this.statusStrip.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox6.ResumeLayout(false);
@@ -580,6 +621,8 @@
             this.Cbo_sexo.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.statusStrip.ResumeLayout(false);
+            this.statusStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -594,17 +637,14 @@
         private System.Windows.Forms.Button Btn_eliminar;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.StatusStrip statusStrip;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
-        private System.Windows.Forms.ToolStripStatusLabel LblUsuario;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TXT_APE;
+        private System.Windows.Forms.TextBox TXT_NOM;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -627,8 +667,13 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox Txt_emplecon;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox Txt_Codigo2;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.StatusStrip statusStrip;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
+        private System.Windows.Forms.ToolStripStatusLabel LblUsuario;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel Txt_Codigo2;
+        private System.Windows.Forms.ToolStripProgressBar ProgressBar1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }

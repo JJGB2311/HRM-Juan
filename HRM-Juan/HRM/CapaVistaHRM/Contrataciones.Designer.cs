@@ -36,7 +36,7 @@
             this.ClientSize = new System.Drawing.Size(1016, 659);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Contrataciones";
-            this.Text = "Contrataciones";
+            this.Text = "3055- Contrataciones";
             this.ResumeLayout(false);
 
         }

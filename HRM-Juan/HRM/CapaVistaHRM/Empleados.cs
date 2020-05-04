@@ -19,7 +19,6 @@ namespace CapaVistaHRM
     {
         OdbcConnection conn = new OdbcConnection("Dsn=ERP");
         ModeloEmpleado logic = new ModeloEmpleado();
-        string tabla = "def";
         string fechana;
         string usuario;
         string emple;
