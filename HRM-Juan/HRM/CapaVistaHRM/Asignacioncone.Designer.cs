@@ -92,6 +92,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
             this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
@@ -103,6 +104,7 @@
             this.button1.Size = new System.Drawing.Size(231, 70);
             this.button1.TabIndex = 32;
             this.button1.Text = "Finalizar Registro";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -229,6 +231,8 @@
             // Btn_geeecon
             // 
             this.Btn_geeecon.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_geeecon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_geeecon.BackgroundImage")));
+            this.Btn_geeecon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_geeecon.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
             this.Btn_geeecon.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_geeecon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
@@ -240,6 +244,7 @@
             this.Btn_geeecon.Size = new System.Drawing.Size(231, 77);
             this.Btn_geeecon.TabIndex = 0;
             this.Btn_geeecon.Text = "Agregar concepto";
+            this.Btn_geeecon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_geeecon.UseVisualStyleBackColor = false;
             this.Btn_geeecon.Click += new System.EventHandler(this.Btn_geeecon_Click);
             // 
@@ -291,6 +296,7 @@
             // 
             this.dataGridView2.AllowUserToAddRows = false;
             this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(23, 26);
             this.dataGridView2.Name = "dataGridView2";
@@ -378,6 +384,7 @@
             // Asignacioncone
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(726, 643);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.statusStrip);

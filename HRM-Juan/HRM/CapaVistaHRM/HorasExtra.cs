@@ -21,7 +21,7 @@ namespace CapaVistaHRM
             string[] alias = { "NO", "Cantidad", "Costo","Fecha","Empleado","Estado" }; // Arreglo de nombres para campos
             navegador1.asignarAlias(alias); // Asignar nombres
             navegador1.asignarSalida(this); // Asignar form de salida
-            Color nuevoColor = System.Drawing.ColorTranslator.FromHtml("#0926E3"); // Deficion de 
+            Color nuevoColor = System.Drawing.ColorTranslator.FromHtml("#ffffff"); // Deficion de 
             navegador1.asignarColorFondo(nuevoColor);
             navegador1.asignarColorFuente(Color.White);
             navegador1.asignarAyuda("1"); // asignar 1 por defecto 

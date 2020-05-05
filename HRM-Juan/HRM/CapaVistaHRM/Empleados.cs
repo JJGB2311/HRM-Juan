@@ -99,6 +99,7 @@ namespace CapaVistaHRM
                 combo1.Enabled = true;
                 combo2.Enabled = true;
                 Txt_direccion.Enabled = true;
+                progres();
 
                 Mostraremp(); 
             }
@@ -133,6 +134,7 @@ namespace CapaVistaHRM
             combo1.Enabled = false;
             combo2.Enabled = false;
             Txt_direccion.Enabled = false;
+            progres();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -160,12 +162,20 @@ namespace CapaVistaHRM
             combo1.Enabled = false;
             combo2.Enabled = false;
             Txt_direccion.Enabled = false;
+            progres();
+        }
+        void progres()
+        {
+            for (int i = 0; i <= 100; i++)
+            {
+                ProgressBar1.Value = i;
+                i++;
+            }
 
         }
-
         private void Empleados_Load(object sender, EventArgs e)
         {
-
+            progres();
         }
     }
 }

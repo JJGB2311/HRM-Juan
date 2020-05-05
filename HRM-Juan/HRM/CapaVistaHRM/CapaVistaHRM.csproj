@@ -72,6 +72,18 @@
     <Compile Include="Asistenacia.Designer.cs">
       <DependentUpon>Asistenacia.cs</DependentUpon>
     </Compile>
+    <Compile Include="Candidatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Candidatos.Designer.cs">
+      <DependentUpon>Candidatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Citas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Citas.Designer.cs">
+      <DependentUpon>Citas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Comiciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,11 +96,17 @@
     <Compile Include="Conceptos.Designer.cs">
       <DependentUpon>Conceptos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Contrataciones.cs">
+    <Compile Include="Empleos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Contrataciones.Designer.cs">
-      <DependentUpon>Contrataciones.cs</DependentUpon>
+    <Compile Include="Empleos.Designer.cs">
+      <DependentUpon>Empleos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REContrataciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REContrataciones.Designer.cs">
+      <DependentUpon>REContrataciones.cs</DependentUpon>
     </Compile>
     <Compile Include="Datalleconceptos.cs">
       <SubType>Form</SubType>
@@ -102,11 +120,29 @@
     <Compile Include="Despidos.Designer.cs">
       <DependentUpon>Despidos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Finiquitos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finiquitos.Designer.cs">
+      <DependentUpon>Finiquitos.cs</DependentUpon>
+    </Compile>
     <Compile Include="HorasExtra.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="HorasExtra.Designer.cs">
       <DependentUpon>HorasExtra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenifini.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenifini.Designer.cs">
+      <DependentUpon>Mantenifini.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientodes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientodes.Designer.cs">
+      <DependentUpon>Mantenimientodes.cs</DependentUpon>
     </Compile>
     <Compile Include="MantenimientoPlanilla.cs">
       <SubType>Form</SubType>
@@ -203,14 +239,20 @@
     <EmbeddedResource Include="Asistenacia.resx">
       <DependentUpon>Asistenacia.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Candidatos.resx">
+      <DependentUpon>Candidatos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Comiciones.resx">
       <DependentUpon>Comiciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Conceptos.resx">
       <DependentUpon>Conceptos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Contrataciones.resx">
-      <DependentUpon>Contrataciones.cs</DependentUpon>
+    <EmbeddedResource Include="Empleos.resx">
+      <DependentUpon>Empleos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REContrataciones.resx">
+      <DependentUpon>REContrataciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Datalleconceptos.resx">
       <DependentUpon>Datalleconceptos.cs</DependentUpon>
@@ -218,8 +260,17 @@
     <EmbeddedResource Include="Despidos.resx">
       <DependentUpon>Despidos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Finiquitos.resx">
+      <DependentUpon>Finiquitos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HorasExtra.resx">
       <DependentUpon>HorasExtra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenifini.resx">
+      <DependentUpon>Mantenifini.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientodes.resx">
+      <DependentUpon>Mantenimientodes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MantenimientoPlanilla.resx">
       <DependentUpon>MantenimientoPlanilla.cs</DependentUpon>

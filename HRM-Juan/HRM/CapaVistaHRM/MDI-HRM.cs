@@ -219,7 +219,9 @@ namespace CapaVistaHRM
 
         private void recontratacionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            REContrataciones nuevo = new REContrataciones(usuarioact);
+            nuevo.MdiParent = this.MdiParent;
+            nuevo.Show();
         }
 
         private void solicitudesToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -253,6 +255,16 @@ namespace CapaVistaHRM
             nuevo.Show();
         }
 
-       
+        private void despidosToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            Mantenimientodes nuevo = new Mantenimientodes(usuarioact);
+            nuevo.MdiParent = this.MdiParent;
+            nuevo.Show();
+        }
+
+        private void finiquitosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

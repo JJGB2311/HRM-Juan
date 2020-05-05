@@ -20,6 +20,15 @@ namespace CapaModeloHRM
             dt.Fill(table);
             return table;
         }
+        /*recontra*/
+        public DataTable consultaLogica2()
+        {
+            OdbcDataAdapter dt = sn.llenaTbl2();
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+        /**/
         public DataTable consultaLogicacon(string emple)
         {
             OdbcDataAdapter dt = sn.llenaTblcon(emple);
@@ -45,6 +54,39 @@ namespace CapaModeloHRM
         public DataTable consultaLogicanoma(string nombre,string apelldo)
         {
             OdbcDataAdapter dt = sn.llenaTblnomap(nombre,apelldo);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+        /**/
+        /*Busqueda2*/
+        public DataTable consultaLogicacod2(string emple)
+        {
+            OdbcDataAdapter dt = sn.llenaTblcod2(emple);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+        public DataTable consultaLogicanoma2(string nombre, string apelldo)
+        {
+            OdbcDataAdapter dt = sn.llenaTblnomap2(nombre, apelldo);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+        /**/
+        /*des*/
+        public DataTable consultaLogicades()
+        {
+            OdbcDataAdapter dt = sn.llenaTbldes();
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+        /*fini*/
+        public DataTable consultaLogicafini()
+        {
+            OdbcDataAdapter dt = sn.llenaTblfin();
             DataTable table = new DataTable();
             dt.Fill(table);
             return table;

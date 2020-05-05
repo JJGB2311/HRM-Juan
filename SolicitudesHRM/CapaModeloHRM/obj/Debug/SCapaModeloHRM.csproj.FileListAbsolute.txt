@@ -1,0 +1,9 @@
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\SolicitudesHRM\CapaModeloHRM\bin\Debug\CapaModeloHRM.dll
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\SolicitudesHRM\CapaModeloHRM\bin\Debug\CapaModeloHRM.pdb
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\SolicitudesHRM\CapaModeloHRM\bin\Debug\CapaControladorHRM.dll
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\SolicitudesHRM\CapaModeloHRM\bin\Debug\CapaControladorHRM.pdb
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\SolicitudesHRM\CapaModeloHRM\obj\Debug\SCapaModeloHRM.csprojAssemblyReference.cache
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\SolicitudesHRM\CapaModeloHRM\obj\Debug\SCapaModeloHRM.csproj.CoreCompileInputs.cache
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\SolicitudesHRM\CapaModeloHRM\obj\Debug\SCapaModeloHRM.csproj.CopyComplete
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\SolicitudesHRM\CapaModeloHRM\obj\Debug\CapaModeloHRM.dll
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\SolicitudesHRM\CapaModeloHRM\obj\Debug\CapaModeloHRM.pdb

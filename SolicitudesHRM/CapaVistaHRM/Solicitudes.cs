@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CapaVistaHRM
 {
-    public partial class Solicitudes : UserControl
+    public partial class solicitudes : Form
     {
-        public Solicitudes()
+        public solicitudes()
         {
             InitializeComponent();
         }

@@ -19,6 +19,17 @@ namespace CapaControladorHRM
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
             return dataTable;
         }
+        /*recontra*/
+        public OdbcDataAdapter llenaTbl2()// metodo  que obtinene el contenio de una tabla
+        {
+
+            string sql = "SELECT id_empleado,nombre,apellido,sexo,fecha_de_nacimiento,cui,correo,id_puesto,id_area,nit,direccion FROM `empleados` WHERE estado =2 ORDER BY id_empleado DESC;";
+            //SELECT * FROM tbl_bodega WHERE estado=1 ORDER BY kbodega DESC
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
+            return dataTable;
+        }
+
+        /**/
         public OdbcDataAdapter llenaTblcon(string empeado)// metodo  que obtinene el contenio de una tabla
         {
 
@@ -54,6 +65,24 @@ namespace CapaControladorHRM
             return dataTable;
         }
         /**/
+        /*Busquedas2*/
+        public OdbcDataAdapter llenaTblcod2(string empeado)// metodo  que obtinene el contenio de una tabla
+        {
+
+            string sql = "SELECT id_empleado,nombre,apellido,sexo,fecha_de_nacimiento,cui,correo,id_puesto,id_area,nit,direccion FROM `empleados` WHERE estado =2 AND id_empleado=" + empeado + ";";
+            //SELECT * FROM tbl_bodega WHERE estado=1 ORDER BY kbodega DESC
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
+            return dataTable;
+        }
+        public OdbcDataAdapter llenaTblnomap2(string nombre, string apellido)// metodo  que obtinene el contenio de una tabla
+        {
+
+            string sql = "SELECT id_empleado,nombre,apellido,sexo,fecha_de_nacimiento,cui,correo,id_puesto,id_area,nit,direccion FROM `empleados` WHERE estado =2 AND nombre= '" + nombre + "' OR apellido = '" + apellido + "';";
+            //SELECT * FROM tbl_bodega WHERE estado=1 ORDER BY kbodega DESC
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
+            return dataTable;
+        }
+        /**/
 
         public OdbcDataAdapter llenaTblempleno(string empeado)// metodo  que obtinene el contenio de una tabla
         {
@@ -68,6 +97,26 @@ namespace CapaControladorHRM
         {
 
             string sql = "SELECT conceptos.id_empleado,conceptos.fecha_inicio,conceptos.fecha_fin,tipo_concepto.nombre,conceptos.monto,conceptos.debe_Haber FROM conceptos INNER JOIN tipo_concepto ON conceptos.id_tipo = tipo_concepto.id_tipo AND conceptos.estado= 1 AND conceptos.id_empleado=" + empeado + ";";
+            //SELECT * FROM tbl_bodega WHERE estado=1 ORDER BY kbodega DESC
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
+            return dataTable;
+        }
+
+        /*Despidos*/
+        public OdbcDataAdapter llenaTbldes()// metodo  que obtinene el contenio de una tabla
+        {
+
+            string sql = "SELECT id_empleado,nombre,apellido,sexo,fecha_de_nacimiento,cui,correo,id_puesto,id_area,nit,direccion FROM `empleados` WHERE estado =2 ORDER BY id_empleado DESC;";
+            //SELECT * FROM tbl_bodega WHERE estado=1 ORDER BY kbodega DESC
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
+            return dataTable;
+        }
+
+        /*finiquitos*/
+        public OdbcDataAdapter llenaTblfin()// metodo  que obtinene el contenio de una tabla
+        {
+
+            string sql = "SELECT id_finiqito,id_empleados,motivo,descripcion,total_prestaciones FROM finiqito WHERE estado=1 ORDER BY id_finiqito DESC;";
             //SELECT * FROM tbl_bodega WHERE estado=1 ORDER BY kbodega DESC
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.conexion());
             return dataTable;

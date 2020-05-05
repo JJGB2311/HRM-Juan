@@ -88,6 +88,7 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(6, 26);
             this.dataGridView1.Name = "dataGridView1";
@@ -134,6 +135,7 @@
             // BTN_Sig
             // 
             this.BTN_Sig.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BTN_Sig.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTN_Sig.BackgroundImage")));
             this.BTN_Sig.Enabled = false;
             this.BTN_Sig.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
             this.BTN_Sig.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
@@ -141,28 +143,31 @@
             this.BTN_Sig.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
             this.BTN_Sig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_Sig.ForeColor = System.Drawing.Color.White;
-            this.BTN_Sig.Location = new System.Drawing.Point(699, 210);
+            this.BTN_Sig.Location = new System.Drawing.Point(716, 210);
             this.BTN_Sig.Name = "BTN_Sig";
-            this.BTN_Sig.Size = new System.Drawing.Size(191, 57);
+            this.BTN_Sig.Size = new System.Drawing.Size(174, 57);
             this.BTN_Sig.TabIndex = 33;
             this.BTN_Sig.Text = "Siguiente";
+            this.BTN_Sig.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BTN_Sig.UseVisualStyleBackColor = false;
             this.BTN_Sig.Click += new System.EventHandler(this.button1_Click);
             // 
             // Btn_can
             // 
             this.Btn_can.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_can.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_can.BackgroundImage")));
             this.Btn_can.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
             this.Btn_can.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_can.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_can.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_can.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_can.ForeColor = System.Drawing.Color.White;
-            this.Btn_can.Location = new System.Drawing.Point(492, 210);
+            this.Btn_can.Location = new System.Drawing.Point(521, 210);
             this.Btn_can.Name = "Btn_can";
-            this.Btn_can.Size = new System.Drawing.Size(175, 57);
+            this.Btn_can.Size = new System.Drawing.Size(184, 57);
             this.Btn_can.TabIndex = 31;
             this.Btn_can.Text = "Cancela registo";
+            this.Btn_can.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_can.UseVisualStyleBackColor = false;
             this.Btn_can.Click += new System.EventHandler(this.button1_Click_2);
             // 
@@ -224,17 +229,20 @@
             // Btn_genee
             // 
             this.Btn_genee.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_genee.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_genee.BackgroundImage")));
+            this.Btn_genee.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_genee.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
             this.Btn_genee.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_genee.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_genee.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_genee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_genee.ForeColor = System.Drawing.Color.White;
-            this.Btn_genee.Location = new System.Drawing.Point(301, 210);
+            this.Btn_genee.Location = new System.Drawing.Point(355, 210);
             this.Btn_genee.Name = "Btn_genee";
-            this.Btn_genee.Size = new System.Drawing.Size(174, 57);
+            this.Btn_genee.Size = new System.Drawing.Size(160, 57);
             this.Btn_genee.TabIndex = 0;
-            this.Btn_genee.Text = "Registrar Empleado";
+            this.Btn_genee.Text = "Registrar ";
+            this.Btn_genee.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_genee.UseVisualStyleBackColor = false;
             this.Btn_genee.Click += new System.EventHandler(this.Btn_genee_Click);
             // 
@@ -442,6 +450,7 @@
             // EmpleadosCon
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(930, 670);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.groupBox3);

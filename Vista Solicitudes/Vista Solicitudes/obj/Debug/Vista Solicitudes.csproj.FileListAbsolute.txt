@@ -1,0 +1,19 @@
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Vista Solicitudes\Vista Solicitudes\bin\Debug\Vista Solicitudes.exe.config
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Vista Solicitudes\Vista Solicitudes\bin\Debug\Vista Solicitudes.exe
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Vista Solicitudes\Vista Solicitudes\bin\Debug\Vista Solicitudes.pdb
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Vista Solicitudes\Vista Solicitudes\bin\Debug\CapaVista.dll
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Vista Solicitudes\Vista Solicitudes\bin\Debug\CapaVistaHRM.dll
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Vista Solicitudes\Vista Solicitudes\bin\Debug\CapaModelo.dll
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Vista Solicitudes\Vista Solicitudes\bin\Debug\CapaControlador.dll
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Vista Solicitudes\Vista Solicitudes\bin\Debug\CapaVista.pdb
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Vista Solicitudes\Vista Solicitudes\bin\Debug\CapaVista.dll.config
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Vista Solicitudes\Vista Solicitudes\bin\Debug\CapaVistaHRM.pdb
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Vista Solicitudes\Vista Solicitudes\bin\Debug\CapaModelo.pdb
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Vista Solicitudes\Vista Solicitudes\bin\Debug\CapaControlador.pdb
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Vista Solicitudes\Vista Solicitudes\obj\Debug\Vista Solicitudes.csprojAssemblyReference.cache
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Vista Solicitudes\Vista Solicitudes\obj\Debug\Vista_Solicitudes.Properties.Resources.resources
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Vista Solicitudes\Vista Solicitudes\obj\Debug\Vista Solicitudes.csproj.GenerateResource.cache
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Vista Solicitudes\Vista Solicitudes\obj\Debug\Vista Solicitudes.csproj.CoreCompileInputs.cache
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Vista Solicitudes\Vista Solicitudes\obj\Debug\Vista Solicitudes.csproj.CopyComplete
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Vista Solicitudes\Vista Solicitudes\obj\Debug\Vista Solicitudes.exe
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\Vista Solicitudes\Vista Solicitudes\obj\Debug\Vista Solicitudes.pdb

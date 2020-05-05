@@ -32,11 +32,20 @@ namespace CapaVistaHRM
         }
         private void Datalleconceptos_Load(object sender, EventArgs e)
         {
-            
+            progres();
         }
+        void progres()
+        {
+            for (int i = 0; i <= 100; i++)
+            {
+                ProgressBar1.Value = i;
+                i++;
+            }
 
+        }
         private void button1_Click(object sender, EventArgs e)
         {
+            progres();
             Empleados nuevo = new Empleados(usuario);
             nuevo.MdiParent = this.MdiParent;
             nuevo.Show();

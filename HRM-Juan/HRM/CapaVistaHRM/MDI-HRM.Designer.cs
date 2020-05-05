@@ -61,6 +61,7 @@
             this.pruebasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.citasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.documentosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.contratacionesToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.fRMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.facturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tipoDeComicionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -73,15 +74,14 @@
             this.finiquitosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.contratacionesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.solicitudesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.verSolicitudesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.generarSolicitudesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.verSoloicitudesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.asistenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.heramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seguridadToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.algunDiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contratacionesToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -335,6 +335,12 @@
             this.documentosToolStripMenuItem1.Size = new System.Drawing.Size(256, 26);
             this.documentosToolStripMenuItem1.Text = "3054 - Documentos";
             // 
+            // contratacionesToolStripMenuItem2
+            // 
+            this.contratacionesToolStripMenuItem2.Name = "contratacionesToolStripMenuItem2";
+            this.contratacionesToolStripMenuItem2.Size = new System.Drawing.Size(256, 26);
+            this.contratacionesToolStripMenuItem2.Text = "3055 - Contrataciones ";
+            // 
             // fRMToolStripMenuItem
             // 
             this.fRMToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -400,6 +406,7 @@
             this.despidosToolStripMenuItem4.Name = "despidosToolStripMenuItem4";
             this.despidosToolStripMenuItem4.Size = new System.Drawing.Size(278, 26);
             this.despidosToolStripMenuItem4.Text = "3082 - Despidos";
+            this.despidosToolStripMenuItem4.Click += new System.EventHandler(this.despidosToolStripMenuItem4_Click);
             // 
             // recontratacionesToolStripMenuItem
             // 
@@ -413,36 +420,36 @@
             this.finiquitosToolStripMenuItem1.Name = "finiquitosToolStripMenuItem1";
             this.finiquitosToolStripMenuItem1.Size = new System.Drawing.Size(278, 26);
             this.finiquitosToolStripMenuItem1.Text = "3084 - Finiquitos";
+            this.finiquitosToolStripMenuItem1.Click += new System.EventHandler(this.finiquitosToolStripMenuItem1_Click);
             // 
             // contratacionesToolStripMenuItem1
             // 
             this.contratacionesToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.solicitudesToolStripMenuItem1});
+            this.solicitudesToolStripMenuItem1,
+            this.verSoloicitudesToolStripMenuItem,
+            this.toolStripMenuItem2});
             this.contratacionesToolStripMenuItem1.Name = "contratacionesToolStripMenuItem1";
             this.contratacionesToolStripMenuItem1.Size = new System.Drawing.Size(255, 26);
             this.contratacionesToolStripMenuItem1.Text = "3090 - Bolsa de trabajo";
             // 
             // solicitudesToolStripMenuItem1
             // 
-            this.solicitudesToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.verSolicitudesToolStripMenuItem1,
-            this.generarSolicitudesToolStripMenuItem1});
             this.solicitudesToolStripMenuItem1.Name = "solicitudesToolStripMenuItem1";
-            this.solicitudesToolStripMenuItem1.Size = new System.Drawing.Size(210, 26);
+            this.solicitudesToolStripMenuItem1.Size = new System.Drawing.Size(264, 26);
             this.solicitudesToolStripMenuItem1.Text = "3091 - Solicitudes";
             this.solicitudesToolStripMenuItem1.Click += new System.EventHandler(this.solicitudesToolStripMenuItem1_Click);
             // 
-            // verSolicitudesToolStripMenuItem1
+            // verSoloicitudesToolStripMenuItem
             // 
-            this.verSolicitudesToolStripMenuItem1.Name = "verSolicitudesToolStripMenuItem1";
-            this.verSolicitudesToolStripMenuItem1.Size = new System.Drawing.Size(279, 26);
-            this.verSolicitudesToolStripMenuItem1.Text = "3082 - Ver solicitudes";
+            this.verSoloicitudesToolStripMenuItem.Name = "verSoloicitudesToolStripMenuItem";
+            this.verSoloicitudesToolStripMenuItem.Size = new System.Drawing.Size(264, 26);
+            this.verSoloicitudesToolStripMenuItem.Text = "3092 - Ver soloicitudes";
             // 
-            // generarSolicitudesToolStripMenuItem1
+            // toolStripMenuItem2
             // 
-            this.generarSolicitudesToolStripMenuItem1.Name = "generarSolicitudesToolStripMenuItem1";
-            this.generarSolicitudesToolStripMenuItem1.Size = new System.Drawing.Size(279, 26);
-            this.generarSolicitudesToolStripMenuItem1.Text = "3083 - Generar Solicitudes";
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(264, 26);
+            this.toolStripMenuItem2.Text = "3092 - Generar solitudes";
             // 
             // asistenciaToolStripMenuItem
             // 
@@ -488,12 +495,6 @@
             this.algunDiaToolStripMenuItem.Name = "algunDiaToolStripMenuItem";
             this.algunDiaToolStripMenuItem.Size = new System.Drawing.Size(157, 26);
             this.algunDiaToolStripMenuItem.Text = "Algun Dia";
-            // 
-            // contratacionesToolStripMenuItem2
-            // 
-            this.contratacionesToolStripMenuItem2.Name = "contratacionesToolStripMenuItem2";
-            this.contratacionesToolStripMenuItem2.Size = new System.Drawing.Size(256, 26);
-            this.contratacionesToolStripMenuItem2.Text = "3055 - Contrataciones ";
             // 
             // MDI_HRM
             // 
@@ -563,8 +564,6 @@
         private System.Windows.Forms.ToolStripMenuItem finiquitosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem contratacionesToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem solicitudesToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem verSolicitudesToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem generarSolicitudesToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem fRMToolStripMenuItem;
         private System.Windows.Forms.ToolStripProgressBar ProgressBar1;
         private System.Windows.Forms.ToolStripMenuItem facturaToolStripMenuItem;
@@ -572,6 +571,8 @@
         private System.Windows.Forms.ToolStripMenuItem controDeAsistenciaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tipoDeComicionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem contratacionesToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem verSoloicitudesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
     }
 }
 
