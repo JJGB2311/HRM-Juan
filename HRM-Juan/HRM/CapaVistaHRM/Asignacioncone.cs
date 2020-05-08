@@ -20,10 +20,11 @@ namespace CapaVistaHRM
         string fechaini = "1111-11-11";
         string fechafin = "1111-11-11";
         string debehaber;
+        string vacio = "";
         public Asignacioncone(string user)
         {
             InitializeComponent();
-            user = usuario;
+            usuario = user;
             LblUsuario.Text = usuario;
             dateTimePicker2.Format = DateTimePickerFormat.Custom;
             dateTimePicker2.CustomFormat = "yyyy-MM-dd";
@@ -108,6 +109,8 @@ namespace CapaVistaHRM
             Txt_montocon.Text = "";
             radioButton2.Checked = true;
             checkBox1.Checked = false;
+            combo3.texto(vacio);
+            
         }
 
         private void button1_Click(object sender, EventArgs e)

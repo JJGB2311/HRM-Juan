@@ -30,12 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Despidos));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btn_recar = new System.Windows.Forms.Button();
             this.Txt_sexo = new System.Windows.Forms.TextBox();
             this.Txt_area = new System.Windows.Forms.TextBox();
             this.Txt_puesto = new System.Windows.Forms.TextBox();
             this.Txt_direccion = new System.Windows.Forms.TextBox();
             this.Txt_nit = new System.Windows.Forms.TextBox();
             this.Txt_cui = new System.Windows.Forms.TextBox();
+            this.Btn_Des = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -52,7 +54,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Txt_id = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.Btn_Des = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
@@ -72,7 +73,6 @@
             this.Txt_nombreb = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.btn_recar = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -85,12 +85,14 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btn_recar);
             this.groupBox2.Controls.Add(this.Txt_sexo);
             this.groupBox2.Controls.Add(this.Txt_area);
             this.groupBox2.Controls.Add(this.Txt_puesto);
             this.groupBox2.Controls.Add(this.Txt_direccion);
             this.groupBox2.Controls.Add(this.Txt_nit);
             this.groupBox2.Controls.Add(this.Txt_cui);
+            this.groupBox2.Controls.Add(this.Btn_Des);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label10);
@@ -109,10 +111,30 @@
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Location = new System.Drawing.Point(12, 160);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(752, 252);
+            this.groupBox2.Size = new System.Drawing.Size(954, 252);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos";
+            // 
+            // btn_recar
+            // 
+            this.btn_recar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_recar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_recar.BackgroundImage")));
+            this.btn_recar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_recar.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_recar.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_recar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_recar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_recar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_recar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_recar.Location = new System.Drawing.Point(738, 29);
+            this.btn_recar.Name = "btn_recar";
+            this.btn_recar.Size = new System.Drawing.Size(202, 86);
+            this.btn_recar.TabIndex = 30;
+            this.btn_recar.Text = "Recargar";
+            this.btn_recar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_recar.UseVisualStyleBackColor = false;
+            this.btn_recar.Click += new System.EventHandler(this.button3_Click);
             // 
             // Txt_sexo
             // 
@@ -161,6 +183,26 @@
             this.Txt_cui.Name = "Txt_cui";
             this.Txt_cui.Size = new System.Drawing.Size(259, 27);
             this.Txt_cui.TabIndex = 27;
+            // 
+            // Btn_Des
+            // 
+            this.Btn_Des.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Des.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Des.BackgroundImage")));
+            this.Btn_Des.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Btn_Des.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.Btn_Des.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Des.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Des.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Des.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Des.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Btn_Des.Location = new System.Drawing.Point(736, 141);
+            this.Btn_Des.Name = "Btn_Des";
+            this.Btn_Des.Size = new System.Drawing.Size(204, 85);
+            this.Btn_Des.TabIndex = 3;
+            this.Btn_Des.Text = "Despedir";
+            this.Btn_Des.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_Des.UseVisualStyleBackColor = false;
+            this.Btn_Des.Click += new System.EventHandler(this.Btn_Modi_Click);
             // 
             // label12
             // 
@@ -301,32 +343,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ID";
             // 
-            // Btn_Des
-            // 
-            this.Btn_Des.BackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Des.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Des.BackgroundImage")));
-            this.Btn_Des.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Btn_Des.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.Btn_Des.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Des.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Des.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Des.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Des.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Btn_Des.Location = new System.Drawing.Point(788, 309);
-            this.Btn_Des.Name = "Btn_Des";
-            this.Btn_Des.Size = new System.Drawing.Size(204, 85);
-            this.Btn_Des.TabIndex = 3;
-            this.Btn_Des.Text = "Despedir";
-            this.Btn_Des.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_Des.UseVisualStyleBackColor = false;
-            this.Btn_Des.Click += new System.EventHandler(this.Btn_Modi_Click);
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.dataGridView1);
             this.groupBox3.Location = new System.Drawing.Point(12, 418);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1005, 201);
+            this.groupBox3.Size = new System.Drawing.Size(954, 201);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "información";
@@ -341,7 +363,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(989, 169);
+            this.dataGridView1.Size = new System.Drawing.Size(938, 169);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
@@ -354,7 +376,7 @@
             this.ProgressBar1});
             this.statusStrip.Location = new System.Drawing.Point(0, 619);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(1033, 22);
+            this.statusStrip.Size = new System.Drawing.Size(972, 22);
             this.statusStrip.TabIndex = 14;
             this.statusStrip.Text = "StatusStrip";
             // 
@@ -391,7 +413,7 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(933, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(866, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 72);
             this.pictureBox1.TabIndex = 2;
@@ -405,7 +427,7 @@
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1033, 76);
+            this.groupBox1.Size = new System.Drawing.Size(966, 76);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             // 
@@ -432,7 +454,7 @@
             this.groupBox6.Controls.Add(this.label15);
             this.groupBox6.Location = new System.Drawing.Point(12, 85);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(1005, 69);
+            this.groupBox6.Size = new System.Drawing.Size(954, 69);
             this.groupBox6.TabIndex = 28;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Buscar por Nombre";
@@ -455,9 +477,9 @@
             this.btn_nomap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
             this.btn_nomap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_nomap.ForeColor = System.Drawing.Color.White;
-            this.btn_nomap.Location = new System.Drawing.Point(885, 15);
+            this.btn_nomap.Location = new System.Drawing.Point(860, 15);
             this.btn_nomap.Name = "btn_nomap";
-            this.btn_nomap.Size = new System.Drawing.Size(80, 33);
+            this.btn_nomap.Size = new System.Drawing.Size(80, 42);
             this.btn_nomap.TabIndex = 28;
             this.btn_nomap.Text = "Buscar";
             this.btn_nomap.UseVisualStyleBackColor = false;
@@ -472,7 +494,7 @@
             this.btn_cod.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
             this.btn_cod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cod.ForeColor = System.Drawing.Color.White;
-            this.btn_cod.Location = new System.Drawing.Point(258, 15);
+            this.btn_cod.Location = new System.Drawing.Point(258, 23);
             this.btn_cod.Name = "btn_cod";
             this.btn_cod.Size = new System.Drawing.Size(104, 35);
             this.btn_cod.TabIndex = 30;
@@ -482,21 +504,21 @@
             // 
             // Txt_apellidoB
             // 
-            this.Txt_apellidoB.Location = new System.Drawing.Point(715, 19);
+            this.Txt_apellidoB.Location = new System.Drawing.Point(694, 24);
             this.Txt_apellidoB.Name = "Txt_apellidoB";
             this.Txt_apellidoB.Size = new System.Drawing.Size(144, 27);
             this.Txt_apellidoB.TabIndex = 5;
             // 
             // Txt_Codigo
             // 
-            this.Txt_Codigo.Location = new System.Drawing.Point(141, 23);
+            this.Txt_Codigo.Location = new System.Drawing.Point(141, 27);
             this.Txt_Codigo.Name = "Txt_Codigo";
             this.Txt_Codigo.Size = new System.Drawing.Size(111, 27);
             this.Txt_Codigo.TabIndex = 29;
             // 
             // Txt_nombreb
             // 
-            this.Txt_nombreb.Location = new System.Drawing.Point(458, 19);
+            this.Txt_nombreb.Location = new System.Drawing.Point(444, 24);
             this.Txt_nombreb.Name = "Txt_nombreb";
             this.Txt_nombreb.Size = new System.Drawing.Size(164, 27);
             this.Txt_nombreb.TabIndex = 4;
@@ -504,7 +526,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(638, 23);
+            this.label14.Location = new System.Drawing.Point(614, 26);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(74, 21);
             this.label14.TabIndex = 3;
@@ -513,44 +535,22 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(389, 20);
+            this.label15.Location = new System.Drawing.Point(367, 27);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(73, 21);
             this.label15.TabIndex = 2;
             this.label15.Text = "Nombre";
             // 
-            // btn_recar
-            // 
-            this.btn_recar.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_recar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_recar.BackgroundImage")));
-            this.btn_recar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_recar.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.btn_recar.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_recar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_recar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_recar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_recar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_recar.Location = new System.Drawing.Point(790, 189);
-            this.btn_recar.Name = "btn_recar";
-            this.btn_recar.Size = new System.Drawing.Size(202, 86);
-            this.btn_recar.TabIndex = 30;
-            this.btn_recar.Text = "Recargar";
-            this.btn_recar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_recar.UseVisualStyleBackColor = false;
-            this.btn_recar.Click += new System.EventHandler(this.button3_Click);
-            // 
             // Despidos
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1033, 641);
-            this.Controls.Add(this.btn_recar);
+            this.ClientSize = new System.Drawing.Size(972, 641);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.Btn_Des);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Despidos";

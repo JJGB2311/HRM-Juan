@@ -180,7 +180,7 @@ namespace CapaVistaHRM
 
         private void perfilesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Perfiles nuevo = new Perfiles(usuarioact);
+            Perfiles nuevo = new Perfiles(usuarioact ,"1");
             nuevo.MdiParent = this.MdiParent;
             nuevo.Show();
         }
@@ -226,7 +226,9 @@ namespace CapaVistaHRM
 
         private void solicitudesToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            Solicitudes nuevo = new Solicitudes(usuarioact);
+            nuevo.MdiParent = this.MdiParent;
+            nuevo.Show();
         }
 
         private void asistenciaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -264,7 +266,36 @@ namespace CapaVistaHRM
 
         private void finiquitosToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+           
+        }
 
+        private void trajajosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           MantenimientosEmpleos nuevo = new MantenimientosEmpleos(usuarioact);
+            nuevo.MdiParent = this.MdiParent;
+            nuevo.Show();
+
+        }
+
+        private void finiquitosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Mantenifini nuevo = new Mantenifini(usuarioact);
+            nuevo.MdiParent = this.MdiParent;
+            nuevo.Show();
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Mantenimeitosoli nuevo = new Mantenimeitosoli(usuarioact);
+            nuevo.MdiParent = this.MdiParent;
+            nuevo.Show();
+        }
+
+        private void solicitudesPCToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Solicitudespro nuevo = new Solicitudespro(usuarioact);
+            nuevo.MdiParent = this.MdiParent;
+            nuevo.Show();
         }
     }
 }

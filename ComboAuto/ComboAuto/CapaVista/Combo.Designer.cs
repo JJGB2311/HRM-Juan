@@ -28,17 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Cmb_auto = new System.Windows.Forms.ComboBox();
+            this.dataSet1 = new CapaVista.DataSet1();
+            this.dataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // Cmb_auto
             // 
+            this.Cmb_auto.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.Cmb_auto.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.Cmb_auto.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Cmb_auto.FormattingEnabled = true;
             this.Cmb_auto.Location = new System.Drawing.Point(0, 0);
             this.Cmb_auto.Name = "Cmb_auto";
             this.Cmb_auto.Size = new System.Drawing.Size(337, 24);
+            this.Cmb_auto.Sorted = true;
             this.Cmb_auto.TabIndex = 0;
+            this.Cmb_auto.SelectedIndexChanged += new System.EventHandler(this.Cmb_auto_SelectedIndexChanged);
+            // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dataSet1BindingSource
+            // 
+            this.dataSet1BindingSource.DataSource = this.dataSet1;
+            this.dataSet1BindingSource.Position = 0;
             // 
             // Combo
             // 
@@ -47,6 +66,8 @@
             this.Controls.Add(this.Cmb_auto);
             this.Name = "Combo";
             this.Size = new System.Drawing.Size(337, 24);
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -54,5 +75,7 @@
         #endregion
 
         private System.Windows.Forms.ComboBox Cmb_auto;
+        private System.Windows.Forms.BindingSource dataSet1BindingSource;
+        private DataSet1 dataSet1;
     }
 }

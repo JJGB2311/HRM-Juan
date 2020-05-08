@@ -16,15 +16,17 @@ namespace CapaVistaHRM
     public partial class EmpleadosCon : Form
     {
         ModeloEmpleado logic = new ModeloEmpleado();
-        string tabla = "def";
-        string fechana;
+       
+  
         string usuario;
-        
+        string vacio="";
+        string valor ="NO";
+       
         public EmpleadosCon(string user)
         {
             InitializeComponent();
             Mostraremp();
-            user = usuario;
+            usuario= user;
             LblUsuario.Text = usuario;
             DTP_fechana.Format = DateTimePickerFormat.Custom;
             DTP_fechana.CustomFormat = "yyyy-MM-dd";
@@ -43,12 +45,21 @@ namespace CapaVistaHRM
        
         string crearInsert()// crea el query de insert
         {
-           string query = "INSERT INTO `empleados` (`id_empleado`, `nombre`, `apellido`, `sexo`, `fecha_de_nacimiento`, `cui`, `correo`, `id_puesto`, `id_area`, `nit`, `direccion`, `estado`) VALUES (NULL, '" + Txt_nombre.Text + "', '"+Txt_apellido.Text+"', '"+Cbo_sex.Text+"', '"+ DTP_fechana.Text+ "', '"+Txt_cui.Text+"', '"+txt_correo.Text+"', '"+combo1.obtener()+ "', '" + combo2.obtener() + "', '" + Txt_nit.Text+"', '"+Txt_dire.Text+"', '1');";
-           return query; 
+          // string query = "INSERT INTO empleados (id_empleado, nombre, apellido, sexo, fecha_de_nacimiento, cui, correo, id_puesto, id_area, nit, direccion, estado) VALUES (NULL, '" + Txt_nombre.Text + "', '"+Txt_apellido.Text+"', '"+Cbo_sex.Text+"', '"+ DTP_fechana.Text+ "', '"+Txt_cui.Text+"', '"+txt_correo.Text+"', '"+combo1.ObtenerIndif()+ "', '" + combo2.obtener() + "', '" + Txt_nit.Text+"', '"+Txt_dire.Text+"', '1');";
+
+            string query = "INSERT INTO `empleados` (`id_empleado`, `nombre`, `apellido`, `sexo`, `fecha_de_nacimiento`, `cui`, `correo`, `id_puesto`, `id_area`, `nit`, `direccion`, `estado`) VALUES (NULL,'" + Txt_nombre.Text + "', '" + Txt_apellido.Text + "', '" + Cbo_sex.Text + "', '" + DTP_fechana.Text + "', '" + Txt_cui.Text + "', '" + txt_correo.Text + "', '" + combo1.ObtenerIndif() + "', '" + combo2.obtener() + "', '" + Txt_nit.Text + "', '" + Txt_dire.Text + "', '1');";
+
+            return query; 
         }
 
         private void Btn_genee_Click(object sender, EventArgs e)
         {
+            string contenido = combo1.texto2();
+            int existe = combo1.existe(contenido);
+            if (existe ==-1)
+            {
+               
+            }
             logic.nuevoQuery(crearInsert());
             Mostraremp();
             Txt_id.Text = "";
@@ -59,8 +70,8 @@ namespace CapaVistaHRM
             Txt_dire.Text = "";
             Txt_nit.Text = "";
             Cbo_sex.Text = "";
-            combo1.llenarse("puestos", "id_puesto", "nombre");
-            combo2.llenarse("area", "id_area", "nombre");
+            combo1.texto(vacio);
+            combo2.texto(vacio);
             Btn_genee.Enabled = false;
 
             BTN_Sig.Enabled = true;
@@ -162,14 +173,43 @@ namespace CapaVistaHRM
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            valor = "si";
            Asignacioncone nuevo = new Asignacioncone(usuario);
             nuevo.MdiParent = this.MdiParent;
             nuevo.Show();
+           
             this.Close();
+            
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void EmpleadosCon_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+            if (Btn_genee.Enabled == false)
+            {
+                if (valor=="si")
+                {
+                    e.Cancel = false;
+                }
+                else { e.Cancel = true; }
+              
+               
+             
+
+            }
+            else if (Btn_genee.Enabled == true)
+            {
+
+                e.Cancel = false; 
+
+            }
+
+
 
         }
     }

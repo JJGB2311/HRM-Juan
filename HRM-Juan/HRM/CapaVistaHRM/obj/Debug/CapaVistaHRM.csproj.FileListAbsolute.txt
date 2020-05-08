@@ -140,3 +140,6 @@ C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingen
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\obj\Debug\CapaVistaHRM.Mantenifini.resources
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\obj\Debug\CapaVistaHRM.Candidatos.resources
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\obj\Debug\CapaVistaHRM.Empleos.resources
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\obj\Debug\CapaVistaHRM.Mantenimeitosoli.resources
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\obj\Debug\CapaVistaHRM.MantenimientosEmpleos.resources
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\obj\Debug\CapaVistaHRM.Solicitudespro.resources

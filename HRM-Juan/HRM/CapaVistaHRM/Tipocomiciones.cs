@@ -18,7 +18,7 @@ namespace CapaVistaHRM
             InitializeComponent();
             usuario = user;
             LblUsuario.Text = usuario;
-            string[] alias = { "No", "Nombre","Porcentaje", "Porcentaje","Estado" }; // Arreglo de nombres para campos
+            string[] alias = { "No", "Nombre","Porcentaje", "valor","Estado" }; // Arreglo de nombres para campos
             navegador1.asignarAlias(alias); // Asignar nombres
             navegador1.asignarSalida(this); // Asignar form de salida
             Color nuevoColor = System.Drawing.ColorTranslator.FromHtml("#ffffff"); // Deficion de 

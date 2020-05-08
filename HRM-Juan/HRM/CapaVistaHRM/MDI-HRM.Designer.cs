@@ -50,12 +50,14 @@
             this.horasExtrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.controDeAsistenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.areasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.finiquitosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.planillaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generarPlanillaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.planillasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bolsaDeTrabajoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trajajosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.perfilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.solicitudesPCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contratacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.candidatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pruebasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -74,7 +76,6 @@
             this.finiquitosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.contratacionesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.solicitudesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.verSoloicitudesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.asistenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.heramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -162,7 +163,8 @@
             this.agregarEmpleadoToolStripMenuItem,
             this.conceptosToolStripMenuItem,
             this.empleadosToolStripMenuItem1,
-            this.areasToolStripMenuItem});
+            this.areasToolStripMenuItem,
+            this.finiquitosToolStripMenuItem});
             this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
             this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(255, 26);
             this.empleadosToolStripMenuItem.Text = "3010 - Empleados";
@@ -252,6 +254,13 @@
             this.areasToolStripMenuItem.Text = "3014 - Areas";
             this.areasToolStripMenuItem.Click += new System.EventHandler(this.areasToolStripMenuItem_Click);
             // 
+            // finiquitosToolStripMenuItem
+            // 
+            this.finiquitosToolStripMenuItem.Name = "finiquitosToolStripMenuItem";
+            this.finiquitosToolStripMenuItem.Size = new System.Drawing.Size(334, 26);
+            this.finiquitosToolStripMenuItem.Text = "3015 - Finiquitos ";
+            this.finiquitosToolStripMenuItem.Click += new System.EventHandler(this.finiquitosToolStripMenuItem_Click);
+            // 
             // planillaToolStripMenuItem
             // 
             this.planillaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -279,7 +288,8 @@
             // 
             this.bolsaDeTrabajoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.trajajosToolStripMenuItem,
-            this.perfilesToolStripMenuItem});
+            this.perfilesToolStripMenuItem,
+            this.solicitudesPCToolStripMenuItem});
             this.bolsaDeTrabajoToolStripMenuItem.Name = "bolsaDeTrabajoToolStripMenuItem";
             this.bolsaDeTrabajoToolStripMenuItem.Size = new System.Drawing.Size(255, 26);
             this.bolsaDeTrabajoToolStripMenuItem.Text = "3040 - Bolsa de trabajo";
@@ -287,15 +297,23 @@
             // trajajosToolStripMenuItem
             // 
             this.trajajosToolStripMenuItem.Name = "trajajosToolStripMenuItem";
-            this.trajajosToolStripMenuItem.Size = new System.Drawing.Size(193, 26);
+            this.trajajosToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
             this.trajajosToolStripMenuItem.Text = "3041 - Empleos";
+            this.trajajosToolStripMenuItem.Click += new System.EventHandler(this.trajajosToolStripMenuItem_Click);
             // 
             // perfilesToolStripMenuItem
             // 
             this.perfilesToolStripMenuItem.Name = "perfilesToolStripMenuItem";
-            this.perfilesToolStripMenuItem.Size = new System.Drawing.Size(193, 26);
+            this.perfilesToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
             this.perfilesToolStripMenuItem.Text = "3042 - Perfiles";
             this.perfilesToolStripMenuItem.Click += new System.EventHandler(this.perfilesToolStripMenuItem_Click);
+            // 
+            // solicitudesPCToolStripMenuItem
+            // 
+            this.solicitudesPCToolStripMenuItem.Name = "solicitudesPCToolStripMenuItem";
+            this.solicitudesPCToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
+            this.solicitudesPCToolStripMenuItem.Text = "3043 - Solicitudes P.C";
+            this.solicitudesPCToolStripMenuItem.Click += new System.EventHandler(this.solicitudesPCToolStripMenuItem_Click);
             // 
             // contratacionesToolStripMenuItem
             // 
@@ -426,7 +444,6 @@
             // 
             this.contratacionesToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.solicitudesToolStripMenuItem1,
-            this.verSoloicitudesToolStripMenuItem,
             this.toolStripMenuItem2});
             this.contratacionesToolStripMenuItem1.Name = "contratacionesToolStripMenuItem1";
             this.contratacionesToolStripMenuItem1.Size = new System.Drawing.Size(255, 26);
@@ -439,17 +456,12 @@
             this.solicitudesToolStripMenuItem1.Text = "3091 - Solicitudes";
             this.solicitudesToolStripMenuItem1.Click += new System.EventHandler(this.solicitudesToolStripMenuItem1_Click);
             // 
-            // verSoloicitudesToolStripMenuItem
-            // 
-            this.verSoloicitudesToolStripMenuItem.Name = "verSoloicitudesToolStripMenuItem";
-            this.verSoloicitudesToolStripMenuItem.Size = new System.Drawing.Size(264, 26);
-            this.verSoloicitudesToolStripMenuItem.Text = "3092 - Ver soloicitudes";
-            // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(264, 26);
             this.toolStripMenuItem2.Text = "3092 - Generar solitudes";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // asistenciaToolStripMenuItem
             // 
@@ -571,8 +583,9 @@
         private System.Windows.Forms.ToolStripMenuItem controDeAsistenciaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tipoDeComicionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem contratacionesToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem verSoloicitudesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem finiquitosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem solicitudesPCToolStripMenuItem;
     }
 }
 

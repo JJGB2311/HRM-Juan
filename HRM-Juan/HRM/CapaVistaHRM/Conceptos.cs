@@ -24,12 +24,13 @@ namespace CapaVistaHRM
         string fechaf;
         string DBAB;
         string ID;
+        string vacio = "";
       
         ModeloEmpleado logic = new ModeloEmpleado();
         public Conceptos(string user)
         {
             InitializeComponent();
-            user = usuario;
+            usuario = user;
             LblUsuario.Text = usuario;
             Mostraremp();
             combo3.llenarse("tipo_concepto", "id_tipo", "nombre");
@@ -141,11 +142,13 @@ namespace CapaVistaHRM
                 fechafin = dataGridView2.CurrentRow.Cells[3].FormattedValue.ToString();
                 Txt_montocon.Text = dataGridView2.CurrentRow.Cells[5].Value.ToString();
                 DBAB = dataGridView2.CurrentRow.Cells[6].Value.ToString();
-                 combo3.Enabled = true;
-                Txt_montocon.Enabled = true;
-                radioButton1.Enabled = true;
-                radioButton2.Enabled = true;
-                checkBox1.Enabled = true;
+                checkBox1.Checked = false;
+                combo3.Enabled = false;
+                Txt_montocon.Enabled = false;
+                radioButton1.Enabled = false;
+                radioButton2.Enabled = false;
+                checkBox1.Enabled = false;
+          
 
                 if (fechaini == "1111-11-11")
                 {
@@ -236,8 +239,14 @@ namespace CapaVistaHRM
             Mostrarcon2(Txt_Codigo2.Text);
 
             Txt_montocon.Text = "";
+            combo3.texto(vacio);
             radioButton2.Checked = true;
             checkBox1.Checked = false;
+            combo3.Enabled = false;
+            Txt_montocon.Enabled = false;
+            radioButton1.Enabled = false;
+            radioButton2.Enabled = false;
+            checkBox1.Enabled = false;
             progres();
        
 
@@ -250,6 +259,7 @@ namespace CapaVistaHRM
             Mostrarcon2(Txt_Codigo2.Text);
             Txt_emplecon.Text = "";
             Txt_montocon.Text = "";
+            combo3.texto(vacio);
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)

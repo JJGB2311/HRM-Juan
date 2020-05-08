@@ -141,6 +141,7 @@ namespace CapaVistaHRM
         {
             MostrarCOD(Txt_Codigo.Text);
             progres();
+            Txt_Codigo.Text = "";
             ProgressBar1.Style = ProgressBarStyle.Marquee;
         }
 
@@ -148,6 +149,9 @@ namespace CapaVistaHRM
         {
             MostrarNOMA(Txt_nombreb.Text, Txt_apellidoB.Text);
             progres();
+            Txt_apellidoB.Text = "";
+            Txt_nombreb.Text = "";
+            ProgressBar1.Style = ProgressBarStyle.Marquee;
         }
     }
 }

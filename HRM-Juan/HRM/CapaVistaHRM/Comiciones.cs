@@ -18,17 +18,17 @@ namespace CapaVistaHRM
             InitializeComponent();
             usuario = user;
             LblUsuario.Text = usuario;
-            string[] alias = { "No", "Tipo Comicion", "Empleado", "Factura", "Estado" }; // Arreglo de nombres para campos
+            string[] alias = { "No", "TipoComicion", "Empleado", "Factura", "Estado" }; // Arreglo de nombres para campos
             navegador1.asignarAlias(alias); // Asignar nombres
             navegador1.asignarSalida(this); // Asignar form de salida
-            Color nuevoColor = System.Drawing.ColorTranslator.FromHtml("#0926E3"); // Deficion de 
+            Color nuevoColor = System.Drawing.ColorTranslator.FromHtml("#ffffff"); // Deficion de 
             navegador1.asignarColorFondo(nuevoColor);
-            navegador1.asignarColorFuente(Color.White);
+            navegador1.asignarColorFuente(Color.Blue);
             navegador1.asignarAyuda("1"); // asignar 1 por defecto 
-            navegador1.asignarComboConTabla("tipo_comisiones", "nombre", 1); // 0 o 1 en modo, 0 pone el id y 1 coloca el nombre y consulta el id
-            navegador1.asignarComboConTabla("empleados", "nombre", 1); // 0 o 1 en modo, 0 pone el id y 1 coloca el nombre y consulta el id
-            navegador1.asignarTabla("tipo_comisiones"); // tabla principal
-            navegador1.asignarNombreForm("Tipo de comisiones"); // Titulo y nombre del form
+            navegador1.asignarComboConTabla("tipo_comisiones", "nombre", 0); // 0 o 1 en modo, 0 pone el id y 1 coloca el nombre y consulta el id
+            navegador1.asignarComboConTabla("empleados", "nombre", 0); // 0 o 1 en modo, 0 pone el id y 1 coloca el nombre y consulta el id
+            navegador1.asignarTabla("comisiones"); // tabla principal
+            navegador1.asignarNombreForm("comisiones"); // Titulo y nombre del form
         }
         void progres()
         {

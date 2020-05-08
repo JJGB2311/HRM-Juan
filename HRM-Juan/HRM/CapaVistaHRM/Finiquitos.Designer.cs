@@ -277,7 +277,7 @@
             this.toolStripStatusLabel2});
             this.statusStrip.Location = new System.Drawing.Point(0, 591);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(745, 22);
+            this.statusStrip.Size = new System.Drawing.Size(749, 22);
             this.statusStrip.TabIndex = 17;
             this.statusStrip.Text = "StatusStrip";
             // 
@@ -318,7 +318,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(745, 613);
+            this.ClientSize = new System.Drawing.Size(749, 613);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);

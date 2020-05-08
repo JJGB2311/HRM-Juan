@@ -461,6 +461,7 @@
             this.Name = "EmpleadosCon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "3011 - EmpleaodosCom";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EmpleadosCon_FormClosing);
             this.Load += new System.EventHandler(this.Btn_agrecon_Load);
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

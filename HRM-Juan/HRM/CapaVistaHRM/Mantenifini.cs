@@ -16,19 +16,50 @@ namespace CapaVistaHRM
     {
         ModeloEmpleado logic = new ModeloEmpleado();
         string usuario;
-        public Mantenifini()
+        public Mantenifini(string user)
         {
             InitializeComponent();
-            Mostrardes();
+            Mostraremp();
+            usuario = user;
+            LblUsuario.Text = usuario;
         }
-        void Mostrardes()
+        void Mostraremp()
         {
-            DataTable dt = logic.consultaLogicades();
+            DataTable dt = logic.consultaLogicafini();
             dataGridView1.DataSource = dt;
+        }
+        void progres()
+        {
+            for (int i = 0; i <= 100; i++)
+            {
+                ProgressBar1.Value = i;
+                i++;
+            }
+
         }
         private void Mantenifini_Load(object sender, EventArgs e)
         {
+            progres();
+        }
 
+        private void dataGridView1_DoubleClick(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count == 1)
+            {
+                Txt_id.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+                Txt_nombre.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+               Txt_prestaciones.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                Txt_motivo.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                Txt_descrip.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+             
+                progres();
+                ProgressBar1.Style = ProgressBarStyle.Marquee;
+
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un Registro!", "Planilla", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

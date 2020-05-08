@@ -22,11 +22,14 @@ namespace CapaVistaHRM
         string fechana;
         string usuario;
         string emple;
+        string vacio = "";
+        string puesto;
+        string area;
         public Empleados(string user)
         {
             InitializeComponent();
             Mostraremp();
-            user = usuario;
+            usuario = user;
             LblUsuario.Text = usuario;
             DTP_fechana.CustomFormat = "yyyy-MM-dd";
             DTP_fechana.Format = DateTimePickerFormat.Custom;
@@ -79,12 +82,13 @@ namespace CapaVistaHRM
                 DTP_fechana.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
                 Txt_cui.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
                 Txt_correo.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
-                combo1.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
-                combo2.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
+               puesto = dataGridView1.CurrentRow.Cells[7].Value.ToString();
+                area = dataGridView1.CurrentRow.Cells[8].Value.ToString();
                 Txt_nit.Text = dataGridView1.CurrentRow.Cells[9].Value.ToString();
                 Txt_direccion.Text = dataGridView1.CurrentRow.Cells[10].Value.ToString();
                 emple = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-                
+                combo1.texto(puesto);
+                combo2.texto(area);
                 Btn_concep.Enabled = true;
                 Btn_elimi.Enabled = true;
                 Btn_Modi.Enabled = true;
@@ -134,6 +138,8 @@ namespace CapaVistaHRM
             combo1.Enabled = false;
             combo2.Enabled = false;
             Txt_direccion.Enabled = false;
+            combo1.texto(vacio);
+            combo2.texto(vacio);
             progres();
         }
 
@@ -176,6 +182,11 @@ namespace CapaVistaHRM
         private void Empleados_Load(object sender, EventArgs e)
         {
             progres();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

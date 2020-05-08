@@ -11,7 +11,7 @@ namespace CapaControladorHRM
     public class SQLPlanilla
     {
         conexionHRM cn = new conexionHRM();
-     string planilla = "";
+         string planilla = "";
         string IDp ="1";
         /****Planilla***/
         public OdbcDataAdapter llenaTblpla(string tabla)// metodo  que obtinene el contenio de una tabla

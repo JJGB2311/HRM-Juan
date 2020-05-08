@@ -29,7 +29,7 @@ namespace CapaVistaHRM
         string crearDelete()// crea el query de delete
         {
             //Cambiar el estadoPelicula por estado
-            string query = "UPDATE empleados set estado = 2 WHERE id_empleado =" + dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            string query = "UPDATE empleados set estado = 1 WHERE id_empleado =" + dataGridView1.CurrentRow.Cells[0].Value.ToString();
             return query;
         }
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -50,6 +50,18 @@ namespace CapaVistaHRM
             }
 
         }
+        /*Busquedas*/
+        void MostrarCOD(string dato)
+        {
+            DataTable dt = logic.consultaLogicacod2(dato);
+            dataGridView1.DataSource = dt;
+        }
+        void MostrarNOMA(string nom, string ap)
+        {
+            DataTable dt = logic.consultaLogicanoma2(nom, ap);
+            dataGridView1.DataSource = dt;
+        }
+        /**/
         private void Contrataciones_Load(object sender, EventArgs e)
         {
             progres();
@@ -72,7 +84,7 @@ namespace CapaVistaHRM
                 Txt_direccion.Text = dataGridView1.CurrentRow.Cells[10].Value.ToString();
                 Btn_Des.Enabled = true;
                 progres();
-                Btn_Des.Enabled = true;
+                
 
 
             }
@@ -83,6 +95,25 @@ namespace CapaVistaHRM
         }
 
         private void btn_recar_Click(object sender, EventArgs e)
+        {
+            Mostraremp();
+            Txt_nombre.Text = "";
+            Txt_apellido.Text = "";
+            Txt_id.Text = "";
+            Txt_nit.Text = "";
+            Txt_direccion.Text = "";
+            Txt_cui.Text = "";
+            Txt_correo.Text = "";
+            Txt_sexo.Text = "";
+            Txt_area.Text = "";
+            Txt_puesto.Text = "";
+            Txt_nombreb.Text = "";
+            Txt_apellidoB.Text = "";
+            Txt_Codigo.Text = "";
+            progres();
+        }
+
+        private void Btn_Des_Click(object sender, EventArgs e)
         {
             MessageBox.Show("El empleado fue recontratado");
             logic.nuevoQuery(crearDelete());
@@ -98,6 +129,23 @@ namespace CapaVistaHRM
             Txt_area.Text = "";
             Txt_puesto.Text = "";
             progres();
+        }
+
+        private void btn_nomap_Click(object sender, EventArgs e)
+        {
+            MostrarNOMA(Txt_nombreb.Text, Txt_apellidoB.Text);
+            progres();
+            ProgressBar1.Style = ProgressBarStyle.Marquee;
+            Txt_nombreb.Text = "";
+            Txt_apellidoB.Text = "";
+        }
+
+        private void btn_cod_Click(object sender, EventArgs e)
+        {
+            MostrarCOD(Txt_Codigo.Text);
+            Txt_Codigo.Text = "";
+            progres();
+            ProgressBar1.Style = ProgressBarStyle.Marquee;
         }
     }
 }

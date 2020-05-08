@@ -54,7 +54,7 @@
             this.ProgressBar1});
             this.statusStrip.Location = new System.Drawing.Point(0, 640);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(854, 22);
+            this.statusStrip.Size = new System.Drawing.Size(850, 22);
             this.statusStrip.TabIndex = 15;
             this.statusStrip.Text = "StatusStrip";
             // 
@@ -90,7 +90,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(854, 662);
+            this.ClientSize = new System.Drawing.Size(850, 662);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.navegador1);

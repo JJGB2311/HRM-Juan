@@ -92,6 +92,24 @@ namespace CapaModeloHRM
             return table;
         }
         /**/
+        /*solicitud*/
+        public DataTable consultaLogisoli()
+        {
+            OdbcDataAdapter dt = sn.llenaTblsoli();
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+        /**/
+        /*solicitudp*/
+        public DataTable consultaLogisolip()
+        {
+            OdbcDataAdapter dt = sn.llenaTblsolip();
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+        /**/
         public string nuevoEMPCON()//trasporta el query de la capa de disenio a Datos
         {
             return sn.obtenerEMP();
@@ -104,6 +122,15 @@ namespace CapaModeloHRM
             dt.Fill(table);
             return table;
         }
+        /*emple*/
+        public DataTable consultaLogiENP()
+        {
+            OdbcDataAdapter dt = sn.llenaTblen();
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+        /**/
         public DataTable llenaTblemplenom(string emple)
         {
             OdbcDataAdapter dt = sn.llenaTblcon(emple);
@@ -111,6 +138,15 @@ namespace CapaModeloHRM
             dt.Fill(table);
             return table;
         }
+        /*perfil*/
+        public DataTable consultaLogicap()
+        {
+            OdbcDataAdapter dt = sn.llenaTblp();
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+        /**/
         public void nuevoQuery(String query)//trasporta el query de la capa de disenio a Datos
         {
             sn.ejecutarQuery(query);

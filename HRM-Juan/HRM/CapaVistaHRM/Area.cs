@@ -23,7 +23,7 @@ namespace CapaVistaHRM
             navegador1.asignarSalida(this); // Asignar form de salida
             Color nuevoColor = System.Drawing.ColorTranslator.FromHtml("#ffffff"); // Deficion de 
             navegador1.asignarColorFondo(nuevoColor);
-            navegador1.asignarColorFuente(Color.White);
+            navegador1.asignarColorFuente(Color.Blue);
             navegador1.asignarAyuda("1"); // asignar 1 por defecto 
 
             navegador1.asignarTabla("area"); // tabla principal
