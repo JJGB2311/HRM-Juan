@@ -515,6 +515,7 @@
             this.Txt_Codigo.Name = "Txt_Codigo";
             this.Txt_Codigo.Size = new System.Drawing.Size(111, 27);
             this.Txt_Codigo.TabIndex = 29;
+            this.Txt_Codigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Codigo_KeyPress);
             // 
             // Txt_nombreb
             // 

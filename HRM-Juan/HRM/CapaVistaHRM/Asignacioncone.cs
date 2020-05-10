@@ -26,6 +26,7 @@ namespace CapaVistaHRM
             InitializeComponent();
             usuario = user;
             LblUsuario.Text = usuario;
+            lbl_ID.Text=logic.nuevoEMPCON();
             dateTimePicker2.Format = DateTimePickerFormat.Custom;
             dateTimePicker2.CustomFormat = "yyyy-MM-dd";
             dateTimePicker3.Format = DateTimePickerFormat.Custom;
@@ -40,16 +41,14 @@ namespace CapaVistaHRM
         }
         string crearInsertcon()// crea el query de insert
         {
-            string query = "INSERT INTO `conceptos` (`id_concepto`, `id_empleado`, `fecha_inicio`, `fecha_fin`, `id_tipo`, `monto`, `debe_Haber`, `estado`) VALUES (NULL, '" + Txt_emplecon.Text + "', '" + dateTimePicker2.Text + "', '" + dateTimePicker3.Text + "', '" + combo3.obtener() + "', '" + Txt_montocon.Text + "', '" + debehaber + "', '1');";
+            string query = "INSERT INTO `conceptos` (`id_concepto`, `id_empleado`, `fecha_inicio`, `fecha_fin`, `id_tipo`, `monto`, `debe_Haber`, `estado`) VALUES (NULL, '" + Txt_emplecon.Text + "', '" + dateTimePicker2.Text + "', '" + dateTimePicker3.Text + "', '" + combo3.ObtenerIndif() + "', '" + Txt_montocon.Text + "', '" + debehaber + "', '1');";
             return query;
-
         }
         private void Asignacioncone_Load(object sender, EventArgs e)
         {
             if (radioButton2.Checked == true)
             {
                 debehaber = "1";
-
             }
             else
             {
@@ -81,10 +80,8 @@ namespace CapaVistaHRM
             {
                 dateTimePicker2.Enabled = true;
                 dateTimePicker3.Enabled = true;
-
                 fechaini = dateTimePicker2.Text;
                 fechafin = dateTimePicker3.Text;
-
             }
             else if (checkBox1.Checked == false)
             {
@@ -92,7 +89,6 @@ namespace CapaVistaHRM
                 fechafin = "1111-11-11";
                 dateTimePicker2.Enabled = false;
                 dateTimePicker3.Enabled = false;
-
             }
             else
             {
@@ -109,8 +105,7 @@ namespace CapaVistaHRM
             Txt_montocon.Text = "";
             radioButton2.Checked = true;
             checkBox1.Checked = false;
-            combo3.texto(vacio);
-            
+            combo3.texto(vacio);           
         }
 
         private void button1_Click(object sender, EventArgs e)

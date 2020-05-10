@@ -197,11 +197,13 @@
             this.Cbo_sexo.Size = new System.Drawing.Size(359, 29);
             this.Cbo_sexo.TabIndex = 30;
             this.Cbo_sexo.Text = "--Seleccione--";
+            this.Cbo_sexo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Cbo_sexo_KeyPress);
             // 
             // Txt_direccion
             // 
             this.Txt_direccion.Enabled = false;
             this.Txt_direccion.Location = new System.Drawing.Point(640, 202);
+            this.Txt_direccion.MaxLength = 45;
             this.Txt_direccion.Name = "Txt_direccion";
             this.Txt_direccion.Size = new System.Drawing.Size(359, 27);
             this.Txt_direccion.TabIndex = 29;
@@ -210,6 +212,7 @@
             // 
             this.Txt_nit.Enabled = false;
             this.Txt_nit.Location = new System.Drawing.Point(118, 245);
+            this.Txt_nit.MaxLength = 13;
             this.Txt_nit.Name = "Txt_nit";
             this.Txt_nit.Size = new System.Drawing.Size(359, 27);
             this.Txt_nit.TabIndex = 28;
@@ -218,6 +221,7 @@
             // 
             this.Txt_cui.Enabled = false;
             this.Txt_cui.Location = new System.Drawing.Point(118, 202);
+            this.Txt_cui.MaxLength = 13;
             this.Txt_cui.Name = "Txt_cui";
             this.Txt_cui.Size = new System.Drawing.Size(359, 27);
             this.Txt_cui.TabIndex = 27;
@@ -279,6 +283,7 @@
             // 
             this.Txt_correo.Enabled = false;
             this.Txt_correo.Location = new System.Drawing.Point(640, 72);
+            this.Txt_correo.MaxLength = 40;
             this.Txt_correo.Name = "Txt_correo";
             this.Txt_correo.Size = new System.Drawing.Size(359, 27);
             this.Txt_correo.TabIndex = 13;
@@ -314,6 +319,7 @@
             // 
             this.Txt_apellido.Enabled = false;
             this.Txt_apellido.Location = new System.Drawing.Point(118, 114);
+            this.Txt_apellido.MaxLength = 40;
             this.Txt_apellido.Name = "Txt_apellido";
             this.Txt_apellido.Size = new System.Drawing.Size(359, 27);
             this.Txt_apellido.TabIndex = 7;
@@ -331,6 +337,7 @@
             // 
             this.Txt_nombre.Enabled = false;
             this.Txt_nombre.Location = new System.Drawing.Point(118, 66);
+            this.Txt_nombre.MaxLength = 40;
             this.Txt_nombre.Name = "Txt_nombre";
             this.Txt_nombre.Size = new System.Drawing.Size(359, 27);
             this.Txt_nombre.TabIndex = 5;

@@ -33,7 +33,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.Txt_de = new System.Windows.Forms.TextBox();
             this.Txt_soli = new System.Windows.Forms.TextBox();
             this.combo1 = new CapaVista.Combo();
             this.Cbo_tipo = new System.Windows.Forms.ComboBox();
@@ -56,6 +55,7 @@
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.btn_borrar = new System.Windows.Forms.Button();
             this.btn_modificar = new System.Windows.Forms.Button();
+            this.TEX_DETA = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -68,9 +68,9 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dataGridView1);
-            this.groupBox2.Location = new System.Drawing.Point(12, 287);
+            this.groupBox2.Location = new System.Drawing.Point(12, 274);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(725, 188);
+            this.groupBox2.Size = new System.Drawing.Size(725, 201);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Empleos";
@@ -86,15 +86,15 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(660, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(660, 169);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.TEX_DETA);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.Txt_de);
             this.groupBox1.Controls.Add(this.Txt_soli);
             this.groupBox1.Controls.Add(this.combo1);
             this.groupBox1.Controls.Add(this.Cbo_tipo);
@@ -114,21 +114,15 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.Enabled = false;
             this.dateTimePicker1.Location = new System.Drawing.Point(289, 137);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(287, 27);
             this.dateTimePicker1.TabIndex = 32;
             // 
-            // Txt_de
-            // 
-            this.Txt_de.Location = new System.Drawing.Point(308, 47);
-            this.Txt_de.Multiline = true;
-            this.Txt_de.Name = "Txt_de";
-            this.Txt_de.Size = new System.Drawing.Size(268, 57);
-            this.Txt_de.TabIndex = 31;
-            // 
             // Txt_soli
             // 
+            this.Txt_soli.Enabled = false;
             this.Txt_soli.Location = new System.Drawing.Point(82, 65);
             this.Txt_soli.Name = "Txt_soli";
             this.Txt_soli.Size = new System.Drawing.Size(185, 27);
@@ -136,6 +130,7 @@
             // 
             // combo1
             // 
+            this.combo1.Enabled = false;
             this.combo1.Location = new System.Drawing.Point(82, 98);
             this.combo1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.combo1.Name = "combo1";
@@ -144,6 +139,7 @@
             // 
             // Cbo_tipo
             // 
+            this.Cbo_tipo.Enabled = false;
             this.Cbo_tipo.FormattingEnabled = true;
             this.Cbo_tipo.Location = new System.Drawing.Point(82, 137);
             this.Cbo_tipo.Name = "Cbo_tipo";
@@ -152,6 +148,7 @@
             // 
             // txt_no
             // 
+            this.txt_no.Enabled = false;
             this.txt_no.Location = new System.Drawing.Point(82, 35);
             this.txt_no.Name = "txt_no";
             this.txt_no.Size = new System.Drawing.Size(185, 27);
@@ -305,27 +302,40 @@
             // 
             // btn_borrar
             // 
+            this.btn_borrar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btn_borrar.Enabled = false;
-            this.btn_borrar.Location = new System.Drawing.Point(610, 89);
+            this.btn_borrar.ForeColor = System.Drawing.Color.White;
+            this.btn_borrar.Location = new System.Drawing.Point(600, 95);
             this.btn_borrar.Name = "btn_borrar";
-            this.btn_borrar.Size = new System.Drawing.Size(137, 57);
+            this.btn_borrar.Size = new System.Drawing.Size(137, 81);
             this.btn_borrar.TabIndex = 26;
             this.btn_borrar.Text = "Borrar";
-            this.btn_borrar.UseVisualStyleBackColor = true;
+            this.btn_borrar.UseVisualStyleBackColor = false;
+            this.btn_borrar.Click += new System.EventHandler(this.btn_borrar_Click);
             // 
             // btn_modificar
             // 
             this.btn_modificar.Enabled = false;
-            this.btn_modificar.Location = new System.Drawing.Point(610, 155);
+            this.btn_modificar.Location = new System.Drawing.Point(600, 182);
             this.btn_modificar.Name = "btn_modificar";
-            this.btn_modificar.Size = new System.Drawing.Size(137, 57);
+            this.btn_modificar.Size = new System.Drawing.Size(137, 78);
             this.btn_modificar.TabIndex = 27;
             this.btn_modificar.Text = "Modificar";
             this.btn_modificar.UseVisualStyleBackColor = true;
+            this.btn_modificar.Click += new System.EventHandler(this.btn_modificar_Click);
+            // 
+            // TEX_DETA
+            // 
+            this.TEX_DETA.Enabled = false;
+            this.TEX_DETA.Location = new System.Drawing.Point(289, 47);
+            this.TEX_DETA.Name = "TEX_DETA";
+            this.TEX_DETA.Size = new System.Drawing.Size(259, 27);
+            this.TEX_DETA.TabIndex = 33;
             // 
             // MantenimientosEmpleos
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(749, 500);
             this.Controls.Add(this.btn_modificar);
             this.Controls.Add(this.btn_borrar);
@@ -360,7 +370,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox Txt_de;
         private System.Windows.Forms.TextBox Txt_soli;
         private CapaVista.Combo combo1;
         private System.Windows.Forms.ComboBox Cbo_tipo;
@@ -383,5 +392,6 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.Button btn_borrar;
         private System.Windows.Forms.Button btn_modificar;
+        private System.Windows.Forms.TextBox TEX_DETA;
     }
 }
