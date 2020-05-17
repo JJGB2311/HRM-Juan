@@ -36,8 +36,9 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.btn_fin = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.Txt_prestaciones = new System.Windows.Forms.TextBox();
+            this.btn_fin = new System.Windows.Forms.Button();
             this.Txt_descrip = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -53,7 +54,6 @@
             this.ProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -122,10 +122,11 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 25);
+            this.dataGridView1.Location = new System.Drawing.Point(67, 26);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(684, 234);
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(563, 234);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
@@ -150,9 +151,34 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Datos";
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.Enabled = false;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Blue;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Location = new System.Drawing.Point(563, 134);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(140, 66);
+            this.button3.TabIndex = 33;
+            this.button3.Text = "Eliminar";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // Txt_prestaciones
+            // 
+            this.Txt_prestaciones.Location = new System.Drawing.Point(113, 100);
+            this.Txt_prestaciones.Name = "Txt_prestaciones";
+            this.Txt_prestaciones.Size = new System.Drawing.Size(251, 27);
+            this.Txt_prestaciones.TabIndex = 28;
+            // 
             // btn_fin
             // 
             this.btn_fin.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_fin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_fin.BackgroundImage")));
             this.btn_fin.Enabled = false;
             this.btn_fin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btn_fin.FlatAppearance.CheckedBackColor = System.Drawing.Color.Blue;
@@ -165,13 +191,6 @@
             this.btn_fin.TabIndex = 30;
             this.btn_fin.Text = "Modificar";
             this.btn_fin.UseVisualStyleBackColor = false;
-            // 
-            // Txt_prestaciones
-            // 
-            this.Txt_prestaciones.Location = new System.Drawing.Point(113, 100);
-            this.Txt_prestaciones.Name = "Txt_prestaciones";
-            this.Txt_prestaciones.Size = new System.Drawing.Size(251, 27);
-            this.Txt_prestaciones.TabIndex = 28;
             // 
             // Txt_descrip
             // 
@@ -298,22 +317,6 @@
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(16, 17);
             this.toolStripStatusLabel2.Text = "...";
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button3.Enabled = false;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Blue;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(563, 134);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(140, 66);
-            this.button3.TabIndex = 33;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
             // Mantenifini
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -327,7 +330,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Mantenifini";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Mantenifini";
+            this.Text = "3015 - Finiquitos";
             this.Load += new System.EventHandler(this.Mantenifini_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

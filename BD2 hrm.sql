@@ -1,3 +1,22 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.1
+-- https://www.phpmyadmin.net/
+--
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 10-05-2020 a las 06:49:21
+-- Versión del servidor: 10.4.11-MariaDB
+-- Versión de PHP: 7.4.3
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Base de datos: `hrm`
@@ -129,8 +148,8 @@ CREATE TABLE `comisiones` (
 --
 
 INSERT INTO `comisiones` (`id_comisiones`, `id_tipo_comisiones`, `id_empleado`, `id_factura`, `estado`) VALUES
-(1, 1, 1, 1, 1),
-(2, 1, 1, 2, 1);
+(1, 1, 2, 1, 1),
+(2, 1, 2, 2, 1);
 
 -- --------------------------------------------------------
 
@@ -164,7 +183,7 @@ INSERT INTO `conceptos` (`id_concepto`, `id_empleado`, `fecha_inicio`, `fecha_fi
 (9, 6, '2020-04-22', '2020-04-22', 1, 300, 1, 1),
 (10, 6, '1111-11-11', '1111-11-11', 1, 300, 1, 1),
 (11, 18, '1111-11-11', '1111-11-11', 1, 300, 1, 1),
-(12, 9, '1111-11-11', '1111-11-11', 1, 300, 1, 1),
+(12, 9, '1111-11-11', '1111-11-11', 1, 300, 1, 0),
 (13, 17, '1111-11-11', '1111-11-11', 1, 500, 1, 1),
 (14, 17, '1111-11-11', '1111-11-11', 2, 500, 0, 1),
 (15, 19, '1111-11-11', '1111-11-11', 1, 650, 1, 1),
@@ -179,7 +198,26 @@ INSERT INTO `conceptos` (`id_concepto`, `id_empleado`, `fecha_inicio`, `fecha_fi
 (25, 22, '2020-05-02', '2020-05-02', 1, 300, 1, 1),
 (26, 2, '1111-11-11', '1111-11-11', 2, 300, 0, 1),
 (27, 23, '2020-05-02', '2020-05-03', 1, 200, 1, 1),
-(28, 23, '2020-05-02', '2020-05-03', 2, 200, 0, 1);
+(28, 23, '2020-05-02', '2020-05-03', 2, 200, 0, 1),
+(29, 27, '2020-05-02', '2020-05-05', 1, 300, 1, 1),
+(30, 27, '2020-05-02', '2020-05-05', 2, 200, 0, 1),
+(31, 31, '1111-11-11', '1111-11-11', 1, 0, 1, 1),
+(32, 31, '1111-11-11', '1111-11-11', 2, 200, 0, 1),
+(33, 32, '2020-05-01', '2020-05-30', 1, 500, 1, 1),
+(34, 32, '2020-05-01', '2020-05-30', 3, 300, 1, 1),
+(35, 33, '2020-05-02', '2020-05-09', 1, 500, 1, 1),
+(37, 33, '2020-05-02', '2020-05-09', 2, 200, 1, 1),
+(38, 34, '2020-05-02', '2020-05-09', 1, 300, 1, 0),
+(39, 34, '2020-05-02', '2020-05-09', 3, 200, 1, 1),
+(40, 35, '2020-05-02', '2020-05-09', 2, 300, 0, 1),
+(41, 36, '2020-05-02', '2020-05-09', 1, 300, 1, 1),
+(42, 36, '1111-11-11', '1111-11-11', 2, 200, 0, 0),
+(47, 35, '1111-11-11', '1111-11-11', 2, 200, 0, 1),
+(48, 35, '2020-05-09', '2020-05-09', 3, 500, 1, 1),
+(49, 36, '1111-11-11', '1111-11-11', 1, 500, 1, 0),
+(50, 36, '1111-11-11', '1111-11-11', 4, 500, 1, 1),
+(51, 36, '1111-11-11', '1111-11-11', 2, 700, 1, 1),
+(52, 36, '2020-05-09', '2020-05-09', 2, 200, 0, 1);
 
 -- --------------------------------------------------------
 
@@ -241,6 +279,8 @@ INSERT INTO `detalle_planilla` (`id_detalle`, `id_planilla`, `id_empleado`, `sue
 (1, 19, 1, 3000, 3025, 3002, 170, 5832, 1),
 (1, 20, 1, 3000, 3025, 3002, 170, 5832, 1),
 (1, 21, 4, 3000, 3000, 3000, 0, 6000, 1),
+(1, 22, 7, 3000, 3000, 3000, 0, 6000, 1),
+(1, 23, 7, 3000, 3000, 3000, 0, 6000, 1),
 (2, 1, 2, 3000, 51515, 555, 5255, 123, 1),
 (2, 2, 2, 5000, 51515, 555, 5255, 123, 1),
 (2, 3, 2, 3000, 51515, 555, 5255, 123, 1),
@@ -262,6 +302,8 @@ INSERT INTO `detalle_planilla` (`id_detalle`, `id_planilla`, `id_empleado`, `sue
 (2, 19, 2, 5000, 5000, 5300, 0, 10600, 1),
 (2, 20, 2, 5000, 5000, 5300, 300, 10300, 1),
 (2, 21, 5, 3000, 3000, 3000, 0, 6000, 1),
+(2, 22, 8, 3000, 3000, 3000, 0, 6000, 1),
+(2, 23, 8, 3000, 3000, 3000, 0, 6000, 1),
 (3, 13, 4, 3000, 3000, 3000, 0, 6000, 1),
 (3, 14, 4, 3000, 3000, 3000, 0, 6000, 1),
 (3, 15, 4, 3000, 3000, 3000, 0, 6000, 1),
@@ -271,6 +313,8 @@ INSERT INTO `detalle_planilla` (`id_detalle`, `id_planilla`, `id_empleado`, `sue
 (3, 19, 4, 3000, 3000, 3000, 0, 6000, 1),
 (3, 20, 4, 3000, 3000, 3000, 0, 6000, 1),
 (3, 21, 6, 3000, 3000, 4800, 0, 9600, 1),
+(3, 22, 9, 3000, 3000, 3300, 0, 6600, 1),
+(3, 23, 9, 3000, 3000, 3300, 0, 6600, 1),
 (4, 13, 5, 3000, 3000, 3000, 0, 6000, 1),
 (4, 14, 5, 3000, 3000, 3000, 0, 6000, 1),
 (4, 15, 5, 3000, 3000, 3000, 0, 6000, 1),
@@ -280,6 +324,8 @@ INSERT INTO `detalle_planilla` (`id_detalle`, `id_planilla`, `id_empleado`, `sue
 (4, 19, 5, 3000, 3000, 3000, 0, 6000, 1),
 (4, 20, 5, 3000, 3000, 3000, 0, 6000, 1),
 (4, 21, 7, 3000, 3000, 3000, 0, 6000, 1),
+(4, 22, 10, 3000, 3000, 3000, 0, 6000, 1),
+(4, 23, 10, 3000, 3000, 3000, 0, 6000, 1),
 (5, 13, 6, 3000, 3000, 5100, 0, 10200, 1),
 (5, 14, 6, 3000, 3000, 3000, 0, 6000, 1),
 (5, 15, 6, 3000, 3000, 5100, 0, 10200, 1),
@@ -289,6 +335,8 @@ INSERT INTO `detalle_planilla` (`id_detalle`, `id_planilla`, `id_empleado`, `sue
 (5, 19, 6, 3000, 3000, 4800, 0, 9600, 1),
 (5, 20, 6, 3000, 3000, 4800, 0, 9600, 1),
 (5, 21, 8, 3000, 3000, 3000, 0, 6000, 1),
+(5, 22, 11, 3000, 3000, 3000, 0, 6000, 1),
+(5, 23, 11, 3000, 3000, 3000, 0, 6000, 1),
 (6, 13, 7, 3000, 3000, 3000, 0, 6000, 1),
 (6, 15, 7, 3000, 3000, 3000, 0, 6000, 1),
 (6, 16, 7, 3000, 3000, 3000, 0, 6000, 1),
@@ -297,6 +345,8 @@ INSERT INTO `detalle_planilla` (`id_detalle`, `id_planilla`, `id_empleado`, `sue
 (6, 19, 7, 3000, 3000, 3000, 0, 6000, 1),
 (6, 20, 7, 3000, 3000, 3000, 0, 6000, 1),
 (6, 21, 9, 3000, 3000, 3300, 0, 6600, 1),
+(6, 22, 12, 3000, 3000, 3000, 0, 6000, 1),
+(6, 23, 12, 3000, 3000, 3000, 0, 6000, 1),
 (7, 13, 8, 3000, 3000, 3000, 0, 6000, 1),
 (7, 15, 8, 3000, 3000, 3000, 0, 6000, 1),
 (7, 16, 8, 3000, 3000, 3000, 0, 6000, 1),
@@ -305,6 +355,8 @@ INSERT INTO `detalle_planilla` (`id_detalle`, `id_planilla`, `id_empleado`, `sue
 (7, 19, 8, 3000, 3000, 3000, 0, 6000, 1),
 (7, 20, 8, 3000, 3000, 3000, 0, 6000, 1),
 (7, 21, 10, 3000, 3000, 3000, 0, 6000, 1),
+(7, 22, 13, 5000, 5000, 5000, 0, 10000, 1),
+(7, 23, 13, 5000, 5000, 5000, 0, 10000, 1),
 (8, 13, 9, 3000, 3000, 3300, 0, 6600, 1),
 (8, 15, 9, 3000, 3000, 3300, 0, 6600, 1),
 (8, 16, 9, 3000, 3000, 3300, 0, 6600, 1),
@@ -313,6 +365,8 @@ INSERT INTO `detalle_planilla` (`id_detalle`, `id_planilla`, `id_empleado`, `sue
 (8, 19, 9, 3000, 3000, 3300, 0, 6600, 1),
 (8, 20, 9, 3000, 3000, 3300, 0, 6600, 1),
 (8, 21, 11, 3000, 3000, 3000, 0, 6000, 1),
+(8, 22, 14, 3000, 3000, 3000, 0, 6000, 1),
+(8, 23, 14, 3000, 3000, 3000, 0, 6000, 1),
 (9, 13, 10, 3000, 3000, 3000, 0, 6000, 1),
 (9, 15, 10, 3000, 3000, 3000, 0, 6000, 1),
 (9, 16, 10, 3000, 3000, 3000, 0, 6000, 1),
@@ -321,6 +375,8 @@ INSERT INTO `detalle_planilla` (`id_detalle`, `id_planilla`, `id_empleado`, `sue
 (9, 19, 10, 3000, 3000, 3000, 0, 6000, 1),
 (9, 20, 10, 3000, 3000, 3000, 0, 6000, 1),
 (9, 21, 12, 3000, 3000, 3000, 0, 6000, 1),
+(9, 22, 15, 3000, 3000, 3000, 0, 6000, 1),
+(9, 23, 15, 3000, 3000, 3000, 0, 6000, 1),
 (10, 13, 11, 3000, 3000, 3000, 0, 6000, 1),
 (10, 15, 11, 3000, 3000, 3000, 0, 6000, 1),
 (10, 16, 11, 3000, 3000, 3000, 0, 6000, 1),
@@ -329,6 +385,8 @@ INSERT INTO `detalle_planilla` (`id_detalle`, `id_planilla`, `id_empleado`, `sue
 (10, 19, 11, 3000, 3000, 3000, 0, 6000, 1),
 (10, 20, 11, 3000, 3000, 3000, 0, 6000, 1),
 (10, 21, 13, 5000, 5000, 5000, 0, 10000, 1),
+(10, 22, 24, 3000, 3000, 3000, 0, 6000, 1),
+(10, 23, 24, 3000, 3000, 3000, 0, 6000, 1),
 (11, 13, 12, 3000, 3000, 3000, 0, 6000, 1),
 (11, 15, 12, 3000, 3000, 3000, 0, 6000, 1),
 (11, 16, 12, 3000, 3000, 3000, 0, 6000, 1),
@@ -337,6 +395,8 @@ INSERT INTO `detalle_planilla` (`id_detalle`, `id_planilla`, `id_empleado`, `sue
 (11, 19, 12, 3000, 3000, 3000, 0, 6000, 1),
 (11, 20, 12, 3000, 3000, 3000, 0, 6000, 1),
 (11, 21, 14, 3000, 3000, 3000, 0, 6000, 1),
+(11, 22, 25, 3000, 3000, 3000, 0, 6000, 1),
+(11, 23, 25, 3000, 3000, 3000, 0, 6000, 1),
 (12, 13, 13, 5000, 5000, 5000, 0, 10000, 1),
 (12, 15, 13, 5000, 5000, 5000, 0, 10000, 1),
 (12, 16, 13, 5000, 5000, 5000, 0, 10000, 1),
@@ -345,6 +405,8 @@ INSERT INTO `detalle_planilla` (`id_detalle`, `id_planilla`, `id_empleado`, `sue
 (12, 19, 13, 5000, 5000, 5000, 0, 10000, 1),
 (12, 20, 13, 5000, 5000, 5000, 0, 10000, 1),
 (12, 21, 15, 3000, 3000, 3000, 0, 6000, 1),
+(12, 22, 26, 3000, 3000, 3000, 0, 6000, 1),
+(12, 23, 26, 3000, 3000, 3000, 0, 6000, 1),
 (13, 13, 14, 3000, 3000, 3000, 0, 6000, 1),
 (13, 15, 14, 3000, 3000, 3000, 0, 6000, 1),
 (13, 16, 14, 3000, 3000, 3000, 0, 6000, 1),
@@ -352,6 +414,8 @@ INSERT INTO `detalle_planilla` (`id_detalle`, `id_planilla`, `id_empleado`, `sue
 (13, 18, 14, 3000, 3000, 3000, 0, 6000, 1),
 (13, 19, 14, 3000, 3000, 3000, 0, 6000, 1),
 (13, 20, 14, 3000, 3000, 3000, 0, 6000, 1),
+(13, 22, 27, 3000, 3000, 3300, 200, 6400, 1),
+(13, 23, 27, 3000, 3000, 3300, 200, 6400, 1),
 (14, 13, 15, 3000, 3000, 3000, 0, 6000, 1),
 (14, 15, 15, 3000, 3000, 3000, 0, 6000, 1),
 (14, 16, 15, 3000, 3000, 3000, 0, 6000, 1),
@@ -359,6 +423,8 @@ INSERT INTO `detalle_planilla` (`id_detalle`, `id_planilla`, `id_empleado`, `sue
 (14, 18, 15, 3000, 3000, 3000, 0, 6000, 1),
 (14, 19, 15, 3000, 3000, 3000, 0, 6000, 1),
 (14, 20, 15, 3000, 3000, 3000, 0, 6000, 1),
+(14, 22, 28, 3000, 3000, 3000, 0, 6000, 1),
+(14, 23, 28, 3000, 3000, 3000, 0, 6000, 1),
 (15, 13, 16, 3000, 3000, 3000, 0, 6000, 1),
 (15, 15, 16, 3000, 3000, 3000, 0, 6000, 1),
 (15, 16, 16, 3000, 3000, 3000, 0, 6000, 1),
@@ -366,6 +432,8 @@ INSERT INTO `detalle_planilla` (`id_detalle`, `id_planilla`, `id_empleado`, `sue
 (15, 18, 16, 3000, 3000, 3000, 0, 6000, 1),
 (15, 19, 16, 3000, 3000, 3000, 0, 6000, 1),
 (15, 20, 16, 3000, 3000, 3000, 0, 6000, 1),
+(15, 22, 29, 3000, 3000, 3000, 0, 6000, 1),
+(15, 23, 29, 3000, 3000, 3000, 0, 6000, 1),
 (16, 13, 17, 3000, 3000, 3500, 0, 7000, 1),
 (16, 15, 17, 3000, 3000, 3500, 500, 6500, 1),
 (16, 16, 17, 3000, 3000, 3500, 500, 6500, 1),
@@ -373,6 +441,8 @@ INSERT INTO `detalle_planilla` (`id_detalle`, `id_planilla`, `id_empleado`, `sue
 (16, 18, 17, 3000, 3000, 3500, 500, 6500, 1),
 (16, 19, 17, 3000, 3000, 3500, 500, 6500, 1),
 (16, 20, 17, 3000, 3000, 3500, 500, 6500, 1),
+(16, 22, 30, 3000, 3000, 3000, 0, 6000, 1),
+(16, 23, 30, 3000, 3000, 3000, 0, 6000, 1),
 (17, 13, 18, 3000, 3000, 3300, 0, 6600, 1),
 (17, 15, 18, 3000, 3000, 3300, 0, 6600, 1),
 (17, 16, 18, 3000, 3000, 3300, 0, 6600, 1),
@@ -380,21 +450,28 @@ INSERT INTO `detalle_planilla` (`id_detalle`, `id_planilla`, `id_empleado`, `sue
 (17, 18, 18, 3000, 3000, 3300, 0, 6600, 1),
 (17, 19, 18, 3000, 3000, 3300, 0, 6600, 1),
 (17, 20, 18, 3000, 3000, 3300, 0, 6600, 1),
+(17, 22, 31, 3000, 3000, 3000, 200, 5800, 1),
+(17, 23, 31, 3000, 3000, 3000, 200, 5800, 1),
 (18, 15, 19, 5000, 5000, 6060, 700, 11420, 1),
 (18, 16, 19, 5000, 5000, 6060, 700, 11420, 1),
 (18, 17, 19, 5000, 5000, 6060, 700, 11420, 1),
 (18, 18, 19, 5000, 5000, 6060, 700, 11420, 1),
 (18, 19, 19, 5000, 5000, 6060, 700, 11420, 1),
 (18, 20, 19, 5000, 5000, 6060, 700, 11420, 1),
+(18, 23, 32, 3000, 3000, 3800, 0, 7600, 1),
 (19, 16, 20, 3000, 3000, 4500, 0, 9000, 1),
 (19, 17, 20, 3000, 3000, 4500, 0, 9000, 1),
 (19, 18, 20, 3000, 3000, 4500, 0, 9000, 1),
 (19, 19, 20, 3000, 3000, 4500, 0, 9000, 1),
 (19, 20, 20, 3000, 3000, 4500, 0, 9000, 1),
+(19, 23, 33, 3000, 3000, 3700, 0, 7400, 1),
 (20, 19, 21, 3000, 3000, 3000, 0, 6000, 1),
 (20, 20, 21, 3000, 3000, 3000, 0, 6000, 1),
+(20, 23, 34, 3000, 3000, 3500, 0, 7000, 1),
 (21, 19, 22, 3000, 3000, 4300, 200, 8400, 1),
-(21, 20, 22, 3000, 3000, 4300, 200, 8400, 1);
+(21, 20, 22, 3000, 3000, 4300, 200, 8400, 1),
+(21, 23, 35, 3000, 3000, 3000, 300, 5700, 1),
+(22, 23, 36, 3000, 3000, 3300, 0, 6600, 1);
 
 -- --------------------------------------------------------
 
@@ -443,7 +520,7 @@ INSERT INTO `empleados` (`id_empleado`, `nombre`, `apellido`, `sexo`, `fecha_de_
 (4, 'Victor ', 'Gonzales', 'Masculino', '2020-04-15', '44522222855', 'juan@hotmail.com', 1, 1, '59239255-3', 'Guatemala', 2),
 (5, 'saul', 'ramirez', 'Masculino', '2020-04-15', '445282581', 'juan@hotmail.com', 1, 1, '85342198', 'Guatemala', 2),
 (6, 'paco', 'paco', 'Masculino', '2020-04-15', '8928492', 'paco@hotmail.com', 1, 1, '5632259-9', 'Guatemala', 2),
-(7, '1', '1', 'Masculino', '2020-04-15', '1', '1', 1, 1, '1', '1', 1),
+(7, 'paco', '1', 'Masculino', '2020-04-15', '1', '1', 1, 1, '1', '1', 0),
 (8, '1', '1', 'Femenino', '2020-04-15', '1', '1', 1, 1, '1', '1', 1),
 (9, '2', '2', 'Femenino', '2020-04-23', '2', '2', 1, 1, '2', '2', 1),
 (10, '2', '2', 'Femenino', '2020-04-22', '2', '2', 1, 1, '4', '4', 1),
@@ -459,7 +536,20 @@ INSERT INTO `empleados` (`id_empleado`, `nombre`, `apellido`, `sexo`, `fecha_de_
 (20, 'Gustavo', 'Perez', 'Masculino', '2020-04-24', '5599669', 'gus657@gmail.com', 1, 2, '55266-5', 'zona 6', 0),
 (21, 'Hermnesto', 'Ramirez', 'Masculino', '1997-11-23', '333233134134', 'juan@hotmail', 1, 2, '5588966-8', 'Ciudad', 0),
 (22, 'pedro', 'Ramirez', 'Masculino', '2020-05-13', '5544455', 'ramirez@gmail.com', 1, 3, '5525255-6', 'Guatemala', 0),
-(23, 'ramiro', 'estrada', 'Masculino', '2020-05-03', '5798320', 'ramiro@hotmail.com', 1, 1, '564217-5', 'Guatemala', 0);
+(23, 'ramiro', 'estrada', 'Masculino', '2020-05-03', '5798320', 'ramiro@hotmail.com', 1, 1, '564217-5', 'Guatemala', 0),
+(24, 'edgar', 'edgar', 'Masculino', '2020-05-01', '2566844', '40222', 1, 2, '5662', 'ciudad', 1),
+(25, 'Edgar', 'choc', 'Masculino', '2020-05-15', '522582252', 'cas01@gmail.com', 1, 2, '6161654-4', 'zona 21', 1),
+(26, 'paco', 'paco', 'Masculino', '2020-05-06', '23447', 'paco@hotmail.com', 1, 3, '547233', 'Guatemala', 1),
+(27, 'tono', 'tono', 'Masculino', '2020-05-04', '56644', 'tono@hotmail.com', 1, 1, '', '', 1),
+(28, 'martin', 'perez', 'Masculino', '2020-05-07', '2223232', 'j@hotmial.com', 1, 3, '56789552', 'Guatemala', 1),
+(29, 'paco', 'Gonzales', 'Masculino', '2020-05-06', '58977891', 'juan@hotmailcom', 1, 2, '5654488-4', 'Guatemala', 1),
+(30, 'tony', 'Gomez', 'Masculino', '2020-05-06', '536566444', 'tony@hotmial.com', 2, 2, '5665244-1', 'Guatemala', 1),
+(31, 'pati', 'goazales', 'Femenino', '2020-05-06', '56999785', 'pati@gamil.com', 2, 1, '56677888', 'Gautemala', 1),
+(32, 'Juan', 'Jose ', 'Masculino', '2020-05-09', '1234567891', 'juan@hotmail.com', 2, 2, '452225-5', 'Guatemala', 1),
+(33, 'Juan ', 'Perez', 'Masculino', '2020-05-11', '4566256646444477', 'juan@hotmail.com', 1, 1, '455666', 'guatemala', 1),
+(34, 'ruben', 'casasola', 'Masculino', '2020-05-01', '1234567891234', 'juan@hotmail.com', 1, 2, '456778-5', 'Guatemala', 1),
+(35, 'juan', 'Gamez', 'Femenino', '2020-05-08', '2233333333333', 'juan@hotmai.com', 1, 3, '55555555555-5', 'Guatemala', 1),
+(36, 'juan', 'Gamez', 'Masculino', '2020-04-15', '5555555555555', 'juan@hotmail.com', 1, 2, '77777777777-5', 'Guatemala', 1);
 
 -- --------------------------------------------------------
 
@@ -470,12 +560,21 @@ INSERT INTO `empleados` (`id_empleado`, `nombre`, `apellido`, `sexo`, `fecha_de_
 CREATE TABLE `empleos` (
   `id_empleos` int(11) NOT NULL,
   `id_solicitud` int(11) DEFAULT NULL,
-  `sueldo` varchar(45) DEFAULT NULL,
-  `detalles` varchar(100) DEFAULT NULL,
+  `id_sueldo` int(11) DEFAULT NULL,
+  `detalles` varchar(80) DEFAULT NULL,
   `fecha` date DEFAULT NULL,
   `tipo` varchar(45) DEFAULT NULL,
   `estado` tinyint(1) DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `empleos`
+--
+
+INSERT INTO `empleos` (`id_empleos`, `id_solicitud`, `id_sueldo`, `detalles`, `fecha`, `tipo`, `estado`) VALUES
+(1, 1, 1, 'Se nececita personal con urgencias', '2020-05-15', 'Temporala', 0),
+(2, 1, 2, 'Se nececita empleado ', '2020-05-07', 'Temporal', 1),
+(3, 1, 1, 'hola', '2020-05-01', 'Indefinido', 1);
 
 -- --------------------------------------------------------
 
@@ -532,8 +631,10 @@ INSERT INTO `horas` (`id_hora`, `cantidad`, `costo`, `fecha`, `id_empleado`, `es
 
 CREATE TABLE `perfiles` (
   `id_perfil` int(11) NOT NULL,
-  `nombre` varchar(45) DEFAULT NULL,
-  `descripcion` varchar(45) DEFAULT NULL,
+  `nombre` varchar(50) DEFAULT NULL,
+  `educacion` varchar(50) NOT NULL,
+  `nivel` varchar(50) NOT NULL,
+  `descripcion` varchar(350) DEFAULT NULL,
   `estado` tinyint(1) DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -541,8 +642,11 @@ CREATE TABLE `perfiles` (
 -- Volcado de datos para la tabla `perfiles`
 --
 
-INSERT INTO `perfiles` (`id_perfil`, `nombre`, `descripcion`, `estado`) VALUES
-(2, 'Gerentes', 'Experiencia en programacion ', 1);
+INSERT INTO `perfiles` (`id_perfil`, `nombre`, `educacion`, `nivel`, `descripcion`, `estado`) VALUES
+(2, 'Gerentes', 'Universitaria', '9 semestre', 'Experiencia en programacion ', 0),
+(3, 'Recursos Humanos1', 'Universitaria', 'Ingenieria en sistemas', '-Conociminetos en programacion -Agilidad Social', 1),
+(4, 'Recursos Humanos', '0', '0', '-Conociminetos en programacion', 1),
+(5, 'Recursos Humanos', 'Universitaria', '4to semestre ingenieria', '-Conocimiento en programacion\r\n-Diseño estrategica', 1);
 
 -- --------------------------------------------------------
 
@@ -566,7 +670,7 @@ INSERT INTO `planilla` (`id_planilla`, `fecha_inicio`, `fecha_fin`, `Nombre`, `e
 (1, '2020-04-02', '2020-04-29', 'Bienestar', 0),
 (2, '2020-04-01', '2020-04-30', 'Bienestar', 0),
 (3, '2020-04-02', '2020-04-29', 'Bienestar1', 0),
-(4, '2020-04-01', '2020-04-30', 'Prueba3', 1),
+(4, '2020-04-01', '2020-04-30', 'Prueba3', 0),
 (5, '2020-04-01', '2020-04-30', 'Prueba4', 1),
 (6, '2020-04-01', '2020-04-30', 'Prueba5', 1),
 (7, '2020-04-01', '2020-04-30', 'Bienestar S.A', 1),
@@ -583,7 +687,9 @@ INSERT INTO `planilla` (`id_planilla`, `fecha_inicio`, `fecha_fin`, `Nombre`, `e
 (18, '2020-04-01', '2020-04-30', 'Bienestar', 1),
 (19, '2020-04-13', '2020-04-13', '', 1),
 (20, '2020-04-13', '2020-04-13', 'Pruebas', 1),
-(21, '2020-05-01', '2020-04-30', 'Pureba ', 1);
+(21, '2020-05-01', '2020-04-30', 'Pureba ', 1),
+(22, '2020-04-13', '2020-04-13', 'prueba ul', 1),
+(23, '2020-05-01', '2020-05-31', 'Validaciones ', 1);
 
 -- --------------------------------------------------------
 
@@ -656,6 +762,14 @@ CREATE TABLE `solicitudes` (
   `estado` tinyint(1) DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Volcado de datos para la tabla `solicitudes`
+--
+
+INSERT INTO `solicitudes` (`id_solicitud`, `id_perfil`, `id_area`, `fecha`, `detalles`, `Cantidad`, `motivo`, `id_puesto`, `porcentaje`, `estado`) VALUES
+(1, 2, 2, '2020-05-09', 'Temporal', 1, 'Temporal', 1, 1, 2),
+(2, 3, 2, '2020-05-07', 'hola', 2, 'jaja', 3, 10, 2);
+
 -- --------------------------------------------------------
 
 --
@@ -696,7 +810,9 @@ CREATE TABLE `tipo_comisiones` (
 --
 
 INSERT INTO `tipo_comisiones` (`id_tipo_comisiones`, `nombre`, `isPercentage`, `valor`, `estado`) VALUES
-(1, 'Comision por venta', 1, '1.00', 1);
+(1, 'Comision por venta', 1, '1.00', 1),
+(2, 'gg', 1, '2.00', 1),
+(3, 'gg', 1, '2.00', 1);
 
 -- --------------------------------------------------------
 
@@ -717,7 +833,8 @@ CREATE TABLE `tipo_concepto` (
 INSERT INTO `tipo_concepto` (`id_tipo`, `nombre`, `estado`) VALUES
 (1, 'Bonificación', 1),
 (2, 'IGSS', 1),
-(3, 'Bono 14', 1);
+(3, 'Bono 14', 1),
+(4, 'Aguinaldo', 1);
 
 --
 -- Índices para tablas volcadas
@@ -808,7 +925,8 @@ ALTER TABLE `empleados`
 --
 ALTER TABLE `empleos`
   ADD PRIMARY KEY (`id_empleos`),
-  ADD KEY `solicitudd_idx` (`id_solicitud`);
+  ADD KEY `solicitudd_idx` (`id_solicitud`),
+  ADD KEY `suel` (`id_sueldo`);
 
 --
 -- Indices de la tabla `finiqito`
@@ -927,7 +1045,7 @@ ALTER TABLE `comisiones`
 -- AUTO_INCREMENT de la tabla `conceptos`
 --
 ALTER TABLE `conceptos`
-  MODIFY `id_concepto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id_concepto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- AUTO_INCREMENT de la tabla `documentos`
@@ -939,13 +1057,13 @@ ALTER TABLE `documentos`
 -- AUTO_INCREMENT de la tabla `empleados`
 --
 ALTER TABLE `empleados`
-  MODIFY `id_empleado` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id_empleado` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT de la tabla `empleos`
 --
 ALTER TABLE `empleos`
-  MODIFY `id_empleos` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_empleos` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `finiqito`
@@ -963,13 +1081,13 @@ ALTER TABLE `horas`
 -- AUTO_INCREMENT de la tabla `perfiles`
 --
 ALTER TABLE `perfiles`
-  MODIFY `id_perfil` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_perfil` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `planilla`
 --
 ALTER TABLE `planilla`
-  MODIFY `id_planilla` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id_planilla` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT de la tabla `pruebas`
@@ -984,6 +1102,12 @@ ALTER TABLE `puestos`
   MODIFY `id_puesto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- AUTO_INCREMENT de la tabla `solicitudes`
+--
+ALTER TABLE `solicitudes`
+  MODIFY `id_solicitud` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT de la tabla `sueldos`
 --
 ALTER TABLE `sueldos`
@@ -993,13 +1117,13 @@ ALTER TABLE `sueldos`
 -- AUTO_INCREMENT de la tabla `tipo_comisiones`
 --
 ALTER TABLE `tipo_comisiones`
-  MODIFY `id_tipo_comisiones` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_tipo_comisiones` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `tipo_concepto`
 --
 ALTER TABLE `tipo_concepto`
-  MODIFY `id_tipo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_tipo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Restricciones para tablas volcadas
@@ -1021,8 +1145,8 @@ ALTER TABLE `cita`
 -- Filtros para la tabla `comisiones`
 --
 ALTER TABLE `comisiones`
-  ADD CONSTRAINT `fk_empleados_comisiones` FOREIGN KEY (`id_empleado`) REFERENCES `empleados` (`id_empleado`),
-  ADD CONSTRAINT `fk_tipo_comisiones_comisiones` FOREIGN KEY (`id_tipo_comisiones`) REFERENCES `tipo_comisiones` (`id_tipo_comisiones`);
+  ADD CONSTRAINT `fk_empleados_comisiones` FOREIGN KEY (`id_empleado`) REFERENCES `empleados` (`id_empleado`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `fk_tipo_comisiones_comisiones` FOREIGN KEY (`id_tipo_comisiones`) REFERENCES `tipo_comisiones` (`id_tipo_comisiones`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `conceptos`
@@ -1062,7 +1186,8 @@ ALTER TABLE `empleados`
 -- Filtros para la tabla `empleos`
 --
 ALTER TABLE `empleos`
-  ADD CONSTRAINT `solicitudd` FOREIGN KEY (`id_solicitud`) REFERENCES `solicitudes` (`id_solicitud`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `soli` FOREIGN KEY (`id_solicitud`) REFERENCES `solicitudes` (`id_solicitud`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `suel` FOREIGN KEY (`id_sueldo`) REFERENCES `sueldos` (`id_sueldo`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `finiqito`
@@ -1097,3 +1222,6 @@ ALTER TABLE `solicitudes`
   ADD CONSTRAINT `puess` FOREIGN KEY (`id_puesto`) REFERENCES `puestos` (`id_puesto`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -51,6 +51,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.Cbo_sexo = new System.Windows.Forms.GroupBox();
+            this.btn_can = new System.Windows.Forms.Button();
             this.BTN_nuevo = new System.Windows.Forms.Button();
             this.combo3 = new CapaVista.Combo();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -74,7 +75,6 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.Txt_Codigo2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.ProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
-            this.btn_can = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -147,11 +147,11 @@
             this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(32, 26);
+            this.dataGridView2.Location = new System.Drawing.Point(11, 26);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(590, 240);
+            this.dataGridView2.Size = new System.Drawing.Size(634, 240);
             this.dataGridView2.TabIndex = 0;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             this.dataGridView2.DoubleClick += new System.EventHandler(this.dataGridView2_DoubleClick);
@@ -389,6 +389,26 @@
             this.Cbo_sexo.TabStop = false;
             this.Cbo_sexo.Text = "Datos para agragar coceptos";
             // 
+            // btn_can
+            // 
+            this.btn_can.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_can.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_can.BackgroundImage")));
+            this.btn_can.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_can.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_can.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_can.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_can.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_can.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_can.ForeColor = System.Drawing.Color.White;
+            this.btn_can.Location = new System.Drawing.Point(549, 155);
+            this.btn_can.Name = "btn_can";
+            this.btn_can.Size = new System.Drawing.Size(95, 106);
+            this.btn_can.TabIndex = 33;
+            this.btn_can.Text = "Cancelar";
+            this.btn_can.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_can.UseVisualStyleBackColor = false;
+            this.btn_can.Click += new System.EventHandler(this.button2_Click_2);
+            // 
             // BTN_nuevo
             // 
             this.BTN_nuevo.BackColor = System.Drawing.Color.DodgerBlue;
@@ -612,26 +632,6 @@
             // 
             this.ProgressBar1.Name = "ProgressBar1";
             this.ProgressBar1.Size = new System.Drawing.Size(100, 16);
-            // 
-            // btn_can
-            // 
-            this.btn_can.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_can.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_can.BackgroundImage")));
-            this.btn_can.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_can.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.btn_can.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_can.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_can.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_can.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_can.ForeColor = System.Drawing.Color.White;
-            this.btn_can.Location = new System.Drawing.Point(549, 155);
-            this.btn_can.Name = "btn_can";
-            this.btn_can.Size = new System.Drawing.Size(95, 106);
-            this.btn_can.TabIndex = 33;
-            this.btn_can.Text = "Cancelar";
-            this.btn_can.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_can.UseVisualStyleBackColor = false;
-            this.btn_can.Click += new System.EventHandler(this.button2_Click_2);
             // 
             // Conceptos
             // 

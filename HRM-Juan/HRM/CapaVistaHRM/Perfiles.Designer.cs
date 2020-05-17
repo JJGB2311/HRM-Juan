@@ -240,6 +240,7 @@
             this.BTN_nuevo.Size = new System.Drawing.Size(183, 81);
             this.BTN_nuevo.TabIndex = 21;
             this.BTN_nuevo.Text = "Nuevo";
+            this.BTN_nuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BTN_nuevo.UseVisualStyleBackColor = false;
             this.BTN_nuevo.Click += new System.EventHandler(this.BTN_nuevo_Click);
             // 
@@ -260,6 +261,7 @@
             this.BTN_Guardar.Size = new System.Drawing.Size(183, 86);
             this.BTN_Guardar.TabIndex = 22;
             this.BTN_Guardar.Text = "Guardar";
+            this.BTN_Guardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BTN_Guardar.UseVisualStyleBackColor = false;
             this.BTN_Guardar.Click += new System.EventHandler(this.BTN_Guardar_Click);
             // 
@@ -280,6 +282,7 @@
             this.BTN_Modifi.Size = new System.Drawing.Size(183, 88);
             this.BTN_Modifi.TabIndex = 23;
             this.BTN_Modifi.Text = "Modificar";
+            this.BTN_Modifi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BTN_Modifi.UseVisualStyleBackColor = false;
             this.BTN_Modifi.Click += new System.EventHandler(this.BTN_Modifi_Click);
             // 
@@ -300,6 +303,7 @@
             this.BTN_ELIMI.Size = new System.Drawing.Size(183, 95);
             this.BTN_ELIMI.TabIndex = 24;
             this.BTN_ELIMI.Text = "Eliminar";
+            this.BTN_ELIMI.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BTN_ELIMI.UseVisualStyleBackColor = false;
             this.BTN_ELIMI.Click += new System.EventHandler(this.BTN_ELIMI_Click);
             // 
@@ -388,6 +392,7 @@
             this.BTN_CANCEL.Size = new System.Drawing.Size(183, 95);
             this.BTN_CANCEL.TabIndex = 27;
             this.BTN_CANCEL.Text = "Cancelar";
+            this.BTN_CANCEL.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BTN_CANCEL.UseVisualStyleBackColor = false;
             this.BTN_CANCEL.Click += new System.EventHandler(this.BTN_CANCEL_Click);
             // 

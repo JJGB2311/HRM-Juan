@@ -54,12 +54,12 @@
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.LblUsuario = new System.Windows.Forms.ToolStripStatusLabel();
             this.ProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lbl_ID = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.lbl_ID = new System.Windows.Forms.ToolStripStatusLabel();
             this.Cbo_sexo.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.GPB_info.SuspendLayout();
@@ -341,6 +341,20 @@
             this.ProgressBar1.Name = "ProgressBar1";
             this.ProgressBar1.Size = new System.Drawing.Size(100, 16);
             // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(18, 17);
+            this.toolStripStatusLabel1.Text = "ID";
+            // 
+            // lbl_ID
+            // 
+            this.lbl_ID.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbl_ID.Name = "lbl_ID";
+            this.lbl_ID.Size = new System.Drawing.Size(16, 17);
+            this.lbl_ID.Text = "...";
+            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.DodgerBlue;
@@ -384,20 +398,6 @@
             this.label15.Size = new System.Drawing.Size(413, 39);
             this.label15.TabIndex = 0;
             this.label15.Text = "Asignación de conseptos";
-            // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(18, 17);
-            this.toolStripStatusLabel1.Text = "ID";
-            // 
-            // lbl_ID
-            // 
-            this.lbl_ID.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_ID.Name = "lbl_ID";
-            this.lbl_ID.Size = new System.Drawing.Size(16, 17);
-            this.lbl_ID.Text = "...";
             // 
             // Asignacioncone
             // 

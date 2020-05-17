@@ -340,6 +340,7 @@
             this.dataGridView2.Location = new System.Drawing.Point(20, 26);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView2.Size = new System.Drawing.Size(868, 247);
             this.dataGridView2.TabIndex = 0;
             // 

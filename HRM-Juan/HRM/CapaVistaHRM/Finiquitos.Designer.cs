@@ -87,33 +87,38 @@
             // btn_fin
             // 
             this.btn_fin.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_fin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_fin.BackgroundImage")));
             this.btn_fin.Enabled = false;
             this.btn_fin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btn_fin.FlatAppearance.CheckedBackColor = System.Drawing.Color.Blue;
             this.btn_fin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
             this.btn_fin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_fin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_fin.Location = new System.Drawing.Point(545, 132);
+            this.btn_fin.Location = new System.Drawing.Point(545, 128);
             this.btn_fin.Name = "btn_fin";
-            this.btn_fin.Size = new System.Drawing.Size(158, 60);
+            this.btn_fin.Size = new System.Drawing.Size(158, 64);
             this.btn_fin.TabIndex = 30;
             this.btn_fin.Text = "Finalizar";
+            this.btn_fin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_fin.UseVisualStyleBackColor = false;
             this.btn_fin.Click += new System.EventHandler(this.button2_Click);
             // 
             // btn_gene
             // 
             this.btn_gene.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_gene.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_gene.BackgroundImage")));
+            this.btn_gene.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_gene.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btn_gene.FlatAppearance.CheckedBackColor = System.Drawing.Color.Blue;
             this.btn_gene.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
             this.btn_gene.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_gene.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_gene.Location = new System.Drawing.Point(379, 132);
+            this.btn_gene.Location = new System.Drawing.Point(379, 128);
             this.btn_gene.Name = "btn_gene";
-            this.btn_gene.Size = new System.Drawing.Size(134, 60);
+            this.btn_gene.Size = new System.Drawing.Size(148, 68);
             this.btn_gene.TabIndex = 29;
             this.btn_gene.Text = "Generar";
+            this.btn_gene.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_gene.UseVisualStyleBackColor = false;
             this.btn_gene.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -217,10 +222,11 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 25);
+            this.dataGridView1.Location = new System.Drawing.Point(54, 25);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(684, 234);
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(626, 234);
             this.dataGridView1.TabIndex = 0;
             // 
             // pictureBox2
@@ -260,7 +266,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(343, 23);
+            this.label9.Location = new System.Drawing.Point(288, 22);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(134, 33);
             this.label9.TabIndex = 0;

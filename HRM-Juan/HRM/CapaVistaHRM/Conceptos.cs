@@ -364,7 +364,7 @@ namespace CapaVistaHRM
 
         private void button5_Click(object sender, EventArgs e)
         {
-            MostrarCOD(Txt_Codigo2.Text); 
+            MostrarCOD(Txt_Codigo.Text); 
             progres();
             Txt_Codigo.Text = "";
             ProgressBar1.Style = ProgressBarStyle.Marquee;

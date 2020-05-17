@@ -79,12 +79,12 @@ namespace CapaVistaHRM
         /*Busquedas*/
         void MostrarCOD(string dato)
         {
-            DataTable dt = logic.consultaLogicacod2(dato);
+            DataTable dt = logic.consultaLogicacod(dato);
             dataGridView1.DataSource = dt;
         }
         void MostrarNOMA(string nom, string ap)
         {
-            DataTable dt = logic.consultaLogicanoma2(nom, ap);
+            DataTable dt = logic.consultaLogicanoma(nom, ap);
             dataGridView1.DataSource = dt;
         }
         /**/

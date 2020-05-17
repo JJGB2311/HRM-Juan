@@ -122,6 +122,7 @@ namespace CapaVistaHRM
             Txt_correo.Text = "";
             Txt_nit.Text = "";
             Txt_Codigo.Text = "";
+            btn_cod.Enabled = false;
         }
 
         private void btn_nomap_Click(object sender, EventArgs e)
@@ -140,6 +141,118 @@ namespace CapaVistaHRM
             Txt_nit.Text = "";
             Txt_nombreb.Text = "";
             Txt_apellidoB.Text = "";
+            btn_nomap.Enabled = false;
+        }
+        /*Validaciones*/
+        public void letra(KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+        public void numero(KeyPressEventArgs e)
+        {
+            char dosp = (char)58;
+            if (char.IsNumber(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (e.KeyChar == dosp)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+                MessageBox.Show("En ese campo solo puede ingresar numeros");
+            }
+        }
+        public void letrasimbolo(KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (char.IsPunctuation(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+                MessageBox.Show("En ese campo solo puede ingresar letras y simbolos");
+            }
+        }
+        public void numerosimbolo(KeyPressEventArgs e)
+        {
+            if (char.IsNumber(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (char.IsPunctuation(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+
+        public void letracombo(KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            else if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+        /********/
+        private void Txt_Codigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            numero(e);
+            btn_cod.Enabled = true;
+        }
+
+        private void Txt_nombreb_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            letrasimbolo(e);
+            btn_nomap.Enabled = true;
+        }
+
+        private void Txt_apellidoB_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            letrasimbolo(e);
+            btn_nomap.Enabled = true;
         }
     }
 }

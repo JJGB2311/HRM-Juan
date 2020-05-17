@@ -297,5 +297,13 @@ namespace CapaVistaHRM
             nuevo.MdiParent = this.MdiParent;
             nuevo.Show();
         }
+
+        private void despedidosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Mantenimientodes nuevo = new Mantenimientodes(usuarioact);
+            nuevo.MdiParent = this.MdiParent;
+            nuevo.Show();
+
+        }
     }
 }

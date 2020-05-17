@@ -20,7 +20,7 @@ namespace CapaVistaHRM
         public Datalleconceptos(string user,string emple)
         {
             InitializeComponent();
-            user = usuario;
+            usuario = user;
             LblUsuario.Text = usuario;
             Mostrarcon(emple);
             ProgressBar1.Value = 100;

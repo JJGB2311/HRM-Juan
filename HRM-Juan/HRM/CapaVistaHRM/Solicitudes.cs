@@ -25,6 +25,8 @@ namespace CapaVistaHRM
             InitializeComponent();
             usuario = user;
             LblUsuario.Text = usuario;
+            DTP_fecha.Format = DateTimePickerFormat.Custom;
+            DTP_fecha.CustomFormat = "yyyy-MM-dd";
             combo1.llenarse("perfiles", "id_perfil", "nombre");
             combo2.llenarse("area", "id_area", "nombre");
             combo3.llenarse("puestos", "id_puesto", "nombre");

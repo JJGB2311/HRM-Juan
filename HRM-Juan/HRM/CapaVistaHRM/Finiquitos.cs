@@ -73,7 +73,7 @@ namespace CapaVistaHRM
             Txt_descrip.Text = "";
             btn_fin.Enabled = true;
             btn_gene.Enabled = false;
-            MessageBox.Show("El proceso del despido Finalizo corectamente!");
+            MessageBox.Show("El proceso del despido Finalizo corectamente! Seleccione el boton siguiente para finalizar");
             progres();
         }
     }

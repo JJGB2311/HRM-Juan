@@ -207,39 +207,47 @@
             this.dataGridView1.Location = new System.Drawing.Point(41, 26);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(658, 174);
             this.dataGridView1.TabIndex = 0;
             // 
             // btn_gene
             // 
             this.btn_gene.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_gene.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_gene.BackgroundImage")));
+            this.btn_gene.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_gene.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
             this.btn_gene.FlatAppearance.CheckedBackColor = System.Drawing.Color.Blue;
             this.btn_gene.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
             this.btn_gene.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
             this.btn_gene.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_gene.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_gene.Location = new System.Drawing.Point(611, 106);
             this.btn_gene.Name = "btn_gene";
             this.btn_gene.Size = new System.Drawing.Size(161, 81);
             this.btn_gene.TabIndex = 8;
             this.btn_gene.Text = "Generar";
+            this.btn_gene.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_gene.UseVisualStyleBackColor = false;
             this.btn_gene.Click += new System.EventHandler(this.button1_Click);
             // 
             // btn_fin
             // 
             this.btn_fin.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_fin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_fin.BackgroundImage")));
             this.btn_fin.Enabled = false;
             this.btn_fin.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
             this.btn_fin.FlatAppearance.CheckedBackColor = System.Drawing.Color.Blue;
             this.btn_fin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
             this.btn_fin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
             this.btn_fin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_fin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_fin.Location = new System.Drawing.Point(611, 192);
             this.btn_fin.Name = "btn_fin";
             this.btn_fin.Size = new System.Drawing.Size(161, 77);
             this.btn_fin.TabIndex = 9;
             this.btn_fin.Text = "Finalizar";
+            this.btn_fin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_fin.UseVisualStyleBackColor = false;
             this.btn_fin.Click += new System.EventHandler(this.btn_fin_Click);
             // 

@@ -169,6 +169,8 @@
             // BTN_CAN
             // 
             this.BTN_CAN.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BTN_CAN.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTN_CAN.BackgroundImage")));
+            this.BTN_CAN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BTN_CAN.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
             this.BTN_CAN.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.BTN_CAN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
@@ -180,6 +182,7 @@
             this.BTN_CAN.Size = new System.Drawing.Size(155, 90);
             this.BTN_CAN.TabIndex = 32;
             this.BTN_CAN.Text = "Cancelar solicitud";
+            this.BTN_CAN.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BTN_CAN.UseVisualStyleBackColor = false;
             this.BTN_CAN.Click += new System.EventHandler(this.button1_Click_1);
             // 
@@ -204,6 +207,8 @@
             // Btn_gener
             // 
             this.Btn_gener.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_gener.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_gener.BackgroundImage")));
+            this.Btn_gener.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Btn_gener.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
             this.Btn_gener.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_gener.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
@@ -215,6 +220,7 @@
             this.Btn_gener.Size = new System.Drawing.Size(155, 90);
             this.Btn_gener.TabIndex = 11;
             this.Btn_gener.Text = "Generar empleo";
+            this.Btn_gener.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_gener.UseVisualStyleBackColor = false;
             this.Btn_gener.Click += new System.EventHandler(this.button1_Click);
             // 

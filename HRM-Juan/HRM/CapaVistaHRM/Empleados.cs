@@ -284,5 +284,11 @@ namespace CapaVistaHRM
         {
             letracombo(e);
         }
+
+        private void ayudaRup1_Load(object sender, EventArgs e)
+        {
+             ayudaRup1.AsignarAyuda("/Formato Ayudas.pdf");
+
+        }
     }
 }

@@ -95,10 +95,14 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(19, 35);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1117, 185);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
@@ -324,6 +328,8 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
@@ -334,6 +340,7 @@
             this.button1.Size = new System.Drawing.Size(317, 93);
             this.button1.TabIndex = 10;
             this.button1.Text = "Recargar";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -441,6 +448,8 @@
             // btn_nomap
             // 
             this.btn_nomap.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_nomap.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_nomap.BackgroundImage")));
+            this.btn_nomap.Enabled = false;
             this.btn_nomap.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
             this.btn_nomap.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
             this.btn_nomap.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
@@ -452,12 +461,15 @@
             this.btn_nomap.Size = new System.Drawing.Size(106, 61);
             this.btn_nomap.TabIndex = 28;
             this.btn_nomap.Text = "Buscar";
+            this.btn_nomap.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_nomap.UseVisualStyleBackColor = false;
             this.btn_nomap.Click += new System.EventHandler(this.btn_nomap_Click);
             // 
             // btn_cod
             // 
             this.btn_cod.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_cod.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_cod.BackgroundImage")));
+            this.btn_cod.Enabled = false;
             this.btn_cod.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
             this.btn_cod.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
             this.btn_cod.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
@@ -469,6 +481,7 @@
             this.btn_cod.Size = new System.Drawing.Size(106, 42);
             this.btn_cod.TabIndex = 30;
             this.btn_cod.Text = "Buscar";
+            this.btn_cod.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_cod.UseVisualStyleBackColor = false;
             this.btn_cod.Click += new System.EventHandler(this.btn_cod_Click);
             // 
@@ -478,6 +491,7 @@
             this.Txt_apellidoB.Name = "Txt_apellidoB";
             this.Txt_apellidoB.Size = new System.Drawing.Size(164, 27);
             this.Txt_apellidoB.TabIndex = 5;
+            this.Txt_apellidoB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_apellidoB_KeyPress);
             // 
             // Txt_Codigo
             // 
@@ -485,6 +499,7 @@
             this.Txt_Codigo.Name = "Txt_Codigo";
             this.Txt_Codigo.Size = new System.Drawing.Size(111, 27);
             this.Txt_Codigo.TabIndex = 29;
+            this.Txt_Codigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Codigo_KeyPress);
             // 
             // Txt_nombreb
             // 
@@ -492,6 +507,7 @@
             this.Txt_nombreb.Name = "Txt_nombreb";
             this.Txt_nombreb.Size = new System.Drawing.Size(164, 27);
             this.Txt_nombreb.TabIndex = 4;
+            this.Txt_nombreb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_nombreb_KeyPress);
             // 
             // label14
             // 
@@ -526,7 +542,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Mantenimientodes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Mantenimientodes";
+            this.Text = "3016 - Despedidos";
             this.Load += new System.EventHandler(this.Mantenimientodes_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

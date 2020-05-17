@@ -49,6 +49,8 @@
             this.Txt_puesto = new System.Windows.Forms.TextBox();
             this.Txt_direccion = new System.Windows.Forms.TextBox();
             this.Txt_nit = new System.Windows.Forms.TextBox();
+            this.Btn_Des = new System.Windows.Forms.Button();
+            this.btn_recar = new System.Windows.Forms.Button();
             this.Txt_cui = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -70,8 +72,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.btn_recar = new System.Windows.Forms.Button();
-            this.Btn_Des = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.statusStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -305,6 +305,47 @@
             this.Txt_nit.Size = new System.Drawing.Size(259, 27);
             this.Txt_nit.TabIndex = 28;
             // 
+            // Btn_Des
+            // 
+            this.Btn_Des.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Des.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Des.BackgroundImage")));
+            this.Btn_Des.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Btn_Des.Enabled = false;
+            this.Btn_Des.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.Btn_Des.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Des.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Des.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Des.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Des.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Btn_Des.Location = new System.Drawing.Point(749, 117);
+            this.Btn_Des.Name = "Btn_Des";
+            this.Btn_Des.Size = new System.Drawing.Size(170, 104);
+            this.Btn_Des.TabIndex = 32;
+            this.Btn_Des.Text = "Recontratar";
+            this.Btn_Des.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_Des.UseVisualStyleBackColor = false;
+            this.Btn_Des.Click += new System.EventHandler(this.Btn_Des_Click);
+            // 
+            // btn_recar
+            // 
+            this.btn_recar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_recar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_recar.BackgroundImage")));
+            this.btn_recar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_recar.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_recar.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_recar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_recar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_recar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_recar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_recar.Location = new System.Drawing.Point(749, 26);
+            this.btn_recar.Name = "btn_recar";
+            this.btn_recar.Size = new System.Drawing.Size(170, 85);
+            this.btn_recar.TabIndex = 38;
+            this.btn_recar.Text = "Recargar";
+            this.btn_recar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_recar.UseVisualStyleBackColor = false;
+            this.btn_recar.Click += new System.EventHandler(this.btn_recar_Click);
+            // 
             // Txt_cui
             // 
             this.Txt_cui.Enabled = false;
@@ -495,47 +536,6 @@
             this.label9.Size = new System.Drawing.Size(249, 33);
             this.label9.TabIndex = 0;
             this.label9.Text = "Recontrataciones";
-            // 
-            // btn_recar
-            // 
-            this.btn_recar.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_recar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_recar.BackgroundImage")));
-            this.btn_recar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_recar.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.btn_recar.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_recar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_recar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_recar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_recar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_recar.Location = new System.Drawing.Point(749, 26);
-            this.btn_recar.Name = "btn_recar";
-            this.btn_recar.Size = new System.Drawing.Size(170, 85);
-            this.btn_recar.TabIndex = 38;
-            this.btn_recar.Text = "Recargar";
-            this.btn_recar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_recar.UseVisualStyleBackColor = false;
-            this.btn_recar.Click += new System.EventHandler(this.btn_recar_Click);
-            // 
-            // Btn_Des
-            // 
-            this.Btn_Des.BackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Des.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Des.BackgroundImage")));
-            this.Btn_Des.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Btn_Des.Enabled = false;
-            this.Btn_Des.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.Btn_Des.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Des.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Des.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Des.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Des.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Btn_Des.Location = new System.Drawing.Point(749, 117);
-            this.Btn_Des.Name = "Btn_Des";
-            this.Btn_Des.Size = new System.Drawing.Size(170, 104);
-            this.Btn_Des.TabIndex = 32;
-            this.Btn_Des.Text = "Recontratar";
-            this.Btn_Des.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_Des.UseVisualStyleBackColor = false;
-            this.Btn_Des.Click += new System.EventHandler(this.Btn_Des_Click);
             // 
             // groupBox3
             // 

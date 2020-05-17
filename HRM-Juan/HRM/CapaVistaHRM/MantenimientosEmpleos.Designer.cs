@@ -32,6 +32,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.TEX_DETA = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.Txt_soli = new System.Windows.Forms.TextBox();
             this.combo1 = new CapaVista.Combo();
@@ -55,7 +56,6 @@
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.btn_borrar = new System.Windows.Forms.Button();
             this.btn_modificar = new System.Windows.Forms.Button();
-            this.TEX_DETA = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -111,6 +111,14 @@
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
+            // 
+            // TEX_DETA
+            // 
+            this.TEX_DETA.Enabled = false;
+            this.TEX_DETA.Location = new System.Drawing.Point(289, 47);
+            this.TEX_DETA.Name = "TEX_DETA";
+            this.TEX_DETA.Size = new System.Drawing.Size(259, 27);
+            this.TEX_DETA.TabIndex = 33;
             // 
             // dateTimePicker1
             // 
@@ -315,22 +323,16 @@
             // 
             // btn_modificar
             // 
+            this.btn_modificar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btn_modificar.Enabled = false;
+            this.btn_modificar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_modificar.Location = new System.Drawing.Point(600, 182);
             this.btn_modificar.Name = "btn_modificar";
             this.btn_modificar.Size = new System.Drawing.Size(137, 78);
             this.btn_modificar.TabIndex = 27;
             this.btn_modificar.Text = "Modificar";
-            this.btn_modificar.UseVisualStyleBackColor = true;
+            this.btn_modificar.UseVisualStyleBackColor = false;
             this.btn_modificar.Click += new System.EventHandler(this.btn_modificar_Click);
-            // 
-            // TEX_DETA
-            // 
-            this.TEX_DETA.Enabled = false;
-            this.TEX_DETA.Location = new System.Drawing.Point(289, 47);
-            this.TEX_DETA.Name = "TEX_DETA";
-            this.TEX_DETA.Size = new System.Drawing.Size(259, 27);
-            this.TEX_DETA.TabIndex = 33;
             // 
             // MantenimientosEmpleos
             // 

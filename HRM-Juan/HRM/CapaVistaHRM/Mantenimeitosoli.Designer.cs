@@ -43,11 +43,11 @@
             this.combo3 = new CapaVista.Combo();
             this.combo2 = new CapaVista.Combo();
             this.combo1 = new CapaVista.Combo();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_canti = new System.Windows.Forms.TextBox();
+            this.txt_motivo = new System.Windows.Forms.TextBox();
+            this.txt_deta = new System.Windows.Forms.TextBox();
+            this.DTP_fecha = new System.Windows.Forms.DateTimePicker();
+            this.txt_no = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -56,9 +56,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.BTN_generar = new System.Windows.Forms.Button();
+            this.Btn_borrar = new System.Windows.Forms.Button();
+            this.Btn_nuevo = new System.Windows.Forms.Button();
+            this.BTN_cancelar = new System.Windows.Forms.Button();
             this.statusStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -102,11 +103,17 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(6, 26);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(895, 185);
             this.dataGridView1.TabIndex = 9;
+            this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
             // groupBox3
             // 
@@ -160,18 +167,18 @@
             this.groupBox2.Size = new System.Drawing.Size(907, 225);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.groupBox2.Text = "Solicitudes";
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.combo3);
             this.groupBox1.Controls.Add(this.combo2);
             this.groupBox1.Controls.Add(this.combo1);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txt_canti);
+            this.groupBox1.Controls.Add(this.txt_motivo);
+            this.groupBox1.Controls.Add(this.txt_deta);
+            this.groupBox1.Controls.Add(this.DTP_fecha);
+            this.groupBox1.Controls.Add(this.txt_no);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label2);
@@ -185,10 +192,11 @@
             this.groupBox1.Size = new System.Drawing.Size(733, 271);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Informacion ";
             // 
             // combo3
             // 
+            this.combo3.Enabled = false;
             this.combo3.Location = new System.Drawing.Point(112, 137);
             this.combo3.Margin = new System.Windows.Forms.Padding(5);
             this.combo3.Name = "combo3";
@@ -197,6 +205,7 @@
             // 
             // combo2
             // 
+            this.combo2.Enabled = false;
             this.combo2.Location = new System.Drawing.Point(112, 98);
             this.combo2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.combo2.Name = "combo2";
@@ -205,48 +214,54 @@
             // 
             // combo1
             // 
+            this.combo1.Enabled = false;
             this.combo1.Location = new System.Drawing.Point(112, 64);
             this.combo1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.combo1.Name = "combo1";
             this.combo1.Size = new System.Drawing.Size(214, 30);
             this.combo1.TabIndex = 29;
             // 
-            // textBox5
+            // txt_canti
             // 
-            this.textBox5.Location = new System.Drawing.Point(112, 174);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(214, 27);
-            this.textBox5.TabIndex = 13;
+            this.txt_canti.Enabled = false;
+            this.txt_canti.Location = new System.Drawing.Point(112, 174);
+            this.txt_canti.Name = "txt_canti";
+            this.txt_canti.Size = new System.Drawing.Size(214, 27);
+            this.txt_canti.TabIndex = 13;
             // 
-            // textBox3
+            // txt_motivo
             // 
-            this.textBox3.Location = new System.Drawing.Point(350, 163);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(363, 88);
-            this.textBox3.TabIndex = 11;
+            this.txt_motivo.Enabled = false;
+            this.txt_motivo.Location = new System.Drawing.Point(350, 163);
+            this.txt_motivo.Multiline = true;
+            this.txt_motivo.Name = "txt_motivo";
+            this.txt_motivo.Size = new System.Drawing.Size(363, 88);
+            this.txt_motivo.TabIndex = 11;
             // 
-            // textBox2
+            // txt_deta
             // 
-            this.textBox2.Location = new System.Drawing.Point(350, 52);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(363, 75);
-            this.textBox2.TabIndex = 10;
+            this.txt_deta.Enabled = false;
+            this.txt_deta.Location = new System.Drawing.Point(350, 52);
+            this.txt_deta.Multiline = true;
+            this.txt_deta.Name = "txt_deta";
+            this.txt_deta.Size = new System.Drawing.Size(363, 75);
+            this.txt_deta.TabIndex = 10;
             // 
-            // dateTimePicker1
+            // DTP_fecha
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(112, 211);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(214, 27);
-            this.dateTimePicker1.TabIndex = 9;
+            this.DTP_fecha.Enabled = false;
+            this.DTP_fecha.Location = new System.Drawing.Point(112, 211);
+            this.DTP_fecha.Name = "DTP_fecha";
+            this.DTP_fecha.Size = new System.Drawing.Size(214, 27);
+            this.DTP_fecha.TabIndex = 9;
             // 
-            // textBox1
+            // txt_no
             // 
-            this.textBox1.Location = new System.Drawing.Point(112, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(214, 27);
-            this.textBox1.TabIndex = 8;
+            this.txt_no.Enabled = false;
+            this.txt_no.Location = new System.Drawing.Point(112, 34);
+            this.txt_no.Name = "txt_no";
+            this.txt_no.Size = new System.Drawing.Size(214, 27);
+            this.txt_no.TabIndex = 8;
             // 
             // label1
             // 
@@ -320,43 +335,76 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Detalles";
             // 
-            // button1
+            // BTN_generar
             // 
-            this.button1.Location = new System.Drawing.Point(764, 112);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(149, 71);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Generar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BTN_generar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BTN_generar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTN_generar.BackgroundImage")));
+            this.BTN_generar.Enabled = false;
+            this.BTN_generar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BTN_generar.Location = new System.Drawing.Point(764, 165);
+            this.BTN_generar.Name = "BTN_generar";
+            this.BTN_generar.Size = new System.Drawing.Size(149, 63);
+            this.BTN_generar.TabIndex = 20;
+            this.BTN_generar.Text = "Generar";
+            this.BTN_generar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BTN_generar.UseVisualStyleBackColor = false;
+            this.BTN_generar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // Btn_borrar
             // 
-            this.button2.Location = new System.Drawing.Point(763, 195);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(149, 71);
-            this.button2.TabIndex = 21;
-            this.button2.Text = "Borrar ";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Btn_borrar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_borrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_borrar.BackgroundImage")));
+            this.Btn_borrar.Enabled = false;
+            this.Btn_borrar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Btn_borrar.Location = new System.Drawing.Point(763, 234);
+            this.Btn_borrar.Name = "Btn_borrar";
+            this.Btn_borrar.Size = new System.Drawing.Size(149, 63);
+            this.Btn_borrar.TabIndex = 21;
+            this.Btn_borrar.Text = "Borrar ";
+            this.Btn_borrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Btn_borrar.UseVisualStyleBackColor = false;
+            this.Btn_borrar.Click += new System.EventHandler(this.Btn_borrar_Click);
             // 
-            // button3
+            // Btn_nuevo
             // 
-            this.button3.Location = new System.Drawing.Point(763, 280);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(149, 71);
-            this.button3.TabIndex = 22;
-            this.button3.Text = "Perfiles";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Btn_nuevo.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_nuevo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_nuevo.BackgroundImage")));
+            this.Btn_nuevo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Btn_nuevo.Location = new System.Drawing.Point(763, 96);
+            this.Btn_nuevo.Name = "Btn_nuevo";
+            this.Btn_nuevo.Size = new System.Drawing.Size(149, 63);
+            this.Btn_nuevo.TabIndex = 23;
+            this.Btn_nuevo.Text = "Nuevo ";
+            this.Btn_nuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Btn_nuevo.UseVisualStyleBackColor = false;
+            this.Btn_nuevo.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // BTN_cancelar
+            // 
+            this.BTN_cancelar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BTN_cancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTN_cancelar.BackgroundImage")));
+            this.BTN_cancelar.Enabled = false;
+            this.BTN_cancelar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BTN_cancelar.Location = new System.Drawing.Point(763, 300);
+            this.BTN_cancelar.Name = "BTN_cancelar";
+            this.BTN_cancelar.Size = new System.Drawing.Size(149, 62);
+            this.BTN_cancelar.TabIndex = 22;
+            this.BTN_cancelar.Text = "Cancelar";
+            this.BTN_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BTN_cancelar.UseVisualStyleBackColor = false;
+            this.BTN_cancelar.Click += new System.EventHandler(this.button3_Click);
             // 
             // Mantenimeitosoli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(924, 621);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Btn_nuevo);
+            this.Controls.Add(this.BTN_cancelar);
+            this.Controls.Add(this.Btn_borrar);
+            this.Controls.Add(this.BTN_generar);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -399,11 +447,11 @@
         private CapaVista.Combo combo3;
         private CapaVista.Combo combo2;
         private CapaVista.Combo combo1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_canti;
+        private System.Windows.Forms.TextBox txt_motivo;
+        private System.Windows.Forms.TextBox txt_deta;
+        private System.Windows.Forms.DateTimePicker DTP_fecha;
+        private System.Windows.Forms.TextBox txt_no;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label2;
@@ -412,8 +460,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BTN_generar;
+        private System.Windows.Forms.Button Btn_borrar;
+        private System.Windows.Forms.Button Btn_nuevo;
+        private System.Windows.Forms.Button BTN_cancelar;
     }
 }
