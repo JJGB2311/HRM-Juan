@@ -46,5 +46,10 @@ namespace CapaVistaHRM
             navegador1.ObtenerIdAplicacion(aplicacionActiva);// Pasa el id de la aplicacion actual
             progres();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "Ayudas/Ayuda.chm", "Sueldo.html");
+        }
     }
 }

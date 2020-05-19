@@ -1,0 +1,40 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=Ayuda.chm
+Contents file=Ayuda.hhc
+Default Window=Ayuda
+Display compile progress=No
+Language=0x100a Español (Guatemala)
+
+[WINDOWS]
+Ayuda="Ejemplo","Ayuda.hhc",,"General.html","General.html","generarplanilla.html",,"Puesto.html",,0x23520,,0x387e,,,,,,,,0
+
+
+[FILES]
+areas.html
+contraconcep.html
+Contrataciones.html
+Despedir.html
+General.html
+Generarempleo.html
+Generarfini.html
+generarplanilla.html
+Generarsolicitud.html
+mconceptos.html
+MDespedidos.html
+mempleados.html
+mEmpleos.html
+MFiniquito.html
+mPlanilla.html
+Perfiles.html
+Puesto.html
+Recontrataciones.html
+Solicitudes.html
+SolicitudesPro.html
+Sueldo.html
+tipoconceptos .html
+Vistaemplea.html
+Vistaplanilla.html
+
+[INFOTYPES]
+

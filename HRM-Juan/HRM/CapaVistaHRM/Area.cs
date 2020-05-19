@@ -16,6 +16,7 @@ namespace CapaVistaHRM
         public Area(string user)
         {
             InitializeComponent();
+            
             usuario = user;
             LblUsuario.Text = usuario;
             string[] alias = { "No", "area", "Estado" }; // Arreglo de nombres para campos
@@ -46,6 +47,11 @@ namespace CapaVistaHRM
             navegador1.botonesYPermisosInicial(usuario, aplicacionActiva); // Consulta permisos al iniciar
             navegador1.ObtenerIdAplicacion(aplicacionActiva);// Pasa el id de la aplicacion actual
             progres();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "Ayudas/Ayuda.chm", "areas.html");
         }
     }
 }

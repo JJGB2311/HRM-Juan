@@ -125,10 +125,10 @@
             this.radioButton2.Checked = true;
             this.radioButton2.Location = new System.Drawing.Point(590, 17);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(76, 25);
+            this.radioButton2.Size = new System.Drawing.Size(77, 25);
             this.radioButton2.TabIndex = 26;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Haber";
+            this.radioButton2.Text = "Sumar";
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
@@ -137,9 +137,9 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(497, 17);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(71, 25);
+            this.radioButton1.Size = new System.Drawing.Size(77, 25);
             this.radioButton1.TabIndex = 25;
-            this.radioButton1.Text = "Debe";
+            this.radioButton1.Text = "Restar";
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
@@ -377,6 +377,7 @@
             this.pictureBox2.Size = new System.Drawing.Size(65, 61);
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -409,7 +410,8 @@
             this.Controls.Add(this.GPB_info);
             this.Controls.Add(this.Cbo_sexo);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "Asignacioncone";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "3017 - Asignacion de conceptos";

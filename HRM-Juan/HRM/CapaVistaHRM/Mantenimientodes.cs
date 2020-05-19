@@ -254,5 +254,10 @@ namespace CapaVistaHRM
             letrasimbolo(e);
             btn_nomap.Enabled = true;
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "Ayudas/Ayuda.chm", "MDespedidos.html");
+        }
     }
 }

@@ -305,5 +305,13 @@ namespace CapaVistaHRM
             nuevo.Show();
 
         }
+
+        private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "Ayudas/Ayuda.chm", "General.html");
+            
+
+
+        }
     }
 }

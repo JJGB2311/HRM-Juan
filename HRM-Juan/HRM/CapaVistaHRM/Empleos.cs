@@ -83,5 +83,10 @@ namespace CapaVistaHRM
             Cbo_tipo.Text = "";
             this.Close();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "Ayudas/Ayuda.chm", "Generarempleo.html");
+        }
     }
 }

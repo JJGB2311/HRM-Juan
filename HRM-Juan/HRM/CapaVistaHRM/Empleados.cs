@@ -287,8 +287,13 @@ namespace CapaVistaHRM
 
         private void ayudaRup1_Load(object sender, EventArgs e)
         {
-             ayudaRup1.AsignarAyuda("/Formato Ayudas.pdf");
+            
 
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "Ayudas/Ayuda.chm", "mempleados.html");
         }
     }
 }

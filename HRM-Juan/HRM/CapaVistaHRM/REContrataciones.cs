@@ -147,5 +147,11 @@ namespace CapaVistaHRM
             progres();
             ProgressBar1.Style = ProgressBarStyle.Marquee;
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+            Help.ShowHelp(this, "Ayudas/Ayuda.chm", "Recontrataciones.html");
+        }
     }
 }

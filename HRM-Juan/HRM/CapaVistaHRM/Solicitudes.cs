@@ -75,6 +75,12 @@ namespace CapaVistaHRM
             
         }
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+            Help.ShowHelp(this, "Ayudas/Ayuda.chm", "Solicitudes.html");
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             Empleos nuevo = new Empleos(usuario ,ID);

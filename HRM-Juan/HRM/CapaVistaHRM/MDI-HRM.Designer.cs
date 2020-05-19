@@ -68,7 +68,6 @@
             this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.despidosToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.despidosToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.despidosToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.recontratacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contratacionesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.solicitudesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -77,7 +76,6 @@
             this.seguridadToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.algunDiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -375,7 +373,6 @@
             // 
             this.despidosToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.despidosToolStripMenuItem3,
-            this.despidosToolStripMenuItem4,
             this.recontratacionesToolStripMenuItem});
             this.despidosToolStripMenuItem2.Name = "despidosToolStripMenuItem2";
             this.despidosToolStripMenuItem2.Size = new System.Drawing.Size(255, 26);
@@ -389,18 +386,11 @@
             this.despidosToolStripMenuItem3.Text = "3081- Despedir empleado";
             this.despidosToolStripMenuItem3.Click += new System.EventHandler(this.despidosToolStripMenuItem3_Click);
             // 
-            // despidosToolStripMenuItem4
-            // 
-            this.despidosToolStripMenuItem4.Name = "despidosToolStripMenuItem4";
-            this.despidosToolStripMenuItem4.Size = new System.Drawing.Size(278, 26);
-            this.despidosToolStripMenuItem4.Text = "3082 - Despidos";
-            this.despidosToolStripMenuItem4.Click += new System.EventHandler(this.despidosToolStripMenuItem4_Click);
-            // 
             // recontratacionesToolStripMenuItem
             // 
             this.recontratacionesToolStripMenuItem.Name = "recontratacionesToolStripMenuItem";
             this.recontratacionesToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
-            this.recontratacionesToolStripMenuItem.Text = "3083 - Recontrataciones";
+            this.recontratacionesToolStripMenuItem.Text = "3082 - Recontrataciones";
             this.recontratacionesToolStripMenuItem.Click += new System.EventHandler(this.recontratacionesToolStripMenuItem_Click);
             // 
             // contratacionesToolStripMenuItem1
@@ -451,18 +441,11 @@
             // 
             // ayudaToolStripMenuItem
             // 
-            this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.algunDiaToolStripMenuItem});
             this.ayudaToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(75, 25);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
-            // 
-            // algunDiaToolStripMenuItem
-            // 
-            this.algunDiaToolStripMenuItem.Name = "algunDiaToolStripMenuItem";
-            this.algunDiaToolStripMenuItem.Size = new System.Drawing.Size(157, 26);
-            this.algunDiaToolStripMenuItem.Text = "Algun Dia";
+            this.ayudaToolStripMenuItem.Click += new System.EventHandler(this.ayudaToolStripMenuItem_Click);
             // 
             // MDI_HRM
             // 
@@ -523,10 +506,8 @@
         private System.Windows.Forms.ToolStripMenuItem pruebasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem citasToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem documentosToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem algunDiaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem despidosToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem despidosToolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem despidosToolStripMenuItem4;
         private System.Windows.Forms.ToolStripMenuItem recontratacionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem contratacionesToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem solicitudesToolStripMenuItem1;

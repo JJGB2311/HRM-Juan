@@ -31,6 +31,11 @@ namespace CapaVistaHRM
             Mostraremp();
             progres();
         }
+        void Mostraremp()
+        {
+            DataTable dt = logic.consultaLogisoli();
+            dataGridView1.DataSource = dt;
+        }
         void progres()
         {
             for (int i = 0; i <= 100; i++)
@@ -40,6 +45,12 @@ namespace CapaVistaHRM
             }
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "Ayudas/Ayuda.chm", "SolicitudesPro.html");
+        }
+
         private void dataGridView1_DoubleClick(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count == 1)
@@ -68,11 +79,7 @@ namespace CapaVistaHRM
                 MessageBox.Show("Seleccione un Registro!", "Planilla", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-        void Mostraremp()
-        {
-            DataTable dt = logic.consultaLogisoli();
-            dataGridView1.DataSource = dt;
-        }
+      
         private void Solicitudespro_Load(object sender, EventArgs e)
         {
             progres();

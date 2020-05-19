@@ -47,6 +47,9 @@ namespace CapaVistaHRM
             progres();
         }
 
-       
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "Ayudas/Ayuda.chm", "tipoconceptos .html");
+        }
     }
 }

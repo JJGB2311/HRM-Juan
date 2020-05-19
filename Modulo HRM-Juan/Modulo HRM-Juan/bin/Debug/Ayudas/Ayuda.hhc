@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="General">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="General">
+			<param name="Local" value="General.html">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Planilla">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Vista planilla">
+			<param name="Local" value="Vistaplanilla.html">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Planilla">
+			<param name="Local" value="mPlanilla.html">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Generar planilla">
+			<param name="Local" value="generarplanilla.html">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Solicitudes">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Perfiles">
+			<param name="Local" value="Perfiles.html">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Solicitudes en proceso ">
+			<param name="Local" value="SolicitudesPro.html">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Solicitudes">
+			<param name="Local" value="Solicitudes.html">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Generar solicitudes">
+			<param name="Local" value="Generarsolicitud.html">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Personal">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Generar empleo">
+			<param name="Local" value="Generarempleo.html">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Empleos">
+			<param name="Local" value="mEmpleos.html">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Finiquitos">
+			<param name="Local" value="MFiniquito.html">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Despedir">
+			<param name="Local" value="Despedir.html">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Generear finiquito">
+			<param name="Local" value="Generarfini.html">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Despidos">
+			<param name="Local" value="MDespedidos.html">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Recontrataciones ">
+			<param name="Local" value="Recontrataciones.html">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Empleados">
+			<param name="Local" value="mempleados.html">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="vista empleados">
+			<param name="Local" value="Vistaemplea.html">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Contrataciones">
+			<param name="Local" value="Contrataciones.html">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Conceptos de empleados">
+			<param name="Local" value="contraconcep.html">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Puesto">
+			<param name="Local" value="Puesto.html">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Sueldo">
+			<param name="Local" value="Sueldo.html">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Area">
+			<param name="Local" value="areas.html">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Conceptos">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Conceptos">
+			<param name="Local" value="mconceptos.html">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Tipo de conceptos">
+			<param name="Local" value="tipoconceptos .html">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

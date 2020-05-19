@@ -113,5 +113,10 @@ namespace CapaVistaHRM
             MessageBox.Show("El empleado y sus conceptos se registraron corectamente");
             this.Close();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "Ayudas/Ayuda.chm", "contraconcep.html");
+        }
     }
 }
