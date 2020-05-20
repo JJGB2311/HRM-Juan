@@ -1,5 +1,6 @@
 
 CREATE DATABASE IF NOT EXISTS hrm ;
+use hrm;
 --
 -- Base de datos: `hrm`
 --
