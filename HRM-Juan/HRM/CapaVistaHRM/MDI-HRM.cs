@@ -350,5 +350,12 @@ namespace CapaVistaHRM
 
             poliza.AsignarColores(Color.Blue, Color.White);
         }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Reportesemo nuevo = new Reportesemo();
+            nuevo.MdiParent = this.MdiParent;
+            nuevo.Show();
+        }
     }
 }

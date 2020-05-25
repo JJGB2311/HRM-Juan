@@ -229,6 +229,18 @@
     <Compile Include="Reporte.Designer.cs">
       <DependentUpon>Reporte.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reportesemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportesemo.Designer.cs">
+      <DependentUpon>Reportesemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_empleados.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reporte_empleados.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Reporte_planilla.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -354,6 +366,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reporte.resx">
       <DependentUpon>Reporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportesemo.resx">
+      <DependentUpon>Reportesemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_empleados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte_empleados.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reporte_planilla.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
