@@ -32,7 +32,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.BTN_Sig = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.Btn_can = new System.Windows.Forms.Button();
             this.combo2 = new CapaVista.Combo();
             this.combo1 = new CapaVista.Combo();
@@ -97,7 +97,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.BTN_Sig);
+            this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.Btn_can);
             this.groupBox2.Controls.Add(this.combo2);
             this.groupBox2.Controls.Add(this.combo1);
@@ -127,25 +127,25 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Empleados";
             // 
-            // BTN_Sig
+            // button1
             // 
-            this.BTN_Sig.BackColor = System.Drawing.Color.DodgerBlue;
-            this.BTN_Sig.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTN_Sig.BackgroundImage")));
-            this.BTN_Sig.Enabled = false;
-            this.BTN_Sig.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.BTN_Sig.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
-            this.BTN_Sig.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
-            this.BTN_Sig.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
-            this.BTN_Sig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTN_Sig.ForeColor = System.Drawing.Color.White;
-            this.BTN_Sig.Location = new System.Drawing.Point(720, 192);
-            this.BTN_Sig.Name = "BTN_Sig";
-            this.BTN_Sig.Size = new System.Drawing.Size(157, 75);
-            this.BTN_Sig.TabIndex = 33;
-            this.BTN_Sig.Text = "Siguiente";
-            this.BTN_Sig.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BTN_Sig.UseVisualStyleBackColor = false;
-            this.BTN_Sig.Click += new System.EventHandler(this.button1_Click);
+            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(444, 192);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(126, 75);
+            this.button1.TabIndex = 36;
+            this.button1.Text = "Nuevo ";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Btn_can
             // 
@@ -157,9 +157,9 @@
             this.Btn_can.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_can.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_can.ForeColor = System.Drawing.Color.White;
-            this.Btn_can.Location = new System.Drawing.Point(576, 192);
+            this.Btn_can.Location = new System.Drawing.Point(729, 192);
             this.Btn_can.Name = "Btn_can";
-            this.Btn_can.Size = new System.Drawing.Size(138, 75);
+            this.Btn_can.Size = new System.Drawing.Size(141, 75);
             this.Btn_can.TabIndex = 31;
             this.Btn_can.Text = "Cancelar";
             this.Btn_can.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -168,6 +168,7 @@
             // 
             // combo2
             // 
+            this.combo2.Enabled = false;
             this.combo2.Location = new System.Drawing.Point(521, 71);
             this.combo2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.combo2.Name = "combo2";
@@ -176,6 +177,7 @@
             // 
             // combo1
             // 
+            this.combo1.Enabled = false;
             this.combo1.Location = new System.Drawing.Point(521, 36);
             this.combo1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.combo1.Name = "combo1";
@@ -184,6 +186,7 @@
             // 
             // Txt_dire
             // 
+            this.Txt_dire.Enabled = false;
             this.Txt_dire.Location = new System.Drawing.Point(521, 142);
             this.Txt_dire.MaxLength = 50;
             this.Txt_dire.Name = "Txt_dire";
@@ -201,6 +204,7 @@
             // 
             // Txt_nit
             // 
+            this.Txt_nit.Enabled = false;
             this.Txt_nit.Location = new System.Drawing.Point(521, 109);
             this.Txt_nit.MaxLength = 13;
             this.Txt_nit.Name = "Txt_nit";
@@ -219,6 +223,7 @@
             // 
             // Txt_cui
             // 
+            this.Txt_cui.Enabled = false;
             this.Txt_cui.Location = new System.Drawing.Point(91, 131);
             this.Txt_cui.MaxLength = 13;
             this.Txt_cui.Name = "Txt_cui";
@@ -237,9 +242,9 @@
             this.Btn_genee.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_genee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_genee.ForeColor = System.Drawing.Color.White;
-            this.Btn_genee.Location = new System.Drawing.Point(422, 192);
+            this.Btn_genee.Location = new System.Drawing.Point(576, 192);
             this.Btn_genee.Name = "Btn_genee";
-            this.Btn_genee.Size = new System.Drawing.Size(148, 75);
+            this.Btn_genee.Size = new System.Drawing.Size(147, 75);
             this.Btn_genee.TabIndex = 0;
             this.Btn_genee.Text = "Registrar ";
             this.Btn_genee.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -257,6 +262,7 @@
             // 
             // Cbo_sex
             // 
+            this.Cbo_sex.Enabled = false;
             this.Cbo_sex.FormattingEnabled = true;
             this.Cbo_sex.Location = new System.Drawing.Point(91, 99);
             this.Cbo_sex.Name = "Cbo_sex";
@@ -266,6 +272,7 @@
             // 
             // DTP_fechana
             // 
+            this.DTP_fechana.Enabled = false;
             this.DTP_fechana.Location = new System.Drawing.Point(39, 225);
             this.DTP_fechana.Name = "DTP_fechana";
             this.DTP_fechana.Size = new System.Drawing.Size(323, 27);
@@ -291,6 +298,7 @@
             // 
             // txt_correo
             // 
+            this.txt_correo.Enabled = false;
             this.txt_correo.Location = new System.Drawing.Point(91, 164);
             this.txt_correo.MaxLength = 45;
             this.txt_correo.Name = "txt_correo";
@@ -326,6 +334,7 @@
             // 
             // Txt_apellido
             // 
+            this.Txt_apellido.Enabled = false;
             this.Txt_apellido.Location = new System.Drawing.Point(90, 67);
             this.Txt_apellido.MaxLength = 45;
             this.Txt_apellido.Name = "Txt_apellido";
@@ -343,6 +352,7 @@
             // 
             // Txt_nombre
             // 
+            this.Txt_nombre.Enabled = false;
             this.Txt_nombre.Location = new System.Drawing.Point(91, 34);
             this.Txt_nombre.MaxLength = 45;
             this.Txt_nombre.Name = "Txt_nombre";
@@ -450,7 +460,6 @@
             this.Name = "EmpleadosCon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "3011 - Registro de empleados";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EmpleadosCon_FormClosing);
             this.Load += new System.EventHandler(this.Btn_agrecon_Load);
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -500,7 +509,7 @@
         private System.Windows.Forms.ToolStripStatusLabel LblUsuario;
         private System.Windows.Forms.ToolStripProgressBar ProgressBar1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button BTN_Sig;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button1;
     }
 }

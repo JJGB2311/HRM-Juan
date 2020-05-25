@@ -115,6 +115,10 @@ namespace CapaModeloHRM
             return sn.obtenerEMP();
         }
 
+         public string nuevoEMPCONSU()//trasporta el query de la capa de disenio a Datos
+        {
+            return sn.obtenerEMPSU();
+        }
         public DataTable consultaLogiemplecod(string emple)
         {
             OdbcDataAdapter dt = sn.llenaTblempleno(emple);

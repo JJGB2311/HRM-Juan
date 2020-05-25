@@ -21,7 +21,13 @@ namespace CapaVistaHRM
         string fechafin = "1111-11-11";
         string debehaber;
         string vacio = "";
-        public Asignacioncone(string user)
+        string[] empleados;
+        string A; //CAPTURAMOS LOS DATOS DE LA COLUMNA 0 Y 1 
+        string B ;
+        string C ;
+        string D ;
+        string E;
+         public Asignacioncone(string user)
         {
             InitializeComponent();
             usuario = user;
@@ -32,18 +38,22 @@ namespace CapaVistaHRM
             dateTimePicker3.Format = DateTimePickerFormat.Custom;
             dateTimePicker3.CustomFormat = "yyyy-MM-dd";
             combo3.llenarse("tipo_concepto", "id_tipo", "nombre");
-           Txt_emplecon.Text= logic.nuevoEMPCON();
+         //  Txt_emplecon.Text= logic.nuevoEMPCON();
+            Mostraremp();
         }
-        void Mostrarcon(string emple)
+       
+        void Mostraremp()
         {
-            DataTable dt = logic.consultaLogicacon(emple);
-            dataGridView2.DataSource = dt;
+            DataTable dt = logic.consultaLogica();
+            dataGridView1.DataSource = dt;
         }
-        string crearInsertcon()// crea el query de insert
+        
+        string crearInsertcon(string dato)// crea el query de insert
         {
-            string query = "INSERT INTO `conceptos` (`id_concepto`, `id_empleado`, `fecha_inicio`, `fecha_fin`, `id_tipo`, `monto`, `debe_Haber`, `estado`) VALUES (NULL, '" + Txt_emplecon.Text + "', '" + dateTimePicker2.Text + "', '" + dateTimePicker3.Text + "', '" + combo3.ObtenerIndif() + "', '" + Txt_montocon.Text + "', '" + debehaber + "', '1');";
+            string query = "INSERT INTO `conceptos` (`id_concepto`, `id_empleado`, `fecha_inicio`, `fecha_fin`, `id_tipo`, `monto`, `debe_Haber`, `estado`) VALUES (NULL, '" + dato + "', '" + dateTimePicker2.Text + "', '" + dateTimePicker3.Text + "', '" + combo3.ObtenerIndif() + "', '" + Txt_montocon.Text + "', '" + debehaber + "', '1');";
             return query;
         }
+        
         private void Asignacioncone_Load(object sender, EventArgs e)
         {
             if (radioButton2.Checked == true)
@@ -78,7 +88,7 @@ namespace CapaVistaHRM
         {
             if (checkBox1.Checked == true)
             {
-                dateTimePicker2.Enabled = true;
+                 dateTimePicker2.Enabled = true;
                 dateTimePicker3.Enabled = true;
                 fechaini = dateTimePicker2.Text;
                 fechafin = dateTimePicker3.Text;
@@ -94,18 +104,34 @@ namespace CapaVistaHRM
             {
                 MessageBox.Show("Error!");
             }
-
+            
         }
 
         private void Btn_geeecon_Click(object sender, EventArgs e)
         {
-            logic.nuevoQuery(crearInsertcon());
-            Mostrarcon(Txt_emplecon.Text);
-            progres();
+
+            if (dataGridView3.Rows.Count > 0)
+              {
+                  foreach (DataGridViewRow row in dataGridView3.Rows)
+                  {
+
+                      string prueba = row.Cells[0].Value.ToString();
+                      logic.nuevoQuery(crearInsertcon(prueba));
+
+                  }
+
+                  MessageBox.Show("Conceptos agregados corectamente!!");
+
+              }
+
+             progres();
             Txt_montocon.Text = "";
             radioButton2.Checked = true;
             checkBox1.Checked = false;
-            combo3.texto(vacio);           
+            combo3.texto(vacio);
+            dataGridView3.Rows.Clear();
+            Mostraremp();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -117,6 +143,41 @@ namespace CapaVistaHRM
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Help.ShowHelp(this, "Ayudas/Ayuda.chm", "contraconcep.html");
+        }
+
+    
+        private void dataGridView1_DoubleClick(object sender, EventArgs e)
+        {
+            A = this.dataGridView1.CurrentRow.Cells[0].Value.ToString(); //CAPTURAMOS LOS DATOS DE LA COLUMNA 0 Y 1 
+            B = this.dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            C = this.dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            D = this.dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            E = this.dataGridView1.CurrentRow.Cells[5].Value.ToString();
+            dataGridView3.Rows.Add(A, B, C, D, E);//ENVIAMOS DATOS CAPTURADOS A LA DG1
+            foreach (DataGridViewRow item in this.dataGridView1.SelectedRows)
+            {
+                dataGridView1.Rows.RemoveAt(item.Index);
+            }
+            
+        }
+
+        private void dataGridView3_DoubleClick(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow item in this.dataGridView3.SelectedRows)
+            {
+                dataGridView3.Rows.RemoveAt(item.Index);
+            }
+         
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Txt_montocon.Text = "";
+            radioButton2.Checked = true;
+            checkBox1.Checked = false;
+            combo3.texto(vacio);
+            dataGridView3.Rows.Clear();
+            Mostraremp();
         }
     }
 }
