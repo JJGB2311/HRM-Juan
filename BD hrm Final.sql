@@ -1,22 +1,6 @@
--- phpMyAdmin SQL Dump
--- version 5.0.2
--- https://www.phpmyadmin.net/
---
--- Servidor: 127.0.0.1
--- Tiempo de generación: 12-05-2020 a las 05:42:35
--- Versión del servidor: 10.4.11-MariaDB
--- Versión de PHP: 7.2.30
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
+CREATE DATABASE IF NOT EXISTS hrm ;
+use hrm;
 --
 -- Base de datos: `hrm`
 --
@@ -165,15 +149,12 @@ CREATE TABLE `conceptos` (
 --
 
 INSERT INTO `conceptos` (`id_concepto`, `id_empleado`, `fecha_inicio`, `fecha_fin`, `id_tipo`, `monto`, `debe_Haber`, `estado`) VALUES
-(1, 1, '2020-05-02', '2020-05-11', 1, 300, 1, 1),
-(2, 1, '2020-05-02', '2020-05-11', 2, 250, 0, 1),
-(3, 1, '2020-05-01', '2020-05-30', 3, 0, 1, 1),
-(4, 2, '2020-05-02', '2020-05-11', 1, 300, 1, 1),
-(5, 2, '2020-05-02', '2020-05-11', 2, 200, 0, 1),
-(6, 2, '2020-05-02', '2020-05-11', 3, 500, 1, 1),
-(7, 1, '1111-11-11', '1111-11-11', 4, 400, 1, 1),
-(8, 3, '2020-05-02', '2020-05-11', 1, 200, 1, 1),
-(9, 3, '2020-05-02', '2020-05-11', 2, 200, 0, 1);
+(1, 2, '2020-05-01', '2020-05-31', 1, 300, 1, 1),
+(2, 2, '2020-05-01', '2020-05-31', 2, 200, 0, 1),
+(3, 2, '2020-05-01', '2020-05-31', 3, 400, 1, 1),
+(4, 1, '1111-11-11', '1111-11-11', 1, 300, 1, 1),
+(5, 1, '1111-11-11', '1111-11-11', 2, 250, 0, 1),
+(6, 1, '1111-11-11', '1111-11-11', 3, 450, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -214,11 +195,8 @@ CREATE TABLE `detalle_planilla` (
 --
 
 INSERT INTO `detalle_planilla` (`id_detalle`, `id_planilla`, `id_empleado`, `sueldo_base`, `sueldo_extraordinario`, `total_devengado`, `total_descuento`, `total_liquido`, `estado`) VALUES
-(1, 1, 1, 8000, 8000, 8700, 250, 17150, 1),
-(1, 2, 1, 8000, 8000, 8700, 250, 17150, 1),
-(2, 1, 2, 3000, 3000, 3800, 200, 7400, 1),
-(2, 2, 2, 3000, 3000, 3800, 200, 7400, 1),
-(3, 2, 3, 3000, 3000, 3200, 200, 6200, 1);
+(1, 1, 1, 3000, 3000, 3750, 250, 7250, 1),
+(2, 1, 2, 3000, 3000, 3700, 200, 7200, 1);
 
 -- --------------------------------------------------------
 
@@ -261,9 +239,8 @@ CREATE TABLE `empleados` (
 --
 
 INSERT INTO `empleados` (`id_empleado`, `nombre`, `apellido`, `sexo`, `fecha_de_nacimiento`, `cui`, `correo`, `id_puesto`, `id_area`, `nit`, `direccion`, `estado`) VALUES
-(1, 'Juan', 'Gámez', 'Masculino', '1997-11-23', '4584984918461', 'juan@hotmail.com', 3, 1, '528498-9', 'Boca del monte ', 1),
-(2, 'Edgar', 'Casasola', 'Masculino', '2020-05-11', '5940984984984', 'edgar01@gmail.com', 1, 2, '5254184-8', 'Zona 21', 1),
-(3, 'Victor', 'Gonzales', 'Masculino', '1997-07-11', '5519849498111', 'victor@hotmail.com', 1, 2, '551484844-7', 'Guatemala', 2);
+(1, 'Juan', 'Gamez', 'Masculino', '1997-11-23', '1234567891234', 'juan@hotmail.com', 1, 1, '6165141-5', 'Guatemala villa canales', 1),
+(2, 'Edgar', 'Casasola', 'Masculino', '2020-05-19', '6519814984189', 'cas01@hotmail.com', 1, 2, '5644614-4', 'Zona 21', 1);
 
 -- --------------------------------------------------------
 
@@ -296,13 +273,6 @@ CREATE TABLE `finiqito` (
   `estado` tinyint(1) DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Volcado de datos para la tabla `finiqito`
---
-
-INSERT INTO `finiqito` (`id_finiqito`, `id_empleados`, `motivo`, `descripcion`, `total_prestaciones`, `estado`) VALUES
-(1, 3, 'Se despide por no trabajar ', 'El empleado inculplio con sus labores ', 5000, 1);
-
 -- --------------------------------------------------------
 
 --
@@ -333,6 +303,13 @@ CREATE TABLE `perfiles` (
   `estado` tinyint(1) DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Volcado de datos para la tabla `perfiles`
+--
+
+INSERT INTO `perfiles` (`id_perfil`, `nombre`, `educacion`, `nivel`, `descripcion`, `estado`) VALUES
+(1, 'Recursos Humanos', 'Universitaria', '9no Semestre de ingenieria', '-Conociminetos en c++\r\n-Conocimientos en php\r\n-Conocimientos en SQL', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -352,8 +329,7 @@ CREATE TABLE `planilla` (
 --
 
 INSERT INTO `planilla` (`id_planilla`, `fecha_inicio`, `fecha_fin`, `Nombre`, `estado`) VALUES
-(1, '2020-05-01', '2020-05-30', 'Bienestar S.A', 1),
-(2, '2020-05-01', '2020-05-30', 'Bienestar Mayo', 1);
+(1, '2020-05-01', '2020-05-31', 'Bienestar', 1);
 
 -- --------------------------------------------------------
 
@@ -426,6 +402,13 @@ CREATE TABLE `solicitudes` (
   `estado` tinyint(1) DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Volcado de datos para la tabla `solicitudes`
+--
+
+INSERT INTO `solicitudes` (`id_solicitud`, `id_perfil`, `id_area`, `fecha`, `detalles`, `Cantidad`, `motivo`, `id_puesto`, `porcentaje`, `estado`) VALUES
+(1, 1, 1, '2020-05-19', 'Se necesita con urgencia', 1, 'Temporal', 3, 10, 1);
+
 -- --------------------------------------------------------
 
 --
@@ -491,7 +474,8 @@ INSERT INTO `tipo_concepto` (`id_tipo`, `nombre`, `estado`) VALUES
 (1, 'Bonificación', 1),
 (2, 'IGSS', 1),
 (3, 'Bono 14', 1),
-(4, 'Aguinaldo', 1);
+(4, 'Aguinaldo', 1),
+(5, 'Descuento', 1);
 
 --
 -- Índices para tablas volcadas
@@ -702,7 +686,7 @@ ALTER TABLE `comisiones`
 -- AUTO_INCREMENT de la tabla `conceptos`
 --
 ALTER TABLE `conceptos`
-  MODIFY `id_concepto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_concepto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `documentos`
@@ -714,7 +698,7 @@ ALTER TABLE `documentos`
 -- AUTO_INCREMENT de la tabla `empleados`
 --
 ALTER TABLE `empleados`
-  MODIFY `id_empleado` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_empleado` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `empleos`
@@ -726,25 +710,25 @@ ALTER TABLE `empleos`
 -- AUTO_INCREMENT de la tabla `finiqito`
 --
 ALTER TABLE `finiqito`
-  MODIFY `id_finiqito` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_finiqito` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `horas`
 --
 ALTER TABLE `horas`
-  MODIFY `id_hora` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_hora` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `perfiles`
 --
 ALTER TABLE `perfiles`
-  MODIFY `id_perfil` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_perfil` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `planilla`
 --
 ALTER TABLE `planilla`
-  MODIFY `id_planilla` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_planilla` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `pruebas`
@@ -756,13 +740,13 @@ ALTER TABLE `pruebas`
 -- AUTO_INCREMENT de la tabla `puestos`
 --
 ALTER TABLE `puestos`
-  MODIFY `id_puesto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_puesto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `solicitudes`
 --
 ALTER TABLE `solicitudes`
-  MODIFY `id_solicitud` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_solicitud` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `sueldos`
@@ -780,7 +764,7 @@ ALTER TABLE `tipo_comisiones`
 -- AUTO_INCREMENT de la tabla `tipo_concepto`
 --
 ALTER TABLE `tipo_concepto`
-  MODIFY `id_tipo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_tipo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Restricciones para tablas volcadas
@@ -874,11 +858,7 @@ ALTER TABLE `puestos`
 -- Filtros para la tabla `solicitudes`
 --
 ALTER TABLE `solicitudes`
-  ADD CONSTRAINT `areaa` FOREIGN KEY (`id_area`) REFERENCES `area` (`id_area`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `are` FOREIGN KEY (`id_area`) REFERENCES `area` (`id_area`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `per` FOREIGN KEY (`id_perfil`) REFERENCES `perfiles` (`id_perfil`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `puess` FOREIGN KEY (`id_puesto`) REFERENCES `puestos` (`id_puesto`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `pus` FOREIGN KEY (`id_puesto`) REFERENCES `puestos` (`id_puesto`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
