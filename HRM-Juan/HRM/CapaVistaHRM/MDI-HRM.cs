@@ -313,5 +313,49 @@ namespace CapaVistaHRM
 
 
         }
+
+        private void multiConceptosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Asignacioncone nuevo = new Asignacioncone(usuarioact);
+            nuevo.MdiParent = this.MdiParent;
+            nuevo.Show();
+        }
+
+        private void reportesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void planillaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            
+            Reporte nuevo = new Reporte();
+            nuevo.MdiParent = this.MdiParent;
+            nuevo.Show();
+        }
+
+        private void polizaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Polizas.Polizas poliza = new Polizas.Polizas();
+            poliza.MdiParent=this;
+            poliza.Show();
+
+            poliza.AsignarQuery(
+                "  SELECT 'Sueldos' AS Cuenta, (SELECT round(COALESCE(sum(detalle_planilla.total_liquido), 0), 2) AS Sueldos FROM detalle_planilla INNER JOIN planilla ON planilla.id_planilla = detalle_planilla.id_planilla WHERE planilla.fecha_inicio >= 'FechaI' AND planilla.fecha_fin <= 'FechaF') AS Debe, '0' AS Haber UNION ALL SELECT 'Bancos' AS Cuenta, '0' AS Debe, (SELECT round(COALESCE(sum(detalle_planilla.total_liquido), 0), 2) AS Sueldos FROM detalle_planilla INNER JOIN planilla ON planilla.id_planilla = detalle_planilla.id_planilla WHERE planilla.fecha_inicio >= 'FechaI' AND planilla.fecha_fin <= 'FechaF') AS Haber;");
+
+
+            /**/
+           
+            /**/
+
+            poliza.AsignarColores(Color.Blue, Color.White);
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Reportesemo nuevo = new Reportesemo();
+            nuevo.MdiParent = this.MdiParent;
+            nuevo.Show();
+        }
     }
 }

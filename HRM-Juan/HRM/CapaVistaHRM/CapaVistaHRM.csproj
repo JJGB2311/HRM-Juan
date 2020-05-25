@@ -31,6 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="CapaDeDiseno">
       <HintPath>..\..\..\Navegador\CapaDeDiseno\bin\Debug\CapaDeDiseno.dll</HintPath>
     </Reference>
@@ -41,15 +42,22 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\ComboAuto\CapaVista\bin\Debug\CapaVista.dll</HintPath>
     </Reference>
-    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
-    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="PDFHelpViewer">
       <HintPath>..\..\..\AyudaRupDll-master\PDFHelpViewer\PDFHelpViewer\bin\Debug\PDFHelpViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="Polizas">
+      <HintPath>..\..\..\dd-polizas-master\Polizas\Polizas\bin\Debug\Polizas.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -215,6 +223,30 @@
     <Compile Include="Puestos.Designer.cs">
       <DependentUpon>Puestos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte.Designer.cs">
+      <DependentUpon>Reporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportesemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportesemo.Designer.cs">
+      <DependentUpon>Reportesemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_empleados.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reporte_empleados.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporte_planilla.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reporte_planilla.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Solicitudes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -264,6 +296,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Candidatos.resx">
       <DependentUpon>Candidatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Citas.resx">
+      <DependentUpon>Citas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Comiciones.resx">
       <DependentUpon>Comiciones.cs</DependentUpon>
@@ -329,6 +364,20 @@
     <EmbeddedResource Include="Puestos.resx">
       <DependentUpon>Puestos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reporte.resx">
+      <DependentUpon>Reporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportesemo.resx">
+      <DependentUpon>Reportesemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_empleados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte_empleados.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_planilla.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporte_planilla.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Solicitudes.resx">
       <DependentUpon>Solicitudes.cs</DependentUpon>
     </EmbeddedResource>
@@ -344,6 +393,9 @@
     <EmbeddedResource Include="TipoConcepto.resx">
       <DependentUpon>TipoConcepto.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

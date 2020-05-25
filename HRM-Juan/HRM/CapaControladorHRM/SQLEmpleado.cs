@@ -177,6 +177,24 @@ namespace CapaControladorHRM
             caposactivos1.TrimEnd(',');
             return caposactivos1;
         }
+
+        /**/
+        /**/
+        public string obtenerEMPSU()
+        {
+            string caposactivos1 = "";
+            string sql = "SELECT sueldos.salario FROM empleados INNER JOIN puestos ON puestos.id_puesto = empleados.id_puesto INNER JOIN sueldos ON sueldos.id_sueldo = puestos.id_sueldo WHERE empleados.id_empleado =(select MAX(id_empleado) from empleados where estado=1);";
+
+            OdbcCommand command = new OdbcCommand(sql, cn.conexion());
+            OdbcDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                caposactivos1 += reader.GetValue(0).ToString();
+            }
+            caposactivos1.TrimEnd(',');
+            return caposactivos1;
+        }
+
         /**/
         public void ejecutarQuery(string query)// ejecuta un query en la BD
         {

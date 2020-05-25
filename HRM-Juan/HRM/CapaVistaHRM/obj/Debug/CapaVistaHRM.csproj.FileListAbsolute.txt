@@ -63,8 +63,6 @@ C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingen
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\bin\Debug\CapaDeDiseno.dll
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\bin\Debug\CapaDiseno.dll
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\bin\Debug\CapaModeloHRM.dll
-C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
-C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\bin\Debug\CrystalDecisions.Windows.Forms.dll
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\bin\Debug\CapaControladorHRM.dll
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\bin\Debug\CapaDeLogica.dll
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\bin\Debug\ConsultasInteligentes.dll
@@ -83,7 +81,6 @@ C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingen
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\bin\Debug\CrystalDecisions.ReportSource.dll
-C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\bin\Debug\FlashControlV71.dll
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\bin\Debug\CapaDeDatos.dll
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\bin\Debug\CapaLogica_Consultas.dll
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
@@ -146,3 +143,11 @@ C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingen
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\bin\Debug\AxInterop.AcroPDFLib.dll
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\bin\Debug\Interop.AcroPDFLib.dll
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\bin\Debug\PDFHelpViewer.pdb
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\obj\Debug\CapaVistaHRM.Reporte.resources
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\bin\Debug\AxShockwaveFlashObjects.dll
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\obj\Debug\CapaVistaHRM.Citas.resources
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\bin\Debug\Polizas.dll
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\bin\Debug\Polizas.pdb
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\2do Proyecto\HRM - Juan\Modulo HRM\HRM-Juan\HRM\CapaVistaHRM\obj\Debug\CapaVistaHRM.Reportesemo.resources

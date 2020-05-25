@@ -18,7 +18,10 @@ namespace CapaVistaHRM
         ModeloEmpleado logic = new ModeloEmpleado();
         string usuario;
         string vacio = "";
-        string valor = "NO";
+        int conver=0;
+        string dato;
+        double converi = 0;
+        string datoi;
         public EmpleadosCon(string user)
         {
             InitializeComponent();
@@ -32,6 +35,8 @@ namespace CapaVistaHRM
             combo1.llenarse("puestos", "id_puesto", "nombre");
             combo2.llenarse("area", "id_area", "nombre");
             progres();
+
+           
         }
         void Mostraremp()
         {
@@ -44,6 +49,32 @@ namespace CapaVistaHRM
             string query = "INSERT INTO `empleados` (`id_empleado`, `nombre`, `apellido`, `sexo`, `fecha_de_nacimiento`, `cui`, `correo`, `id_puesto`, `id_area`, `nit`, `direccion`, `estado`) VALUES (NULL,'" + Txt_nombre.Text + "', '" + Txt_apellido.Text + "', '" + Cbo_sex.Text + "', '" + DTP_fechana.Text + "', '" + Txt_cui.Text + "', '" + txt_correo.Text + "', '" + combo1.ObtenerIndif() + "', '" + combo2.obtener() + "', '" + Txt_nit.Text + "', '" + Txt_dire.Text + "', '1');";
             return query;
         }
+        string crearInsertco( string ID,string sueldo)// crea el query de insert
+        {
+            conver = Convert.ToInt32(sueldo);
+            conver = (conver * 10) / 100;
+            dato = (conver).ToString();
+            string query = "INSERT INTO `conceptos` (`id_concepto`, `id_empleado`, `fecha_inicio`, `fecha_fin`, `id_tipo`, `monto`, `debe_Haber`, `estado`) VALUES (NULL, '"+ID+"', '1111-11-11', '1111-11-11', '1', '"+dato+"', '1', '1');";
+            return query;
+        }
+        string crearInsertco1(string ID, string sueldo)// crea el query de insert
+        {
+            converi = Convert.ToInt32(sueldo);
+            converi = (converi * 0.0483);
+            datoi = (converi).ToString();
+            string query = "INSERT INTO `conceptos` (`id_concepto`, `id_empleado`, `fecha_inicio`, `fecha_fin`, `id_tipo`, `monto`, `debe_Haber`, `estado`) VALUES (NULL, '"+ID+"', '1111-11-11', '1111-11-11', '2', '"+ datoi + "', '0', '1');";
+            return query;
+        }
+        string crearInsertco2(string ID, string sueldo)// crea el query de insert
+        {
+            string query = "INSERT INTO `conceptos` (`id_concepto`, `id_empleado`, `fecha_inicio`, `fecha_fin`, `id_tipo`, `monto`, `debe_Haber`, `estado`) VALUES (NULL, '"+ID+ "', '2020-07-01', '2020-07-31', '3', '" + sueldo + "', '1', '1');";
+            return query;
+        }
+        string crearInsertco3(string ID, string sueldo)// crea el query de insert
+        {
+            string query = "INSERT INTO `conceptos` (`id_concepto`, `id_empleado`, `fecha_inicio`, `fecha_fin`, `id_tipo`, `monto`, `debe_Haber`, `estado`) VALUES (NULL, '" + ID + "', '2020-12-01', '2020-12-31', '4', '"+sueldo+"', '1', '1');";
+            return query;
+        }
 
         private void Btn_genee_Click(object sender, EventArgs e)
         {
@@ -54,6 +85,10 @@ namespace CapaVistaHRM
                 MessageBox.Show("El dato ingresado es incorecto!!");
             }
             logic.nuevoQuery(crearInsert());
+            logic.nuevoQuery(crearInsertco(logic.nuevoEMPCON(),logic.nuevoEMPCONSU()));
+            logic.nuevoQuery(crearInsertco1(logic.nuevoEMPCON(), logic.nuevoEMPCONSU()));
+            logic.nuevoQuery(crearInsertco2(logic.nuevoEMPCON(), logic.nuevoEMPCONSU()));
+            logic.nuevoQuery(crearInsertco3(logic.nuevoEMPCON(), logic.nuevoEMPCONSU()));
             Mostraremp();
             Txt_nombre.Text = "";
             Txt_apellido.Text = "";
@@ -65,7 +100,6 @@ namespace CapaVistaHRM
             combo1.texto(vacio);
             combo2.texto(vacio);
             Btn_genee.Enabled = false;
-            BTN_Sig.Enabled = true;
             Txt_nombre.Enabled = false;
             Txt_apellido.Enabled = false;
             Cbo_sex.Enabled = false;
@@ -78,7 +112,7 @@ namespace CapaVistaHRM
             DTP_fechana.Enabled = false;
             Btn_can.Enabled = false;
             progres();
-            MessageBox.Show("El empleado se registró correctamente. Para continuar seleccione el boton siguiente Nota (si cierra el formulario sin seleccionar el boton siguiente el registro no tendrá conceptos asignados)");
+            MessageBox.Show("El empleado se registró correctamente.");
         }
 
         private void Btn_nuevoreg_Click(object sender, EventArgs e)
@@ -116,7 +150,18 @@ namespace CapaVistaHRM
             Txt_dire.Text = "";
             Txt_nit.Text = "";
             Cbo_sex.Text = "";
-            BTN_Sig.Enabled = false;
+            Btn_genee.Enabled = false;
+            Txt_nombre.Enabled = false;
+            Txt_apellido.Enabled = false;
+            Cbo_sex.Enabled = false;
+            Txt_cui.Enabled = false;
+            txt_correo.Enabled = false;
+            combo1.Enabled = false;
+            combo2.Enabled = false;
+            Txt_nit.Enabled = false;
+            Txt_dire.Enabled = false;
+            DTP_fechana.Enabled = false;
+            Btn_can.Enabled = false;
             MessageBox.Show("El Reguistro se cancelo corectamente!!");
 
 
@@ -248,30 +293,12 @@ namespace CapaVistaHRM
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            valor = "si";
-            Asignacioncone nuevo = new Asignacioncone(usuario);
-            nuevo.MdiParent = this.MdiParent;
-            nuevo.Show();
-            this.Close();
+         
+          
+          
         }
 
-        private void EmpleadosCon_FormClosing(object sender, FormClosingEventArgs e)
-        {
-
-            if (Btn_genee.Enabled == false)
-            {
-                if (valor == "si")
-                {
-                    e.Cancel = false;
-                }
-                else { e.Cancel = true; }
-
-            }
-            else if (Btn_genee.Enabled == true)
-            {
-                e.Cancel = false;
-            }
-        }
+       
 
         private void Cbo_sex_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -291,6 +318,22 @@ namespace CapaVistaHRM
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Help.ShowHelp(this, "Ayudas/Ayuda.chm", "Contrataciones.html");
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Btn_genee.Enabled = true;
+            Txt_nombre.Enabled = true;
+            Txt_apellido.Enabled = true;
+            Cbo_sex.Enabled = true;
+            Txt_cui.Enabled = true;
+            txt_correo.Enabled = true;
+            combo1.Enabled = true;
+            combo2.Enabled = true;
+            Txt_nit.Enabled = true;
+            Txt_dire.Enabled = true;
+            DTP_fechana.Enabled = true;
+            Btn_can.Enabled = true;
         }
     }
 }
