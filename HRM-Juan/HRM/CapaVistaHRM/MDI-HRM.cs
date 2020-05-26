@@ -341,7 +341,7 @@ namespace CapaVistaHRM
             poliza.Show();
 
             poliza.AsignarQuery(
-                "  SELECT 'Sueldos' AS Cuenta, (SELECT round(COALESCE(sum(detalle_planilla.total_liquido), 0), 2) AS Sueldos FROM detalle_planilla INNER JOIN planilla ON planilla.id_planilla = detalle_planilla.id_planilla WHERE planilla.fecha_inicio >= 'FechaI' AND planilla.fecha_fin <= 'FechaF') AS Debe, '0' AS Haber UNION ALL SELECT 'Bancos' AS Cuenta, '0' AS Debe, (SELECT round(COALESCE(sum(detalle_planilla.total_liquido), 0), 2) AS Sueldos FROM detalle_planilla INNER JOIN planilla ON planilla.id_planilla = detalle_planilla.id_planilla WHERE planilla.fecha_inicio >= 'FechaI' AND planilla.fecha_fin <= 'FechaF') AS Haber;");
+                "  SELECT 'SUELDOS' AS Cuenta, (SELECT round(COALESCE(sum(detalle_planilla.total_liquido), 0), 2) AS Sueldos FROM detalle_planilla INNER JOIN planilla ON planilla.id_planilla = detalle_planilla.id_planilla WHERE planilla.fecha_inicio >= 'FechaI' AND planilla.fecha_fin <= 'FechaF') AS Debe, '0' AS Haber UNION ALL SELECT 'BANCOS' AS Cuenta, '0' AS Debe, (SELECT round(COALESCE(sum(detalle_planilla.total_liquido), 0), 2) AS Sueldos FROM detalle_planilla INNER JOIN planilla ON planilla.id_planilla = detalle_planilla.id_planilla WHERE planilla.fecha_inicio >= 'FechaI' AND planilla.fecha_fin <= 'FechaF') AS Haber;");
 
 
             /**/
