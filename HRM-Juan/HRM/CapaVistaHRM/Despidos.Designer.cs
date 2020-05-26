@@ -189,6 +189,7 @@
             this.Btn_Des.BackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_Des.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Des.BackgroundImage")));
             this.Btn_Des.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Btn_Des.Enabled = false;
             this.Btn_Des.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
             this.Btn_Des.FlatAppearance.CheckedBackColor = System.Drawing.Color.DodgerBlue;
             this.Btn_Des.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
