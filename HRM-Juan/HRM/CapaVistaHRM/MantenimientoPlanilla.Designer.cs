@@ -88,8 +88,8 @@
             // 
             this.toolStripStatusLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(47, 17);
-            this.toolStripStatusLabel.Text = "Usuario";
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(56, 17);
+            this.toolStripStatusLabel.Text = "Usuario : ";
             // 
             // LblUsuario
             // 
@@ -102,8 +102,8 @@
             // 
             this.toolStripStatusLabel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(76, 17);
-            this.toolStripStatusLabel1.Text = "Total Planilla:";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(79, 17);
+            this.toolStripStatusLabel1.Text = "Total Planilla :";
             // 
             // TOTAL
             // 

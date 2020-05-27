@@ -420,7 +420,7 @@
             this.groupBox3.Size = new System.Drawing.Size(1201, 236);
             this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "información";
+            this.groupBox3.Text = "Información";
             // 
             // dataGridView1
             // 
@@ -459,8 +459,8 @@
             // 
             this.toolStripStatusLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(47, 17);
-            this.toolStripStatusLabel.Text = "Usuario";
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(56, 17);
+            this.toolStripStatusLabel.Text = "Usuario : ";
             // 
             // LblUsuario
             // 

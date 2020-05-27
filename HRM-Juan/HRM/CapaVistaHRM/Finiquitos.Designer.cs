@@ -335,7 +335,7 @@
             this.MaximizeBox = false;
             this.Name = "Finiquitos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Finiquitos";
+            this.Text = "3015 - Finiquitos";
             this.Load += new System.EventHandler(this.Finiquitos_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

@@ -290,8 +290,8 @@
             // 
             this.toolStripStatusLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(47, 17);
-            this.toolStripStatusLabel.Text = "Usuario";
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(56, 17);
+            this.toolStripStatusLabel.Text = "Usuario : ";
             // 
             // LblUsuario
             // 
@@ -360,9 +360,9 @@
             this.label15.ForeColor = System.Drawing.Color.White;
             this.label15.Location = new System.Drawing.Point(460, 23);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(423, 39);
+            this.label15.Size = new System.Drawing.Size(422, 39);
             this.label15.TabIndex = 0;
-            this.label15.Text = "Asignación de comseptos";
+            this.label15.Text = "Asignación de conceptos";
             // 
             // groupBox2
             // 

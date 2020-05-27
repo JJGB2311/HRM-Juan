@@ -314,8 +314,8 @@
             // 
             this.toolStripStatusLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(47, 17);
-            this.toolStripStatusLabel.Text = "Usuario";
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(56, 17);
+            this.toolStripStatusLabel.Text = "Usuario : ";
             // 
             // LblUsuario
             // 
@@ -359,7 +359,7 @@
             this.MaximizeBox = false;
             this.Name = "Empleos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Empleos";
+            this.Text = "3041 - Empleos";
             this.Load += new System.EventHandler(this.Empleos_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
