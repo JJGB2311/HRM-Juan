@@ -343,8 +343,8 @@
             // 
             this.toolStripStatusLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(47, 17);
-            this.toolStripStatusLabel.Text = "Usuario";
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(56, 17);
+            this.toolStripStatusLabel.Text = "Usuario : ";
             // 
             // LblUsuario
             // 
@@ -373,7 +373,7 @@
             this.MaximizeBox = false;
             this.Name = "Planilla";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "3031 Generar planilla";
+            this.Text = "3031 - Generar planilla";
             this.Load += new System.EventHandler(this.Planilla_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

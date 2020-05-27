@@ -100,8 +100,8 @@
             // 
             this.toolStripStatusLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(47, 17);
-            this.toolStripStatusLabel.Text = "Usuario";
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(56, 17);
+            this.toolStripStatusLabel.Text = "Usuario : ";
             // 
             // LblUsuario
             // 
@@ -562,7 +562,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "REContrataciones";
-            this.Text = "3055- Contrataciones";
+            this.Text = "3055 - Contrataciones";
             this.Load += new System.EventHandler(this.Contrataciones_Load);
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();

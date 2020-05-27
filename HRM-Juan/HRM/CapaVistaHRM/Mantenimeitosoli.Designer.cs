@@ -193,7 +193,7 @@
             this.groupBox1.Size = new System.Drawing.Size(733, 271);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Informacion ";
+            this.groupBox1.Text = "Información";
             // 
             // combo3
             // 
@@ -416,7 +416,7 @@
             this.MaximizeBox = false;
             this.Name = "Mantenimeitosoli";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Mantenimeitosoli";
+            this.Text = "3091 - Mantenimineto Solicitudes";
             this.Load += new System.EventHandler(this.Mantenimeitosoli_Load);
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
